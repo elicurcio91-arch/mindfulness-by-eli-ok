@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-xs opacity-40 border-t border-white/10 pt-8">
-        <p>© 2023 MindfulnessbyEli, Inc.</p>
+        <p>© 2026 MindfulnessbyEli, Inc.</p>
         <div className="flex gap-6 mt-4 md:mt-0">
           <a href="#" className="hover:text-white">Términos</a>
           <a href="#" className="hover:text-white">Privacidad</a>
