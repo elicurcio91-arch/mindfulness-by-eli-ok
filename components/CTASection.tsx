@@ -4,7 +4,7 @@ import React from 'react';
 const CTASection: React.FC = () => {
   return (
     <section className="relative bg-brand-blue pt-40 pb-48 overflow-hidden">
-      
+
       {/* Nubes decorativas superiores */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-white/5 rounded-full blur-2xl"></div>
       <div className="absolute top-40 right-20 w-40 h-40 bg-white/5 rounded-full blur-2xl"></div>
@@ -18,17 +18,21 @@ const CTASection: React.FC = () => {
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <h2 className="text-6xl md:text-[100px] font-bold mb-12 tracking-tight leading-[0.9]">
-          Descubrí el <br/> mindfulness
+        <h2 className="text-6xl md:text-[100px] font-bold mb-8 tracking-tight leading-[0.9]">
+          Descubrí el <br /> mindfulness
         </h2>
-        
-        <a 
-          href="https://calendly.com/elicurcio-91/" 
-          target="_blank" 
+
+        <p className="text-xl md:text-2xl font-medium mb-10 opacity-90 max-w-2xl mx-auto">
+          Si tenés dudas, contactame por whatsapp y te respondo personalmente.
+        </p>
+
+        <a
+          href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20que%20me%20cuentes%20m%C3%A1s%20sobre%20el%20Programa%20de%20Mindfulness:%0Agesti%C3%B3n%20de%20estr%C3%A9s%20y%20ansiedad.%20"
+          target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-brand-yellow text-black px-10 py-4 rounded-full font-bold text-sm uppercase tracking-wide hover:scale-105 transition-transform shadow-lg cursor-pointer"
+          className="inline-block bg-brand-yellow text-black px-12 py-5 rounded-full font-bold text-lg uppercase tracking-wide hover:scale-105 transition-transform shadow-lg cursor-pointer"
         >
-          Probalo gratis
+          hablemos por whatsapp
         </a>
       </div>
     </section>
