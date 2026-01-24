@@ -34,11 +34,11 @@ const HowItWorks: React.FC = () => {
               tu camino personalizado de 4 semanas para recuperar control, calma y bienestar.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 text-left max-w-7xl mx-auto">
               {/* Para Quién Section */}
-              <div className="bg-brand-pink/20 p-8 rounded-3xl">
+              <div className="bg-brand-pink/20 p-8 rounded-3xl border border-brand-pink/30">
                 <h4 className="text-xl font-bold text-dark mb-4">¿Para Quién es Este Programa?</h4>
-                <p className="text-gray-700 mb-4 font-medium">Este programa está diseñado específicamente para personas que:</p>
+                <p className="text-gray-700 mb-4 font-medium text-sm">Este programa está diseñado específicamente para personas que:</p>
                 <ul className="space-y-3 text-gray-600 text-sm">
                   <li className="flex gap-2"><span>-</span> Se sienten abrumadas por el estrés diario y las presiones laborales.</li>
                   <li className="flex gap-2"><span>-</span> Experimentan ansiedad que interfiere con su concentración y toma de decisiones.</li>
@@ -49,14 +49,29 @@ const HowItWorks: React.FC = () => {
                 </ul>
               </div>
 
+              {/* Transformación Section */}
+              <div className="bg-brand-yellow/10 p-8 rounded-3xl border border-brand-yellow/20">
+                <h4 className="text-xl font-bold text-dark mb-4">¿Qué Transformación Vas a Experimentar en 4 Semanas?</h4>
+                <p className="text-gray-700 mb-4 font-medium text-sm">Al finalizar este programa personalizado, podrás:</p>
+                <ul className="space-y-3 text-gray-600 text-sm">
+                  <li className="flex gap-2"><span>-</span> <strong>Gestionar eficazmente el estrés:</strong> Reconocer las señales de alerta y aplicar técnicas para reducir su impacto.</li>
+                  <li className="flex gap-2"><span>-</span> <strong>Calmar tu mente:</strong> Aprender a aquietar el ruido mental para experimentar mayor claridad y paz.</li>
+                  <li className="flex gap-2"><span>-</span> <strong>Dormir en calma:</strong> Desarrollar hábitos y herramientas para un sueño profundo y reparador.</li>
+                  <li className="flex gap-2"><span>-</span> <strong>Manejar tus emociones:</strong> Identificar, comprender y gestionar tus estados emocionales sin que te controlen.</li>
+                  <li className="flex gap-2"><span>-</span> <strong>Optimizar tu tiempo y ser más eficiente:</strong> Aplicar la atención plena para mejorar tu concentración y productividad.</li>
+                  <li className="flex gap-2"><span>-</span> Reconocer y diferenciar el estrés "bueno" (motivador) del "malo" (debilitante).</li>
+                  <li className="flex gap-2"><span>-</span> Sentirte más en control de tu vida y menos a merced de las circunstancias.</li>
+                </ul>
+              </div>
+
               {/* Qué Incluye Section */}
-              <div className="bg-brand-blue/5 p-8 rounded-3xl">
+              <div className="bg-brand-blue/5 p-8 rounded-3xl border border-brand-blue/10">
                 <h4 className="text-xl font-bold text-dark mb-4">¿Qué incluye el programa?</h4>
-                <p className="text-gray-700 mb-4 text-sm">
+                <p className="text-gray-700 mb-4 text-xs leading-relaxed">
                   Cada semana se adapta a vos, combinando herramientas prácticas con mi acompañamiento personalizado. Luego de la charla inicial de 15 minutos, diseñamos el plan de 4 semanas basado en tus tiempos, tu compromiso, disponibilidad, emociones y experiencia. El programa es 100% personalizado.
                 </p>
-                <p className="text-dark font-bold mb-4">En las 4 semanas vas a contar con:</p>
-                <ul className="space-y-3 text-dark font-medium">
+                <p className="text-dark font-bold mb-4 text-sm">En las 4 semanas vas a contar con:</p>
+                <ul className="space-y-3 text-dark font-medium text-sm">
                   <li className="flex items-center gap-3"><span className="text-brand-blue text-xl">➜</span> 4 sesiones 1:1 por Zoom (50 min)</li>
                   <li className="flex items-center gap-3"><span className="text-brand-blue text-xl">➜</span> Audios guiados diarios (8–12 min)</li>
                   <li className="flex items-center gap-3"><span className="text-brand-blue text-xl">➜</span> 2 check-ins por WhatsApp por semana</li>
@@ -71,7 +86,7 @@ const HowItWorks: React.FC = () => {
             <h4 className="text-2xl font-bold text-dark">Pilares del Proceso</h4>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-20">
             <Step
               title="Meditación Consciente"
               description="Cultivá la Calma Interior. Reducí el estrés y aumentá la concentración con la meditación."
@@ -133,6 +148,17 @@ const HowItWorks: React.FC = () => {
                 </svg>
               }
             />
+          </div>
+
+          <div className="text-center">
+            <a
+              href="https://calendly.com/elicurcio-91/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-brand-yellow text-black px-10 py-4 rounded-full font-bold text-lg uppercase tracking-wide hover:scale-105 transition-transform shadow-lg shadow-yellow-500/20 cursor-pointer"
+            >
+              quiero mi charla gratuita de 15 minutos
+            </a>
           </div>
         </div>
       </div>
