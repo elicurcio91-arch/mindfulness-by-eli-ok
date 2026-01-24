@@ -122,7 +122,7 @@ const Features: React.FC = () => {
                <Tag text="bienestar mental" color="#FF9EAF" />
                <h3 className="text-4xl font-bold mb-6">MÁS CLARIDAD MENTAL Y CONCENTRACIÓN</h3>
                <p className="text-white/80 leading-relaxed text-lg">
-                  Entrenamiento 1 a 1 para reducir el ruido mental, mejorar el foco y trabajar con mayor eficiencia.
+                  Acompañamiento 1 a 1 para reducir el ruido mental, mejorar el foco y trabajar con mayor eficiencia.
                   Ideal si sentís la cabeza saturada, dificultad para concentrarte o fatiga mental constante.
                </p>
             </div>
