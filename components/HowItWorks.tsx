@@ -34,54 +34,60 @@ const HowItWorks: React.FC = () => {
               tu camino personalizado de 4 semanas para recuperar control, calma y bienestar.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left max-w-5xl mx-auto mb-16">
+            <div className="max-w-5xl mx-auto space-y-16">
               {/* Para Quién Section */}
-              <div className="bg-brand-pink/20 p-8 rounded-3xl border border-brand-pink/30">
-                <h4 className="text-xl font-bold text-dark mb-4">¿Para Quién es Este Programa?</h4>
-                <p className="text-gray-700 mb-4 font-medium text-sm">Este programa está diseñado específicamente para personas que:</p>
-                <ul className="space-y-3 text-gray-600 text-sm">
-                  <li className="flex gap-2"><span>-</span> Se sienten abrumadas por el estrés diario y las presiones laborales.</li>
-                  <li className="flex gap-2"><span>-</span> Experimentan ansiedad que interfiere con su concentración y toma de decisiones.</li>
-                  <li className="flex gap-2"><span>-</span> Tienen dificultades para conciliar el sueño o tener un descanso reparador.</li>
-                  <li className="flex gap-2"><span>-</span> Desean aprender a gestionar sus emociones de manera efectiva para no sentirse desbordados.</li>
-                  <li className="flex gap-2"><span>-</span> Buscan herramientas prácticas para optimizar su tiempo y ser más eficientes.</li>
-                  <li className="flex gap-2"><span>-</span> Están listas para invertir en su bienestar mental y emocional para mejorar su calidad de vida.</li>
-                </ul>
+              <div className="bg-brand-pink/20 p-8 rounded-3xl border border-brand-pink/30 text-left">
+                <h4 className="text-2xl font-bold text-dark mb-4 text-center">¿Para Quién es Este Programa?</h4>
+                <p className="text-gray-700 mb-6 font-medium text-center">Este programa está diseñado específicamente para personas que:</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-3 text-gray-600 text-sm">
+                  <p>• Se sienten abrumadas por el estrés diario y las presiones laborales.</p>
+                  <p>• Experimentan ansiedad que interfiere con su concentración y toma de decisiones.</p>
+                  <p>• Tienen dificultades para conciliar el sueño o tener un descanso reparador.</p>
+                  <p>• Desean aprender a gestionar sus emociones de manera efectiva para no sentirse desbordados.</p>
+                  <p>• Buscan herramientas prácticas para optimizar su tiempo y ser más eficientes.</p>
+                  <p>• Están listas para invertir en su bienestar mental y emocional para mejorar su calidad de vida.</p>
+                </div>
+              </div>
+
+              {/* Transformación Section */}
+              <div className="bg-brand-yellow/10 p-10 rounded-3xl border border-brand-yellow/20 text-left">
+                <h4 className="text-2xl font-bold text-dark mb-6 text-center">¿Qué Transformación Vas a Experimentar en 4 Semanas?</h4>
+                <p className="text-gray-700 mb-6 font-medium text-center">Al finalizar este programa personalizado, podrás:</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-gray-600 text-sm">
+                  <p>• <strong>Gestionar eficazmente el estrés:</strong> Reconocer las señales de alerta y aplicar técnicas para reducir su impacto.</p>
+                  <p>• <strong>Calmar tu mente:</strong> Aprender a aquietar el ruido mental para experimentar mayor claridad y paz.</p>
+                  <p>• <strong>Dormir en calma:</strong> Desarrollar hábitos y herramientas para un sueño profundo y reparador.</p>
+                  <p>• <strong>Manejar tus emociones:</strong> Identificar, comprender y gestionar tus estados emocionales sin que te controlen.</p>
+                  <p>• <strong>Optimizar tu tiempo y ser más eficiente:</strong> Aplicar la atención plena para mejorar tu concentración y productividad.</p>
+                  <p>• Reconocer y diferenciar el estrés "bueno" (motivador) del "malo" (debilitante).</p>
+                  <p>• Sentirte más en control de tu vida y menos a merced de las circunstancias.</p>
+                </div>
               </div>
 
               {/* Qué Incluye Section */}
-              <div className="bg-brand-blue/5 p-8 rounded-3xl border border-brand-blue/10">
-                <h4 className="text-xl font-bold text-dark mb-4">¿Qué incluye el programa?</h4>
-                <p className="text-gray-700 mb-4 text-xs leading-relaxed">
-                  Cada semana se adapta a vos, combinando herramientas prácticas con mi acompañamiento personalizado. Luego de la charla inicial de 15 minutos, diseñamos el plan de 4 semanas basado en tus tiempos, tu compromiso, disponibilidad, emociones y experiencia. El programa es 100% personalizado.
-                </p>
-                <p className="text-dark font-bold mb-4 text-sm">En las 4 semanas vas a contar con:</p>
-                <ul className="space-y-3 text-dark font-medium text-sm">
-                  <li className="flex items-center gap-3"><span className="text-brand-blue text-xl">➜</span> 4 sesiones 1:1 por Zoom (50 min)</li>
-                  <li className="flex items-center gap-3"><span className="text-brand-blue text-xl">➜</span> Audios guiados diarios (8–12 min)</li>
-                  <li className="flex items-center gap-3"><span className="text-brand-blue text-xl">➜</span> 2 check-ins por WhatsApp por semana</li>
-                  <li className="flex items-center gap-3"><span className="text-brand-blue text-xl">➜</span> Material breve (lecturas/ejercicios) según tu caso</li>
-                  <li className="flex items-center gap-3"><span className="text-brand-blue text-xl">➜</span> Acompañamiento cercano durante todo el mes</li>
-                </ul>
+              <div className="bg-brand-blue/5 p-8 rounded-3xl border border-brand-blue/10 text-left">
+                <h4 className="text-2xl font-bold text-dark mb-6 text-center">¿Qué incluye el programa?</h4>
+                <div className="flex flex-col md:flex-row gap-8 items-start">
+                  <div className="flex-1">
+                    <p className="text-gray-700 mb-4 text-sm leading-relaxed">
+                      Cada semana se adapta a vos, combinando herramientas prácticas con mi acompañamiento personalizado. Luego de la charla inicial de 15 minutos, diseñamos el plan de 4 semanas basado en tus tiempos, tu compromiso, disponibilidad, emociones y experiencia. El programa es 100% personalizado.
+                    </p>
+                    <p className="text-dark font-bold mb-4 text-sm">En las 4 semanas vas a contar con:</p>
+                  </div>
+                  <div className="flex-1">
+                    <ul className="space-y-3 text-dark font-medium text-sm">
+                      <li className="flex items-center gap-3"><span className="text-brand-blue text-xl">➜</span> 4 sesiones 1:1 por Zoom (50 min)</li>
+                      <li className="flex items-center gap-3"><span className="text-brand-blue text-xl">➜</span> Audios guiados diarios (8–12 min)</li>
+                      <li className="flex items-center gap-3"><span className="text-brand-blue text-xl">➜</span> 2 check-ins por WhatsApp por semana</li>
+                      <li className="flex items-center gap-3"><span className="text-brand-blue text-xl">➜</span> Material breve (lecturas/ejercicios) según tu caso</li>
+                      <li className="flex items-center gap-3"><span className="text-brand-blue text-xl">➜</span> Acompañamiento cercano durante todo el mes</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Transformación Section - Full Width and Continuous for better reading */}
-            <div className="bg-brand-yellow/10 p-10 rounded-3xl border border-brand-yellow/20 max-w-5xl mx-auto mb-16 text-left">
-              <h4 className="text-2xl font-bold text-dark mb-6 text-center">¿Qué Transformación Vas a Experimentar en 4 Semanas?</h4>
-              <p className="text-gray-700 mb-6 font-medium text-center">Al finalizar este programa personalizado, podrás:</p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-gray-600 text-sm">
-                <p>• <strong>Gestionar eficazmente el estrés:</strong> Reconocer las señales de alerta y aplicar técnicas para reducir su impacto.</p>
-                <p>• <strong>Calmar tu mente:</strong> Aprender a aquietar el ruido mental para experimentar mayor claridad y paz.</p>
-                <p>• <strong>Dormir en calma:</strong> Desarrollar hábitos y herramientas para un sueño profundo y reparador.</p>
-                <p>• <strong>Manejar tus emociones:</strong> Identificar, comprender y gestionar tus estados emocionales sin que te controlen.</p>
-                <p>• <strong>Optimizar tu tiempo y ser más eficiente:</strong> Aplicar la atención plena para mejorar tu concentración y productividad.</p>
-                <p>• Reconocer y diferenciar el estrés "bueno" (motivador) del "malo" (debilitante).</p>
-                <p>• Sentirte más en control de tu vida y menos a merced de las circunstancias.</p>
-              </div>
-            </div>
-
-            <div className="text-center">
+            <div className="text-center mt-16">
               <a
                 href="https://calendly.com/elicurcio-91/"
                 target="_blank"
