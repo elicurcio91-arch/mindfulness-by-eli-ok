@@ -14,13 +14,9 @@ const Teachers: React.FC = () => {
           <div className="w-full md:w-5/12 relative group">
             <div className="absolute inset-0 bg-brand-yellow rounded-[40px] rotate-3 group-hover:rotate-6 transition-transform duration-500"></div>
             <div className="relative aspect-[3/4] rounded-[40px] overflow-hidden shadow-2xl bg-gray-200">
-              {/* 
-                NOTA: Recordá guardar tu foto como 'eli-curcio.jpg' en la carpeta 'public'
-                o ajustar esta URL.
-              */}
               <img
-                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000&auto=format&fit=crop"
-                alt="Eli Curcio"
+                src="/eli-curcio.jpg"
+                alt="Eliana"
                 className="w-full h-full object-cover"
               />
             </div>

@@ -10,6 +10,7 @@ const Tag: React.FC<{ text: string; color: string }> = ({ text, color }) => (
 const Features: React.FC = () => {
    return (
       <section className="max-w-6xl mx-auto px-6 py-20 space-y-24">
+         <h2 className="text-4xl font-bold text-center text-white mb-20">Pilares del Proceso</h2>
 
          {/* Feature 1: Autoconciencia */}
          <div className="flex flex-col md:flex-row items-center gap-12 md:gap-24">
