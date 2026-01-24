@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
       {/* Contenido Principal (Texto y CTA) - Z-Index Alto para estar por encima */}
       <div className="max-w-4xl mx-auto relative z-30 mb-8 md:mb-12">
         <h1 className="text-5xl md:text-[80px] font-bold mb-8 tracking-tight leading-[1.1]">
-          Encontrá más <br/> alegría en la vida
+          Encontrá más <br/> calma y bienestar en tu vida
         </h1>
         
         <a 
@@ -121,8 +121,11 @@ const Hero: React.FC = () => {
         <div className="inline-flex flex-col items-center gap-4">
           <div className="text-brand-yellow text-3xl animate-pulse">✦</div>
           <h2 className="text-3xl font-bold max-w-lg mx-auto leading-tight">
-            Mindfulness para el cuerpo, <br/> mente y espíritu
+            Programa de Mindfulness: <br/> gestión de estrés y ansiedad
           </h2>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mt-4 opacity-90">
+            Transformá tu estrés y ansiedad en 4 semanas. Aprendé a gestionar eficazmente el estrés, calmá tu mente para dormir profundo, optimizá tu tiempo y recuperá el control de tus emociones. Un programa personalizado para vos.
+          </p>
         </div>
       </div>
     </section>
