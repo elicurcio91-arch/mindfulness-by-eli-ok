@@ -95,9 +95,6 @@ const HowItWorks: React.FC = () => {
         </div>
       </div>
     </section>
-        </div >
-      </div >
-    </section >
   );
 };
 
