@@ -8,6 +8,8 @@ import Teachers from './components/Teachers';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import CTASection from './components/CTASection';
+import Newsletter from './components/Newsletter';
+import FreeGuide from './components/FreeGuide';
 
 const App: React.FC = () => {
   return (
@@ -18,7 +20,9 @@ const App: React.FC = () => {
         <Features />
         <HowItWorks />
         <Teachers />
+        <FreeGuide />
         <FAQ />
+        <Newsletter />
         <CTASection />
       </main>
       <Footer />
