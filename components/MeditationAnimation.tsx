@@ -52,51 +52,60 @@ const MeditationAnimation: React.FC = () => {
 
         {/* Character Group */}
         <g className="animate-breathe">
-          {/* Back Hair */}
+          {/* Back Hair (Voluminous & Wavy) */}
           <path
-            d="M340 180 Q320 220 330 350 Q350 400 400 400 Q450 400 470 350 Q480 220 460 180 Z"
-            fill="#5D4037"
+            d="M320 180 Q280 220 300 300 Q320 420 400 420 Q480 420 500 300 Q520 220 480 180 Z"
+            fill="#8E5A3E"
           />
 
-          {/* Legs (Lotus Pose) */}
-          <path d="M250 520 Q200 520 220 480 Q250 430 400 430 Q550 430 580 480 Q600 520 550 520 Z" fill="#8B4513" />
-          <path d="M300 520 Q250 520 270 490 Q300 450 400 450 Q500 450 530 490 Q550 520 500 520 Z" fill="#A0522D" />
+          {/* Legs / Pants (Lotus Pose - Terracotta) */}
+          <path d="M250 520 Q200 520 220 480 Q250 430 400 430 Q550 430 580 480 Q600 520 550 520 Z" fill="#8D5B3E" />
+          <path d="M300 520 Q250 520 270 490 Q300 450 400 450 Q500 450 530 490 Q550 520 500 520 Z" fill="#7A4B31" />
 
-          {/* Torso (More feminine curves) */}
-          <path d="M355 450 Q340 320 400 230 Q460 320 445 450 Z" fill="#6B8E23" />
+          {/* Torso (Sage Green - Softer Curves) */}
+          <path d="M355 450 Q335 320 400 230 Q465 320 445 450 Z" fill="#88A076" />
 
           {/* Neck */}
-          <rect x="392" y="210" width="16" height="25" fill="#F5CBA7" />
+          <rect x="393" y="210" width="14" height="25" fill="#F5CBA7" />
 
           {/* Head */}
           <circle cx="400" cy="180" r="42" fill="#F5CBA7" />
 
-          {/* Front Hair / Face Frame */}
+          {/* Face Details */}
+          {/* Serene eyes */}
+          <path d="M382 182 Q387 179 392 182" stroke="#4A342E" strokeWidth="2" strokeLinecap="round" />
+          <path d="M408 182 Q413 179 418 182" stroke="#4A342E" strokeWidth="2" strokeLinecap="round" />
+          {/* Soft smile */}
+          <path d="M396 200 Q400 203 404 200" stroke="#4A342E" strokeWidth="1.2" strokeLinecap="round" />
+          {/* Subtle Blush */}
+          <circle cx="372" cy="192" r="6" fill="#F0B2B2" fillOpacity="0.4" />
+          <circle cx="428" cy="192" r="6" fill="#F0B2B2" fillOpacity="0.4" />
+
+          {/* Front Hair / Face Frame (Wavy segments) */}
           <path
-            d="M358 180 Q358 120 400 120 Q442 120 442 180 Q442 220 445 280 Q430 260 400 260 Q370 260 355 280 Q358 220 358 180 Z"
-            fill="#6B4226"
+            d="M358 180 
+                           Q358 110 400 110 
+                           Q442 110 442 180 
+                           Q442 210 455 260 
+                           Q435 245 400 245 
+                           Q365 245 345 260 
+                           Q358 210 358 180 Z"
+            fill="#8E5A3E"
           />
 
-          {/* Windblown Hair Strands */}
-          <g className="animate-wind" stroke="#6B4226" strokeWidth="1.5" strokeLinecap="round">
-            <path d="M360 140 Q330 130 310 160" />
-            <path d="M440 140 Q470 130 490 160" />
-            <path d="M450 200 Q480 220 495 280" />
+          {/* Wavy Strands (Windblown) */}
+          <g className="animate-wind" stroke="#6B4226" strokeWidth="1.2" strokeLinecap="round" strokeOpacity="0.6">
+            <path d="M330 150 Q300 140 280 180" />
+            <path d="M470 150 Q500 140 520 180" />
+            <path d="M480 220 Q510 240 520 300" />
           </g>
 
-          {/* Face Details */}
-          <path d="M385 185 Q390 182 395 185" stroke="#3E2723" strokeWidth="2" strokeLinecap="round" />
-          <path d="M405 185 Q410 182 415 185" stroke="#3E2723" strokeWidth="2" strokeLinecap="round" />
-          <path d="M397 202 Q400 205 403 202" stroke="#3E2723" strokeWidth="1.5" strokeLinecap="round" />
+          {/* Arms & Hands (Sage Green) */}
+          <path d="M365 280 Q330 320 385 360" stroke="#88A076" strokeWidth="20" strokeLinecap="round" />
+          <circle cx="395" cy="365" r="9" fill="#F5CBA7" />
 
-          {/* Arms & Hands */}
-          {/* Left Arm (to chest) */}
-          <path d="M365 280 Q330 320 385 360" stroke="#6B8E23" strokeWidth="22" strokeLinecap="round" />
-          <circle cx="395" cy="365" r="10" fill="#F5CBA7" /> {/* Hand on chest */}
-
-          {/* Right Arm (to belly) */}
-          <path d="M435 280 Q470 350 415 405" stroke="#6B8E23" strokeWidth="22" strokeLinecap="round" />
-          <circle cx="410" cy="405" r="10" fill="#F5CBA7" /> {/* Hand on belly */}
+          <path d="M435 280 Q470 350 415 405" stroke="#88A076" strokeWidth="20" strokeLinecap="round" />
+          <circle cx="410" cy="405" r="9" fill="#F5CBA7" />
         </g>
 
         {/* Wind Lines (Foreground) */}
