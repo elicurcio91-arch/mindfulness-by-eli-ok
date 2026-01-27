@@ -5,7 +5,7 @@ const FreeGuide: React.FC = () => {
         <section className="bg-white py-20 px-6">
             <div className="max-w-4xl mx-auto text-center">
                 <div className="mb-12">
-                    <p className="text-2xl md:text-3xl font-medium text-gray-800 leading-relaxed mb-6">
+                    <p className="text-lg md:text-xl font-bold text-gray-800 leading-relaxed mb-6">
                         Dejá tu email y te envío gratuitamente una guía práctica con ejercicios simples para reducir el estrés y volver al presente.
                     </p>
                     <div className="h-1.5 w-24 bg-brand-yellow mx-auto rounded-full"></div>

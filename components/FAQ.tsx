@@ -9,7 +9,7 @@ const AccordionItem: React.FC<{
 
   return (
     <div className="border-b border-black/10 last:border-b-0">
-      <button 
+      <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex items-center justify-between py-6 text-left group"
       >
@@ -32,24 +32,24 @@ const AccordionItem: React.FC<{
 const FAQ: React.FC = () => {
   const faqs = [
     {
-      question: "¿Qué es el mindfulness y cómo beneficia mi cuerpo?",
-      answer: "El mindfulness es la práctica de estar plenamente presente. Beneficia reduciendo el estrés y mejorando la claridad."
+      question: "🧠 ¿Qué es el mindfulness y cómo puede beneficiar mi cuerpo y mi mente?",
+      answer: "El mindfulness es una práctica que te ayuda a entrenar la atención en el momento presente, reduciendo la rumiación mental y mejorando tu capacidad de regular el estrés, las emociones y la concentración. Con práctica regular, favorece un mayor equilibrio emocional, mejor descanso y más claridad mental."
     },
     {
-      question: "¿Cómo puede el mindfulness ayudarme en mi día a día?",
-      answer: "Al entrenar tu cerebro para notar sensaciones sin juzgar, aprendés a salir del piloto automático."
+      question: "🌿 ¿Cómo puede ayudarme el mindfulness en mi vida diaria?",
+      answer: "El mindfulness te permite pausar, observar tus pensamientos y responder con mayor calma frente a situaciones de presión. En el día a día, ayuda a manejar mejor el estrés laboral, mejorar el foco, dormir mejor y relacionarte de manera más consciente con vos y con los demás."
     },
     {
-      question: "¿Cuáles son técnicas prácticas para cultivar el mindfulness?",
-      answer: "Respiración enfocada, escaneo corporal, meditación caminando y alimentación consciente."
+      question: "🧘 ¿Qué técnicas prácticas voy a aprender?",
+      answer: "Vas a aprender ejercicios simples de respiración consciente, meditación guiada, escáner corporal y prácticas breves que podés integrar fácilmente en tu rutina diaria, incluso en medio del trabajo o en pocos minutos."
     },
     {
-      question: "¿Puede el mindfulness reducir el estrés?",
-      answer: "Sí, reduce los niveles de cortisol y ayuda a romper el ciclo de preocupación."
+      question: "🔥 ¿El mindfulness realmente ayuda a reducir el estrés?",
+      answer: "Sí. Diversos estudios muestran que la práctica regular de mindfulness reduce los niveles de estrés, ansiedad y tensión corporal. Al entrenar la atención, el sistema nervioso se regula y el cuerpo entra más fácilmente en estados de calma y recuperación."
     },
     {
-      question: "¿Cómo promueve el bienestar general?",
-      answer: "Desarrolla una relación más saludable con tus emociones y una mayor resiliencia."
+      question: "✨ ¿Cómo mejora mi bienestar general?",
+      answer: "El mindfulness fortalece la conexión con tu cuerpo y tus emociones, mejora la calidad del sueño, la concentración y la capacidad de disfrute. A largo plazo, contribuye a una vida más equilibrada, consciente y saludable."
     }
   ];
 
@@ -57,7 +57,7 @@ const FAQ: React.FC = () => {
     <section className="bg-white pb-32 px-6">
       <div className="max-w-4xl mx-auto bg-brand-pink rounded-[40px] p-8 md:p-16">
         <h2 className="text-3xl md:text-4xl font-bold text-dark text-center mb-12">
-          ¿Buscás una respuesta?
+          Preguntas frecuentes
         </h2>
         <div className="space-y-1">
           {faqs.map((faq, idx) => (

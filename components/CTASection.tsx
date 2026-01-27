@@ -23,7 +23,8 @@ const CTASection: React.FC = () => {
         </h2>
 
         <p className="text-xl md:text-2xl font-medium mb-10 opacity-90 max-w-2xl mx-auto">
-          Si tenés dudas, contactame por whatsapp y te respondo personalmente.
+          ¿Todavía tenés dudas? <br />
+          Estoy acá para ayudarte. Podés escribirme y te respondo personalmente.
         </p>
 
         <a
