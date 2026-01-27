@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Ilustración: Animación de Meditación */}
-      <div className="relative z-10 w-full max-w-2xl mx-auto -mt-16 md:-mt-28">
+      <div className="relative z-0 w-full max-w-2xl mx-auto -mt-12 md:-mt-20">
         <MeditationAnimation />
       </div>
 
