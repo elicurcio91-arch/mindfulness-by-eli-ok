@@ -13,7 +13,7 @@ const FreeGuide: React.FC = () => {
 
                 <div className="relative w-full overflow-hidden rounded-2xl shadow-xl bg-gray-50 border border-gray-100" style={{ minHeight: '600px' }}>
                     <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLScwA5plGulx8AdMqDJFJM3WZqFRMPZ2sq2lgxHaDFHtnXQeUQ/viewform?embedded=true"
+                        src="https://tally.so/embed/xXJEov?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
                         width="100%"
                         height="800"
                         frameBorder="0"
