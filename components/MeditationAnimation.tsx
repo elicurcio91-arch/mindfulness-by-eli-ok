@@ -29,7 +29,8 @@ const MeditationAnimation: React.FC = () => {
         <img
           src="/hero-illustration.jpg"
           alt="Ilustración de Mindfulness"
-          className="w-full h-full object-contain mix-blend-multiply opacity-90 transition-all duration-700"
+          className="w-full h-full object-contain mix-blend-multiply opacity-95 transition-all duration-700 pointer-events-none"
+          style={{ filter: 'contrast(1.05) brightness(1.05)' }}
         />
       </div>
     </div>
