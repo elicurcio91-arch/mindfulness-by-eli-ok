@@ -110,7 +110,7 @@ const MeditationAnimation: React.FC = () => {
           <circle cx="180" cy="180" r="1" fill="#FFF" className="particle" style={{ animationDelay: '5s' }} />
           <circle cx="220" cy="220" r="2.5" fill="#FFF" className="particle" style={{ animationDelay: '7s' }} />
         </g>
-      </svg>
+      <svg className="w-[360px] h-[360px] md:w-[460px] md:h-[460px]" ...>
 
       {/* Visual background text shadow to anchor it */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[420px] h-[420px] md:w-[520px] md:h-[520px] bg-brand-yellow/5 blur-[100px] rounded-full"></div>
