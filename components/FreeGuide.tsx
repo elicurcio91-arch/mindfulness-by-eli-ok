@@ -11,17 +11,15 @@ const FreeGuide: React.FC = () => {
                     <div className="h-1.5 w-24 bg-brand-yellow mx-auto rounded-full"></div>
                 </div>
 
-                <div className="max-w-md mx-auto">
-                    <div className="relative w-full overflow-hidden rounded-2xl shadow-xl bg-gray-50 border border-gray-100 h-[200px]">
+                <div className="max-w-5xl mx-auto text-center px-4">
+                    <div className="relative w-full rounded-2xl shadow-xl bg-gray-50 border border-gray-100">
                         <iframe
                             src="https://tally.so/embed/xXJEov?alignLeft=1&hideTitle=1&transparentBackground=1"
-                            width="100%"
-                            height="200"
                             frameBorder="0"
                             marginHeight={0}
                             marginWidth={0}
                             title="Formulario de suscripción"
-                            className="w-full h-full"
+                            className="w-full min-h-[900px]"
                         >
                             Cargando…
                         </iframe>
