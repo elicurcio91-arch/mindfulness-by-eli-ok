@@ -113,7 +113,7 @@ const MeditationAnimation: React.FC = () => {
       </svg>
 
       {/* Visual background text shadow to anchor it */}
-      <div className="absolute inset-0 bg-brand-yellow/5 blur-[100px] rounded-full scale-110"></div>
+      <div className="absolute inset-0 bg-brand-yellow/5 blur-[100px] rounded-full scale-150"></div>
     </div>
   );
 };
