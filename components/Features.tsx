@@ -18,7 +18,7 @@ const Features: React.FC = () => {
                <Tag text="Calma" color="#FF9EAF" />
                <h3 className="text-4xl font-bold mb-6">REDUCÍ EL ESTRÉS Y LA ANSIEDAD</h3>
                <p className="text-white/80 leading-relaxed text-lg">
-                  Acompañamiento personalizado para regular tu sistema nervioso y bajar la sobrecarga mental.
+                  <strong>Acompañamiento personalizado para regular tu sistema nervioso y bajar la sobrecarga mental.</strong>
                   Vas a aprender técnicas prácticas para calmar la mente, disminuir la tensión y gestionar mejor la presión diaria.
                </p>
             </div>
@@ -72,7 +72,7 @@ const Features: React.FC = () => {
                <Tag text="bienestar físico" color="#FDBA74" />
                <h3 className="text-4xl font-bold mb-6">DORMÍ MEJOR Y RECUPERÁ ENERGÍA</h3>
                <p className="text-white/80 leading-relaxed text-lg">
-                  Prácticas guiadas adaptadas a tu rutina para soltar el estrés del día y mejorar la calidad del sueño.
+                  <strong>Prácticas guiadas adaptadas a tu rutina para soltar el estrés del día y mejorar la calidad del sueño.</strong>
                   Dormir mejor te permite rendir más, tomar mejores decisiones y empezar el día con mayor claridad. Resultado: más energía real, mejor humor y más resiliencia.
                </p>
             </div>
@@ -122,7 +122,7 @@ const Features: React.FC = () => {
                <Tag text="bienestar mental" color="#FF9EAF" />
                <h3 className="text-4xl font-bold mb-6">MÁS CLARIDAD MENTAL Y CONCENTRACIÓN</h3>
                <p className="text-white/80 leading-relaxed text-lg">
-                  Acompañamiento 1 a 1 para reducir el ruido mental, mejorar el foco y trabajar con mayor eficiencia.
+                  <strong>Acompañamiento 1 a 1 para reducir el ruido mental, mejorar el foco y trabajar con mayor eficiencia.</strong>
                   Ideal si sentís la cabeza saturada, dificultad para concentrarte o fatiga mental constante.
                </p>
             </div>

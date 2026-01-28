@@ -17,6 +17,32 @@
     gtag('config', 'G-V849J0S643');
   </script>
 
+  <!-- Google tag (gtag.js) event -->
+  <script>
+    gtag('event', 'clickwpfinalfinal', {
+      // <event_parameters>
+    });
+  </script>
+
+  <!-- Google tag (gtag.js) event - delayed navigation helper -->
+  <script>
+    // Helper function to delay opening a URL until a gtag event is sent.
+    // Call it in response to an action that should navigate to a URL.
+    function gtagSendEvent(url) {
+      var callback = function () {
+        if (typeof url === 'string') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'clickwpfinalfinal', {
+        'event_callback': callback,
+        'event_timeout': 2000,
+        // <event_parameters>
+      });
+      return false;
+    }
+  </script>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -106,6 +132,7 @@
       }
     </script>
   <link rel="stylesheet" href="/index.css">
+  <script async src="https://tally.so/widgets/embed.js"></script>
 </head>
 
 <body>

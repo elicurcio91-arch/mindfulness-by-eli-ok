@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
             Programa de Mindfulness: <br /> gestión de estrés y ansiedad
           </h2>
           <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mt-4 opacity-90">
-            Transformá tu estrés y ansiedad en 4 semanas. Aprendé a gestionar eficazmente el estrés, calmá tu mente para dormir profundo, optimizá tu tiempo y recuperá el control de tus emociones. Un programa personalizado para vos.
+            Transformá tu estrés y ansiedad en 4 semanas. Un programa personalizado para vos.
           </p>
 
           {/* CTA Button */}
