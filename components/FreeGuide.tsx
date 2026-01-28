@@ -19,7 +19,7 @@ const FreeGuide: React.FC = () => {
                             marginHeight={0}
                             marginWidth={0}
                             title="Formulario de suscripción"
-                            className="w-full h-[520px] md:h-[620px] lg:h-[680px]"
+                            className="w-full h-[460px] md:h-[6560px] lg:h-[620px]"
                         >
                             Cargando…
                         </iframe>
