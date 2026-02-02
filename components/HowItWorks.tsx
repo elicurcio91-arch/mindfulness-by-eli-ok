@@ -37,8 +37,31 @@ const HowItWorks: React.FC = () => {
             <div className="max-w-5xl mx-auto space-y-16">
               {/* Para Quién Section */}
               <div className="bg-brand-pink/20 p-8 rounded-3xl border border-brand-pink/30 text-left">
-                <h4 className="text-2xl font-bold text-dark mb-4 text-center">¿Para Quién es Este Programa?</h4>
-                <p className="text-gray-700 mb-6 font-medium text-center">Este programa está diseñado específicamente para personas que:</p>
+                <h4 className="text-2xl font-bold text-dark mb-4 text-center">
+                  <span className="highlight" style={{
+                    background: 'linear-gradient(120deg, #FFD233 0%, #FFC700 100%)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: '100% 85%',
+                    backgroundPosition: '0 80%',
+                    padding: '2px 14px',
+                    display: 'inline-block',
+                    fontWeight: 800,
+                    borderRadius: '8px',
+                    transform: 'rotate(-1deg)'
+                  }}>¿Para Quién es Este Programa?</span>
+                </h4>
+                <p className="text-gray-700 mb-6 font-medium text-center">
+                  <span className="highlight-pink" style={{
+                    background: 'linear-gradient(120deg, #FF9EAF 0%, #FFB3C6 100%)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: '100% 85%',
+                    backgroundPosition: '0 80%',
+                    padding: '2px 14px',
+                    display: 'inline-block',
+                    fontWeight: 700,
+                    borderRadius: '8px'
+                  }}>Este programa está diseñado específicamente para personas que:</span>
+                </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-3 text-gray-600 text-sm">
                   <p>• Se sienten abrumadas por el estrés diario y las presiones laborales.</p>
                   <p>• Experimentan ansiedad que interfiere con su concentración y toma de decisiones.</p>
@@ -51,8 +74,31 @@ const HowItWorks: React.FC = () => {
 
               {/* Transformación Section */}
               <div className="bg-brand-yellow/10 p-10 rounded-3xl border border-brand-yellow/20 text-left">
-                <h4 className="text-2xl font-bold text-dark mb-6 text-center">¿Qué Transformación Vas a Experimentar en 4 Semanas?</h4>
-                <p className="text-gray-700 mb-6 font-medium text-center">Al finalizar este programa personalizado, podrás:</p>
+                <h4 className="text-2xl font-bold text-dark mb-6 text-center">
+                  <span className="highlight" style={{
+                    background: 'linear-gradient(120deg, #FFD233 0%, #FFC700 100%)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: '100% 85%',
+                    backgroundPosition: '0 80%',
+                    padding: '2px 14px',
+                    display: 'inline-block',
+                    fontWeight: 800,
+                    borderRadius: '8px',
+                    transform: 'rotate(1deg)'
+                  }}>¿Qué Transformación Vas a Experimentar en 4 Semanas?</span>
+                </h4>
+                <p className="text-gray-700 mb-6 font-medium text-center">
+                  <span className="highlight-orange" style={{
+                    background: 'linear-gradient(120deg, #FDBA74 0%, #FCD34D 100%)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: '100% 85%',
+                    backgroundPosition: '0 80%',
+                    padding: '2px 14px',
+                    display: 'inline-block',
+                    fontWeight: 700,
+                    borderRadius: '8px'
+                  }}>Al finalizar este programa personalizado, podrás:</span>
+                </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-gray-600 text-sm">
                   <p>• <strong>Gestionar eficazmente el estrés:</strong> Reconocer las señales de alerta y aplicar técnicas para reducir su impacto.</p>
                   <p>• <strong>Calmar tu mente:</strong> Aprender a aquietar el ruido mental para experimentar mayor claridad y paz.</p>
@@ -66,7 +112,18 @@ const HowItWorks: React.FC = () => {
 
               {/* Qué Incluye Section */}
               <div className="bg-brand-blue/5 p-8 rounded-3xl border border-brand-blue/10 text-left">
-                <h4 className="text-2xl font-bold text-dark mb-6 text-center">¿Qué incluye el programa?</h4>
+                <h4 className="text-2xl font-bold text-dark mb-6 text-center">
+                  <span className="highlight" style={{
+                    background: 'linear-gradient(120deg, #FFD233 0%, #FFC700 100%)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: '100% 85%',
+                    backgroundPosition: '0 80%',
+                    padding: '2px 14px',
+                    display: 'inline-block',
+                    fontWeight: 800,
+                    borderRadius: '8px'
+                  }}>¿Qué incluye el programa?</span>
+                </h4>
                 <div className="flex flex-col md:flex-row gap-8 items-start">
                   <div className="flex-1">
                     <p className="text-gray-700 mb-4 text-sm leading-relaxed">
@@ -87,15 +144,30 @@ const HowItWorks: React.FC = () => {
               </div>
             </div>
 
-            <div className="text-center mt-16">
+            <div className="text-center mt-16 flex flex-col items-center">
               <a
                 href="https://calendly.com/elicurcio-91/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-brand-yellow text-black px-12 py-4 rounded-full font-bold text-lg uppercase tracking-wide hover:scale-105 transition-transform shadow-lg shadow-yellow-500/20 cursor-pointer"
+                className="inline-block bg-brand-yellow text-black px-12 py-4 rounded-full font-bold uppercase tracking-wide hover:scale-105 transition-transform shadow-lg shadow-yellow-500/20 cursor-pointer"
               >
-                quiero mi charla gratuita de 15 minutos
+                <span className="block text-xl">quiero mi charla</span>
+                <span className="block text-sm lowercase font-normal opacity-80 mt-1">de 15 minutos</span>
               </a>
+
+              {/* Added Image under the button */}
+              <div className="mt-16 max-w-2xl w-full">
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-brand-pink/20 rounded-[40px] -rotate-2 group-hover:-rotate-1 transition-transform duration-500"></div>
+                  <div className="relative rounded-[40px] overflow-hidden shadow-2xl">
+                    <img
+                      src="/mindfulness_session_premium.png"
+                      alt="Mindfulness Program"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

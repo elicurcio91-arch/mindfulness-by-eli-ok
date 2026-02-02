@@ -36,9 +36,10 @@ const Hero: React.FC = () => {
             href="https://calendly.com/elicurcio-91/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-brand-yellow text-black px-8 py-4 rounded-full font-bold text-base uppercase tracking-wide hover:scale-105 transition-transform shadow-lg shadow-yellow-500/20 cursor-pointer mt-6"
+            className="inline-block bg-brand-yellow text-black px-8 py-4 rounded-full font-bold uppercase tracking-wide hover:scale-105 transition-transform shadow-lg shadow-yellow-500/20 cursor-pointer mt-6"
           >
-            Agendá tu charla gratuita de 15 minutos
+            <span className="block text-lg">Agendá tu charla</span>
+            <span className="block text-xs lowercase font-normal opacity-80 mt-1">de 15 minutos</span>
           </a>
 
           {/* Explanatory Text */}
