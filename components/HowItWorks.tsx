@@ -151,8 +151,7 @@ const HowItWorks: React.FC = () => {
                 rel="noopener noreferrer"
                 className="inline-block bg-brand-yellow text-black px-12 py-4 rounded-full font-bold uppercase tracking-wide hover:scale-105 transition-transform shadow-lg shadow-yellow-500/20 cursor-pointer"
               >
-                <span className="block text-xl">quiero mi charla</span>
-                <span className="block text-sm lowercase font-normal opacity-80 mt-1">de 15 minutos</span>
+                <span className="block text-xl leading-tight">QUIERO MI PROGRAMA <br /> PERSONALIZADO</span>
               </a>
 
             </div>

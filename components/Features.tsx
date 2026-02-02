@@ -173,6 +173,17 @@ const Features: React.FC = () => {
             </div>
          </div>
 
+         <div className="text-center pt-8">
+            <a
+               href="https://calendly.com/elicurcio-91/"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="inline-block bg-brand-yellow text-black px-12 py-4 rounded-full font-bold uppercase tracking-wide hover:scale-105 transition-transform shadow-lg shadow-yellow-500/20 cursor-pointer"
+            >
+               <span className="block text-xl">QUIERO MI CHARLA</span>
+               <span className="block text-[10px] lowercase font-normal opacity-80 mt-1">gratuitita de 15 minutos</span>
+            </a>
+         </div>
       </section>
    );
 };

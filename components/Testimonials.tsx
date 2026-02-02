@@ -58,6 +58,17 @@ const Testimonials: React.FC = () => {
                         </div>
                     </div>
                 </div>
+
+                <div className="text-center mt-16">
+                    <a
+                        href="https://calendly.com/elicurcio-91/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-brand-yellow text-black px-12 py-5 rounded-full font-bold text-xl uppercase tracking-wide hover:scale-105 transition-transform shadow-lg cursor-pointer"
+                    >
+                        QUIERO EMPEZAR HOY
+                    </a>
+                </div>
             </div>
         </section>
     );
