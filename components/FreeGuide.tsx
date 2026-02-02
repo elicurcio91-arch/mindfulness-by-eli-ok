@@ -14,7 +14,7 @@ const FreeGuide: React.FC = () => {
                 <div className="max-w-xl mx-auto">
                     <div className="relative w-full rounded-2xl shadow-xl bg-gray-50 border border-gray-100">
                         <iframe
-                            data-tally-src="https://tally.so/embed/xXJEov?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                            src="https://tally.so/embed/xXJEov?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
                             loading="lazy"
                             width="100%"
                             height="500"
