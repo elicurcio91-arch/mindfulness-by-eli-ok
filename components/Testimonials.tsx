@@ -12,9 +12,9 @@ const Testimonials: React.FC = () => {
                     Testimonios reales de personas que transformaron su día a día con mindfulness
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="flex justify-center">
                     {/* Testimonio de Instagram - Agus */}
-                    <div className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group">
+                    <div className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group max-w-md">
                         <div className="relative">
                             <img
                                 src="/testimonio-agusdeslous.jpg"
@@ -55,66 +55,6 @@ const Testimonials: React.FC = () => {
                             <p className="text-gray-700 leading-relaxed">
                                 "Mi día cambió... esa meditación guiada con Eli no solo me hizo bien, también me hizo emocionar desde un lugar que nunca había experimentado."
                             </p>
-                        </div>
-                    </div>
-
-                    {/* Testimonio placeholder 2 - Podés agregar más testimonios aquí */}
-                    <div className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-                        <div className="flex gap-1 mb-4">
-                            {[1, 2, 3, 4, 5].map((star) => (
-                                <svg
-                                    key={star}
-                                    className="w-5 h-5 text-brand-yellow"
-                                    fill="currentColor"
-                                    viewBox="0 0 20 20"
-                                >
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
-                            ))}
-                        </div>
-
-                        <p className="text-gray-700 leading-relaxed mb-6">
-                            "Las sesiones con Eli me ayudaron a encontrar calma en medio del caos. Ahora tengo herramientas concretas para gestionar mi ansiedad."
-                        </p>
-
-                        <div className="flex items-center gap-3">
-                            <div className="w-12 h-12 bg-gradient-to-br from-brand-blue to-brand-yellow rounded-full flex items-center justify-center text-white font-bold text-lg">
-                                M
-                            </div>
-                            <div>
-                                <p className="font-bold text-gray-900">María González</p>
-                                <p className="text-sm text-gray-500">Empresaria</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Testimonio placeholder 3 */}
-                    <div className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-                        <div className="flex gap-1 mb-4">
-                            {[1, 2, 3, 4, 5].map((star) => (
-                                <svg
-                                    key={star}
-                                    className="w-5 h-5 text-brand-yellow"
-                                    fill="currentColor"
-                                    viewBox="0 0 20 20"
-                                >
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
-                            ))}
-                        </div>
-
-                        <p className="text-gray-700 leading-relaxed mb-6">
-                            "Increíble cómo algo tan simple como respirar conscientemente puede cambiar tu día. Gracias Eli por compartir tu sabiduría."
-                        </p>
-
-                        <div className="flex items-center gap-3">
-                            <div className="w-12 h-12 bg-gradient-to-br from-brand-blue to-brand-yellow rounded-full flex items-center justify-center text-white font-bold text-lg">
-                                J
-                            </div>
-                            <div>
-                                <p className="font-bold text-gray-900">Jorge Pérez</p>
-                                <p className="text-sm text-gray-500">Desarrollador</p>
-                            </div>
                         </div>
                     </div>
                 </div>

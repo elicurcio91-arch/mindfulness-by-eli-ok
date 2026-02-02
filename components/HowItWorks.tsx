@@ -155,19 +155,6 @@ const HowItWorks: React.FC = () => {
                 <span className="block text-sm lowercase font-normal opacity-80 mt-1">de 15 minutos</span>
               </a>
 
-              {/* Added Image under the button */}
-              <div className="mt-16 max-w-2xl w-full">
-                <div className="relative group">
-                  <div className="absolute inset-0 bg-brand-pink/20 rounded-[40px] -rotate-2 group-hover:-rotate-1 transition-transform duration-500"></div>
-                  <div className="relative rounded-[40px] overflow-hidden shadow-2xl">
-                    <img
-                      src="/mindfulness_session_premium.png"
-                      alt="Mindfulness Program"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
