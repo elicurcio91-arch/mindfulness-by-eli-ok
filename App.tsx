@@ -6,6 +6,7 @@ import Features from './components/Features';
 import HowItWorks from './components/HowItWorks';
 import Teachers from './components/Teachers';
 import Testimonials from './components/Testimonials';
+import InstagramFeed from './components/InstagramFeed';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import CTASection from './components/CTASection';
@@ -21,6 +22,7 @@ const App: React.FC = () => {
         <HowItWorks />
         <Teachers />
         <Testimonials />
+        <InstagramFeed />
         <FreeGuide />
         <FAQ />
         <CTASection />
