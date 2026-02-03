@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
       {/* Contenido Principal (Texto) - Z-Index Alto para estar por encima */}
       <div className="max-w-4xl mx-auto relative z-30 mb-8 md:mb-12">
         <h1 className="text-5xl md:text-[80px] font-bold mb-8 tracking-tight leading-[1.1]">
-          Encontrá más <br /> calma y bienestar en tu vida
+          Acompañamiento personalizado para <br /> gestionar el estrés y la ansiedad.
         </h1>
       </div>
 
@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
         <div className="inline-flex flex-col items-center gap-4">
           <div className="text-brand-yellow text-3xl animate-pulse">✦</div>
           <h2 className="text-3xl font-bold max-w-lg mx-auto leading-tight">
-            Acompañamiento personalizado para gestionar el estrés y la ansiedad.
+            Encontrá más calma y bienestar en tu vida
           </h2>
           <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mt-4 opacity-90">
             Transformá tu estrés y ansiedad en 4 semanas.
