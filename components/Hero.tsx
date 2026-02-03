@@ -25,10 +25,10 @@ const Hero: React.FC = () => {
         <div className="inline-flex flex-col items-center gap-4">
           <div className="text-brand-yellow text-3xl animate-pulse">✦</div>
           <h2 className="text-3xl font-bold max-w-lg mx-auto leading-tight">
-            Programa de Mindfulness: <br /> gestión de estrés y ansiedad
+            Acompañamiento personalizado para gestionar el estrés y la ansiedad.
           </h2>
           <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mt-4 opacity-90">
-            Transformá tu estrés y ansiedad en 4 semanas. Un programa personalizado para vos.
+            Transformá tu estrés y ansiedad en 4 semanas.
           </p>
 
           {/* CTA Button */}
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
 
           {/* Explanatory Text */}
           <p className="text-sm md:text-base max-w-2xl mx-auto leading-relaxed mt-4 opacity-80">
-            En esta breve conversación personalizada, descubriremos tus desafíos de estrés y ansiedad, responderé tus dudas y te contaré cómo el Programa de Mindfulness: gestión de estrés y ansiedad de 4 semanas puede ser la solución que buscás.
+            En esta charla gratuita de 15 minutos hablamos de lo que hoy te está generando estrés, vemos qué necesitás y te cuento cómo puedo acompañarte durante 4 semanas para que recuperes calma y claridad.
           </p>
         </div>
       </div>
