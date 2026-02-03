@@ -41,7 +41,7 @@ const HowItWorks: React.FC = () => {
                   fontWeight: 800,
                   borderRadius: '8px',
                   transform: 'rotate(-1deg)'
-                }}>¿Para Quién es Este Programa?</span>
+                }}>¿A quién está dirigido?</span>
               </h4>
               <p className="text-gray-700 mb-6 font-medium text-center">
                 <span className="highlight-pink" style={{
