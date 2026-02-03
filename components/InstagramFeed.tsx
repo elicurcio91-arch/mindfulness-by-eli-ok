@@ -4,12 +4,24 @@ import React from 'react';
 const InstagramFeed: React.FC = () => {
     // Estos serían los links a tus posts reales y tus imágenes
     const posts = [
-        { id: 1, url: 'https://www.instagram.com/mindfulnessbyeli/', img: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=400', alt: 'Mindfulness post 1' },
-        { id: 2, url: 'https://www.instagram.com/mindfulnessbyeli/', img: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=400', alt: 'Mindfulness post 2' },
-        { id: 3, url: 'https://www.instagram.com/mindfulnessbyeli/', img: 'https://images.unsplash.com/photo-1518005020251-ece3b3334886?auto=format&fit=crop&q=80&w=400', alt: 'Mindfulness post 3' },
-        { id: 4, url: 'https://www.instagram.com/mindfulnessbyeli/', img: 'https://images.unsplash.com/photo-1499209974431-9dac3adaf471?auto=format&fit=crop&q=80&w=400', alt: 'Mindfulness post 4' },
-        { id: 5, url: 'https://www.instagram.com/mindfulnessbyeli/', img: 'https://images.unsplash.com/photo-1528712306091-ed0763094c98?auto=format&fit=crop&q=80&w=400', alt: 'Mindfulness post 5' },
-        { id: 6, url: 'https://www.instagram.com/mindfulnessbyeli/', img: 'https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&q=80&w=400', alt: 'Mindfulness post 6' },
+        {
+            id: 1,
+            url: 'https://www.instagram.com/p/DUG7NYWkVZe/',
+            img: 'https://www.instagram.com/p/DUG7NYWkVZe/media/?size=l',
+            alt: 'El estrés no siempre se manifiesta como estrés'
+        },
+        {
+            id: 2,
+            url: 'https://www.instagram.com/p/DTgxx6qkXSa/',
+            img: 'https://www.instagram.com/p/DTgxx6qkXSa/media/?size=l',
+            alt: '¿Cuánto hace que no te sentís en calma?'
+        },
+        {
+            id: 3,
+            url: 'https://www.instagram.com/p/DT0WRGTkRxl/',
+            img: 'https://www.instagram.com/p/DT0WRGTkRxl/media/?size=l',
+            alt: 'Eustrés vs Distrés'
+        },
     ];
 
     return (
