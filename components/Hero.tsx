@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
 
       {/* Contenido Principal (Texto) - Z-Index Alto para estar por encima */}
       <div className="max-w-4xl mx-auto relative z-30 mb-8 md:mb-12">
-        <h1 className="text-5xl md:text-[80px] font-bold mb-8 tracking-tight leading-[1.1]">
+        <h1 className="text-4xl md:text-[80px] font-bold mb-8 tracking-tight leading-[1.1]">
           Acompañamiento personalizado para <br /> gestionar el estrés y la ansiedad.
         </h1>
       </div>
