@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
             className="inline-block bg-brand-yellow text-black px-8 py-4 rounded-full font-bold uppercase tracking-wide hover:scale-105 transition-transform shadow-lg shadow-yellow-500/20 cursor-pointer mt-6"
           >
             <span className="block text-lg">AGENDÁ TU CHARLA</span>
-            <span className="block text-[10px] lowercase font-normal opacity-80 mt-1">gratuitita de 15 minutos</span>
+            <span className="block text-[10px] lowercase font-normal opacity-80 mt-1">gratuita de 15 minutos</span>
           </a>
 
           {/* Explanatory Text */}
