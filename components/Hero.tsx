@@ -30,14 +30,22 @@ const Hero: React.FC = () => {
 
           <div className="flex flex-col items-start gap-1">
 
-            <a
-              href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20consultarte%20por%20la%20charla%20gratuita%20de%2015%20minutos."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="primary-button w-full md:w-auto"
-            >
-              Reservar charla gratuita
-            </a>
+            <div className="flex flex-col md:flex-row items-center gap-4">
+              <a
+                href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20conversar%20con%20vos."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="primary-button w-full md:w-auto"
+              >
+                Hablar conmigo
+              </a>
+              <a
+                href="#proceso"
+                className="primary-button w-full md:w-auto !bg-white !text-gray-900 border border-gray-200 !shadow-none hover:!bg-gray-50"
+              >
+                Ver cómo funciona
+              </a>
+            </div>
 
             <div className="mt-6 flex flex-col gap-1 ml-1">
               <p className="text-gray-600 font-medium italic text-sm">

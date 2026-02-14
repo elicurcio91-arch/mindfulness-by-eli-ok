@@ -13,15 +13,23 @@ const FinalCTA: React.FC = () => {
                     En esta conversación inicial vamos a ver qué está pasando hoy, qué necesitás y cómo podría acompañarte.
                 </p>
 
-                <div className="flex flex-col items-center">
-
+                <div className="flex flex-col items-center gap-6">
                     <a
-                        href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20mi%20charla%20gratuita%20de%2015%20minutos."
+                        href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20conversar%20con%20vos."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="primary-button text-2xl px-16 py-6"
                     >
-                        Quiero empezar mi proceso
+                        Hablar conmigo
+                    </a>
+
+                    <a
+                        href="https://calendly.com/elicurcio-91/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="primary-button text-xl px-12 py-4 !bg-white !text-gray-900 border border-gray-200 !shadow-none hover:!bg-gray-50"
+                    >
+                        Agendar charla
                     </a>
 
                     <div className="mt-6 flex items-center gap-3 text-gray-400 font-bold uppercase tracking-widest text-sm italic">

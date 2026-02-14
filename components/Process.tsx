@@ -11,7 +11,7 @@ const Process: React.FC = () => {
     ];
 
     return (
-        <section className="bg-white">
+        <section className="bg-white" id="proceso">
             <div className="max-w-4xl mx-auto px-6">
                 <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-10 text-center tracking-tight">
                     Cómo trabajamos
@@ -41,12 +41,12 @@ const Process: React.FC = () => {
                 <div className="text-center flex flex-col items-center">
 
                     <a
-                        href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20empezar%20mi%20proceso%20de%20mindfulness%201%3A1"
+                        href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20conversar%20con%20vos."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="primary-button px-10"
                     >
-                        Ver cómo funciona
+                        Hablar conmigo
                     </a>
                 </div>
             </div>
