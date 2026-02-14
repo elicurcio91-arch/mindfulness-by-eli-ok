@@ -1,10 +1,12 @@
-// Final build: 2026-02-14
+
 import React from 'react';
 import Hero from './components/Hero';
+import TrustBanner from './components/TrustBanner';
 import Identification from './components/Identification';
 import Benefits from './components/Benefits';
 import Process from './components/Process';
 import Explanation from './components/Explanation';
+import FreeGuide from './components/FreeGuide';
 import About from './components/About';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
@@ -14,10 +16,12 @@ const App: React.FC = () => {
     <div className="min-h-screen">
       <main>
         <Hero />
+        <TrustBanner />
         <Identification />
         <Benefits />
         <Process />
         <Explanation />
+        <FreeGuide />
         <About />
         <FinalCTA />
       </main>

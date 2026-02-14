@@ -1,11 +1,18 @@
 :root {
   --bg-soft: #F9F7F2;
-  --text-main: #374151;
+  --text-main: #1F2937;
   --text-muted: #6B7280;
-  --accent-green: #D1FAE5;
-  --accent-blue: #E0F2FE;
-  --brand-primary: #5B63D6;
-  --brand-secondary: #059669;
+  --accent-violet: #8A91F2;
+  /* Softer violet */
+  /* Soft violet */
+  --accent-green: #10B981;
+  --brand-violet: #8A91F2;
+  /* Using the softer one as brand color */
+  /* Slightly deeper violet for better contrast */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,35 +23,66 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Base section padding */
+section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
 .primary-button {
-  background-color: #111827;
+  background-color: var(--brand-violet);
   color: white;
-  padding: 1rem 2rem;
+  padding: 1.25rem 2.5rem;
   border-radius: 9999px;
   font-weight: 700;
   text-align: center;
-  transition: all 0.2s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
+  font-size: 1.3rem;
+  /* Increased size (~15%) */
+  box-shadow: 0 4px 6px -1px rgba(124, 58, 237, 0.1), 0 2px 4px -1px rgba(124, 58, 237, 0.06);
+  border: none;
 }
 
 .primary-button:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  background-color: #6D28D9;
+  box-shadow: 0 10px 15px -3px rgba(124, 58, 237, 0.2);
 }
 
 .primary-button:active {
-  transform: scale(0.95);
+  transform: scale(0.98);
 }
 
 .rounded-card {
-  border-radius: 32px;
+  border-radius: 40px;
   overflow: hidden;
   background: white;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.05);
 }
 
 .soft-shadow {
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.05);
+}
+
+/* Custom text sizes */
+.hero-title {
+  font-size: clamp(3.5rem, 8vw, 5.5rem);
+  /* Increased size (+20%ish) */
+}
+
+.trust-text {
+  font-size: 1.1rem;
+  color: #6B7280;
+  text-transform: none;
+  letter-spacing: normal;
 }

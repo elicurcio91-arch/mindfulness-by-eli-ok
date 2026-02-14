@@ -3,13 +3,13 @@ import React from 'react';
 
 const Explanation: React.FC = () => {
     return (
-        <section className="py-28 px-6 bg-[#F9F7F2]">
+        <section className="py-32 px-6 bg-[#F9F7F2]">
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-14 text-center tracking-tight">
                     Qué es mindfulness y por qué ayuda
                 </h2>
 
-                <div className="space-y-12 text-center max-w-3xl mx-auto">
+                <div className="space-y-12 text-center max-w-3xl mx-auto mb-20">
                     <p className="text-2xl md:text-3xl text-gray-800 leading-relaxed font-semibold">
                         "Mindfulness es entrenar la atención para volver al presente con claridad y amabilidad.
                         Con práctica sostenida, ayuda a reducir estrés, ansiedad y reactividad emocional."
@@ -24,6 +24,17 @@ const Explanation: React.FC = () => {
                             Este acompañamiento no reemplaza terapia psicológica ni tratamiento médico.
                         </p>
                     </div>
+                </div>
+
+                <div className="text-center">
+                    <a
+                        href="https://calendly.com/elicurcio-91/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="primary-button"
+                    >
+                        Quiero empezar
+                    </a>
                 </div>
             </div>
         </section>

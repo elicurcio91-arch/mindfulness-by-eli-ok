@@ -3,21 +3,25 @@ import React from 'react';
 
 const About: React.FC = () => {
     return (
-        <section className="py-28 px-6 bg-white">
+        <section className="py-32 px-6 bg-white">
             <div className="max-w-6xl mx-auto">
                 <div className="flex flex-col-reverse md:flex-row items-center gap-16 md:gap-24">
                     <div className="flex-1 text-center md:text-left">
-                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-10 tracking-tight">
+                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
                             Sobre mí
                         </h2>
+                        <p className="text-xl md:text-2xl text-emerald-600 font-medium mb-10 leading-relaxed">
+                            Te acompaño de forma cercana, humana y personalizada. Cada proceso es único.
+                        </p>
+
                         <div className="space-y-6 mb-12">
-                            <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-medium">
+                            <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-medium">
                                 Soy Eli Curcio, instructora de mindfulness con aval internacional, profesora de yoga y coach ontológica.
                             </p>
-                            <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-medium">
+                            <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-medium">
                                 Acompaño procesos individuales para que puedas regular el estrés, comprender tus emociones y construir una relación más calma con tu mente.
                             </p>
-                            <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-medium">
+                            <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-medium">
                                 Mi enfoque es práctico, humano y personalizado.
                             </p>
                         </div>
@@ -31,9 +35,7 @@ const About: React.FC = () => {
 
                     <div className="flex-1 w-full max-w-md">
                         <div className="relative">
-                            {/* Decorative background shape */}
                             <div className="absolute -inset-4 bg-[#F9F7F2] rounded-[60px] -rotate-3 z-0"></div>
-
                             <div className="relative z-10 rounded-[48px] overflow-hidden aspect-[4/5] shadow-2xl shadow-black/10">
                                 <img
                                     src="/eli-curcio.jpg"

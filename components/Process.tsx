@@ -11,9 +11,9 @@ const Process: React.FC = () => {
     ];
 
     return (
-        <section className="py-28 px-6 bg-white">
+        <section className="py-32 px-6 bg-white">
             <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-10 text-center tracking-tight">
+                <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-10 text-center tracking-tight text-brand-violet">
                     Cómo trabajamos
                 </h2>
 
@@ -21,7 +21,7 @@ const Process: React.FC = () => {
                     Después de una charla inicial, diseño un proceso adaptado a tu momento actual, tu nivel de estrés y tus objetivos.
                 </p>
 
-                <div className="bg-[#E0F2FE]/20 p-10 md:p-16 rounded-[48px] border border-blue-50/50">
+                <div className="bg-[#E0F2FE]/20 p-10 md:p-16 rounded-[48px] border border-blue-50/50 mb-20">
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
                         {items.map((item, idx) => (
                             <li key={idx} className="flex items-center gap-5 text-gray-800 font-bold text-lg md:text-xl">
@@ -32,10 +32,21 @@ const Process: React.FC = () => {
                     </ul>
 
                     <div className="mt-14 pt-10 border-t border-blue-100/50 text-center">
-                        <span className="text-sm uppercase tracking-[0.3em] font-black text-blue-600/40">
+                        <span className="text-[10px] uppercase tracking-[0.4em] font-black text-blue-600/40">
                             Todo el proceso es ONLINE.
                         </span>
                     </div>
+                </div>
+
+                <div className="text-center">
+                    <a
+                        href="https://calendly.com/elicurcio-91/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="primary-button"
+                    >
+                        Quiero empezar
+                    </a>
                 </div>
             </div>
         </section>
