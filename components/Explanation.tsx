@@ -11,8 +11,8 @@ const Explanation: React.FC = () => {
 
                 <div className="space-y-12 text-center max-w-3xl mx-auto mb-20">
                     <p className="text-2xl md:text-3xl text-gray-800 leading-relaxed font-semibold">
-                        "Mindfulness es entrenar la atención para volver al presente con claridad y amabilidad.
-                        Con práctica sostenida, ayuda a reducir estrés, ansiedad y reactividad emocional."
+                        Mindfulness es entrenar la atención para volver al presente con claridad y amabilidad.
+                        Con práctica sostenida, ayuda a reducir estrés, ansiedad y reactividad emocional.
                     </p>
 
                     <div className="inline-block px-10 py-8 bg-white/50 backdrop-blur-sm rounded-[32px] border border-gray-100 italic text-xl md:text-2xl text-gray-700 leading-relaxed">

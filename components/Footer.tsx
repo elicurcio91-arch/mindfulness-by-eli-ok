@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
 
         <div className="flex flex-col md:flex-row items-center gap-10">
           <p className="text-gray-900 font-bold text-xl italic">
-            "Tu bienestar también merece un espacio."
+            Tu bienestar también merece un espacio.
           </p>
           <a
             href="https://www.instagram.com/mindfulnessbyeli"

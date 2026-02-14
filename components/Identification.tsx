@@ -28,7 +28,7 @@ const Identification: React.FC = () => {
 
                 <div className="pt-12 border-t border-gray-100 text-center md:text-left">
                     <p className="text-2xl text-gray-800 italic font-medium leading-relaxed max-w-2xl">
-                        "Lo que te pasa tiene sentido: cuando el sistema nervioso está en alerta, todo se intensifica."
+                        Lo que te pasa tiene sentido: cuando el sistema nervioso está en alerta, todo se intensifica.
                     </p>
                 </div>
             </div>
