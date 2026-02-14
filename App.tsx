@@ -1,31 +1,25 @@
 
 import React from 'react';
-import Header from './components/Header';
 import Hero from './components/Hero';
-import Features from './components/Features';
-import HowItWorks from './components/HowItWorks';
-import Teachers from './components/Teachers';
-import Testimonials from './components/Testimonials';
-import InstagramFeed from './components/InstagramFeed';
-import FAQ from './components/FAQ';
+import Identification from './components/Identification';
+import Benefits from './components/Benefits';
+import Process from './components/Process';
+import Explanation from './components/Explanation';
+import About from './components/About';
+import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
-import CTASection from './components/CTASection';
-import FreeGuide from './components/FreeGuide';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-brand-blue text-white relative overflow-x-hidden selection:bg-brand-yellow selection:text-black">
-      <Header />
+    <div className="min-h-screen">
       <main>
         <Hero />
-        <Features />
-        <HowItWorks />
-        <Teachers />
-        <Testimonials />
-        <InstagramFeed />
-        <FreeGuide />
-        <FAQ />
-        <CTASection />
+        <Identification />
+        <Benefits />
+        <Process />
+        <Explanation />
+        <About />
+        <FinalCTA />
       </main>
       <Footer />
     </div>

@@ -13,142 +13,16 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MindfulnessbyEli - Encontrá más alegría en la vida</title>
+  <title>Eli Curcio | Mindfulness 1:1 Online</title>
   <meta name="description"
-    content="Descubrí el mindfulness con Eli. Encontrá más alegría, calma y presencia en tu vida diaria a través de nuestras prácticas guiadas." />
-
-
-  <!-- Google tag (gtag.js) event -->
-  <script>
-    gtag('event', 'clickwpfinalfinal', {
-      // <event_parameters>
-    });
-  </script>
-
-  <!-- Google tag (gtag.js) event - delayed navigation helper -->
-  <script>
-    // Helper function to delay opening a URL until a gtag event is sent.
-    // Call it in response to an action that should navigate to a URL.
-    function gtagSendEvent(url) {
-      var callback = function () {
-        if (typeof url === 'string') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'clickwpfinalfinal', {
-        'event_callback': callback,
-        'event_timeout': 2000,
-        // <event_parameters>
-      });
-      return false;
-    }
-  </script>
+    content="Acompañamiento personalizado de mindfulness online para reducir estrés y ansiedad. Calmá tu mente y volvé a vos." />
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <style>
-    :root {
-      --brand-blue: #707BFF;
-      --brand-yellow: #FFD233;
-      --brand-pink: #FFD6E0;
-      --text-dark: #1F2937;
-    }
 
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      -webkit-font-smoothing: antialiased;
-      background-color: var(--brand-blue);
-      color: white;
-      margin: 0;
-      overflow-x: hidden;
-    }
-
-    /* Custom Utilities */
-    .bg-brand-blue {
-      background-color: var(--brand-blue);
-    }
-
-    .bg-brand-yellow {
-      background-color: var(--brand-yellow);
-    }
-
-    .text-brand-yellow {
-      color: var(--brand-yellow);
-    }
-
-    .bg-brand-pink {
-      background-color: var(--brand-pink);
-    }
-
-    .text-dark {
-      color: var(--text-dark);
-    }
-
-    .blob-shape {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    }
-
-    /* Cloud shape helper */
-    .cloud {
-      background: white;
-      border-radius: 100px;
-      position: absolute;
-    }
-
-    .cloud::after,
-    .cloud::before {
-      content: '';
-      position: absolute;
-      background: white;
-      border-radius: 50%;
-    }
-
-    /* Animations */
-    @keyframes float {
-
-      0%,
-      100% {
-        transform: translateY(0);
-      }
-
-      50% {
-        transform: translateY(-10px);
-      }
-    }
-
-    .animate-float {
-      animation: float 6s ease-in-out infinite;
-    }
-
-    .highlight {
-      background: linear-gradient(120deg, #FFD233 0%, #FFC700 100%);
-      background-repeat: no-repeat;
-      background-size: 100% 55%;
-      background-position: 0 70%;
-      padding: 4px 10px;
-      display: inline-block;
-      font-weight: 700;
-      box-decoration-break: clone;
-      -webkit-box-decoration-break: clone;
-      border-radius: 4px;
-    }
-
-    .highlight-pink {
-      background: linear-gradient(120deg, #FFB3C6 0%, #FFA8BD 100%);
-      background-repeat: no-repeat;
-      background-size: 100% 55%;
-      background-position: 0 70%;
-      padding: 4px 10px;
-      display: inline-block;
-      font-weight: 600;
-      box-decoration-break: clone;
-      -webkit-box-decoration-break: clone;
-      border-radius: 4px;
-    }
-  </style>
   <script type="importmap">
       {
         "imports": {
@@ -159,8 +33,12 @@
       }
     </script>
   <link rel="stylesheet" href="/index.css">
-  <script async src="https://tally.so/widgets/embed.js"></script>
-  <script async src="//www.instagram.com/embed.js"></script>
+  <style>
+    /* Prevent FOUC and set base theme color */
+    body {
+      background-color: #F9F7F2;
+    }
+  </style>
 </head>
 
 <body>

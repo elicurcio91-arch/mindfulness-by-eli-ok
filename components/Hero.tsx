@@ -1,50 +1,46 @@
 
 import React from 'react';
-import MeditationAnimation from './MeditationAnimation';
 
 const Hero: React.FC = () => {
   return (
-    <section className="pt-40 pb-0 px-6 text-center relative overflow-hidden">
-      {/* Background Clouds (Decorative) */}
-      <div className="absolute top-32 left-10 w-24 h-8 bg-white/10 rounded-full blur-xl"></div>
-      <div className="absolute top-40 right-20 w-32 h-10 bg-white/10 rounded-full blur-xl"></div>
+    <section className="relative min-h-[90vh] flex items-center pt-20 pb-20 px-6 overflow-hidden">
+      {/* Background Image Placeholder - To be replaced by generated image */}
+      <div
+        className="absolute inset-0 z-0 bg-cover bg-center md:bg-right"
+        style={{
+          backgroundImage: 'linear-gradient(to right, rgba(249, 247, 242, 0.95) 30%, rgba(249, 247, 242, 0.4)), url("https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80")'
+        }}
+      ></div>
 
-      {/* Contenido Principal (Texto) - Z-Index Alto para estar por encima */}
-      <div className="max-w-4xl mx-auto relative z-30 mb-8 md:mb-12">
-        <h1 className="text-4xl md:text-[80px] font-bold mb-8 tracking-tight leading-[1.1]">
-          Acompañamiento personalizado para <br /> gestionar el estrés y la ansiedad.
-        </h1>
-      </div>
+      <div className="relative z-10 max-w-6xl mx-auto w-full">
+        <div className="max-w-2xl">
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-[1.1]">
+            Calmá tu mente. <br /> Volvé a vos.
+          </h1>
 
-      {/* Ilustración: Animación de Meditación */}
-      <div className="relative z-0 w-full max-w-2xl mx-auto mt-4 md:mt-8">
-        <MeditationAnimation />
-      </div>
-
-      <div className="mt-8 md:mt-16 text-center relative z-30 pb-20">
-        <div className="inline-flex flex-col items-center gap-4">
-          <div className="text-brand-yellow text-3xl animate-pulse">✦</div>
-          <h2 className="text-3xl font-bold max-w-lg mx-auto leading-tight">
-            Encontrá más calma y bienestar en tu vida
-          </h2>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mt-4 opacity-90">
-            Transformá tu estrés y ansiedad en 4 semanas.
+          <p className="text-xl md:text-2xl text-gray-700 mb-10 leading-relaxed max-w-xl">
+            Programa 1:1 de mindfulness ONLINE para reducir estrés, ansiedad y sobrecarga mental. <br />
+            <span className="font-medium opacity-80">Un espacio humano, cuidado y sin exigencias.</span>
           </p>
 
-          {/* CTA Button */}
-          <a
-            href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20que%20me%20cuentes%20m%C3%A1s%20sobre%20el%20Acompa%C3%B1amiento%20personalizado%20para%20gestionar%20el%20estr%C3%A9s%20y%20la%20ansiedad.%20"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-brand-yellow text-black px-8 py-4 rounded-full font-bold uppercase tracking-wide hover:scale-105 transition-transform shadow-lg shadow-yellow-500/20 cursor-pointer mt-6"
-          >
-            <span className="block text-lg">quiero recuperar mi calma</span>
-          </a>
-
-          {/* Explanatory Text */}
-          <p className="text-sm md:text-base max-w-2xl mx-auto leading-relaxed mt-4 opacity-80">
-            En esta charla gratuita de 15 minutos hablamos de lo que hoy te está generando estrés, vemos qué necesitás y te cuento cómo puedo acompañarte durante 4 semanas para que recuperes calma y claridad.
-          </p>
+          <div className="flex flex-col items-start gap-4">
+            <a
+              href="https://calendly.com/elicurcio-91/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="primary-button text-lg w-full md:w-auto"
+            >
+              Agendar charla gratuita
+            </a>
+            <div className="flex flex-col gap-1 ml-1">
+              <span className="text-sm text-gray-500 font-medium tracking-tight">
+                15 minutos por Zoom • Sin compromiso
+              </span>
+              <span className="text-[12px] text-gray-400 uppercase tracking-widest font-bold">
+                100% online • Horarios flexibles
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
