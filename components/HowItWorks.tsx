@@ -139,12 +139,12 @@ const HowItWorks: React.FC = () => {
 
           <div className="text-center mt-16 flex flex-col items-center">
             <a
-              href="https://calendly.com/elicurcio-91/"
+              href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20que%20me%20cuentes%20m%C3%A1s%20sobre%20el%20Acompa%C3%B1amiento%20personalizado%20para%20gestionar%20el%20estr%C3%A9s%20y%20la%20ansiedad.%20"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-brand-yellow text-black px-12 py-4 rounded-full font-bold uppercase tracking-wide hover:scale-105 transition-transform shadow-lg shadow-yellow-500/20 cursor-pointer"
             >
-              <span className="block text-xl leading-tight">QUIERO EMPEZAR AHORA</span>
+              <span className="block text-xl leading-tight">empezar mi proceso</span>
             </a>
 
           </div>

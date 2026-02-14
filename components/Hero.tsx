@@ -33,13 +33,12 @@ const Hero: React.FC = () => {
 
           {/* CTA Button */}
           <a
-            href="https://calendly.com/elicurcio-91/"
+            href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20que%20me%20cuentes%20m%C3%A1s%20sobre%20el%20Acompa%C3%B1amiento%20personalizado%20para%20gestionar%20el%20estr%C3%A9s%20y%20la%20ansiedad.%20"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-brand-yellow text-black px-8 py-4 rounded-full font-bold uppercase tracking-wide hover:scale-105 transition-transform shadow-lg shadow-yellow-500/20 cursor-pointer mt-6"
           >
-            <span className="block text-lg">AGENDÁ TU CHARLA</span>
-            <span className="block text-[10px] lowercase font-normal opacity-80 mt-1">gratuita de 15 minutos</span>
+            <span className="block text-lg">quiero recuperar mi calma</span>
           </a>
 
           {/* Explanatory Text */}
