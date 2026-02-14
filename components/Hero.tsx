@@ -29,9 +29,7 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="flex flex-col items-start gap-1">
-            <span className="micro-copy italic">
-              No es compromiso. Es solo una primera conversación para ver si esto puede ayudarte.
-            </span>
+
             <a
               href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20consultarte%20por%20la%20charla%20gratuita%20de%2015%20minutos."
               target="_blank"

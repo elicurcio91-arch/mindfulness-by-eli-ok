@@ -40,9 +40,7 @@ const Benefits: React.FC = () => {
                 </div>
 
                 <div className="text-center flex flex-col items-center">
-                    <span className="micro-copy italic">
-                        No es compromiso. Es solo una primera conversación para ver si esto puede ayudarte.
-                    </span>
+
                     <a
                         href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20empezar%20my%20proceso%20de%20mindfulness%201%3A1"
                         target="_blank"
