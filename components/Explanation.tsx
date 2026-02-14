@@ -3,24 +3,24 @@ import React from 'react';
 
 const Explanation: React.FC = () => {
     return (
-        <section className="py-24 px-6 bg-[#F9F7F2]">
-            <div className="max-w-3xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10">
+        <section className="py-28 px-6 bg-[#F9F7F2]">
+            <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-14 text-center tracking-tight">
                     Qué es mindfulness y por qué ayuda
                 </h2>
 
-                <div className="space-y-8">
-                    <p className="text-xl text-gray-700 leading-relaxed">
-                        Mindfulness es entrenar la atención para volver al presente con claridad y amabilidad. <br />
-                        Con práctica sostenida, ayuda a reducir estrés, ansiedad y reactividad emocional.
+                <div className="space-y-12 text-center max-w-3xl mx-auto">
+                    <p className="text-2xl md:text-3xl text-gray-800 leading-relaxed font-semibold">
+                        "Mindfulness es entrenar la atención para volver al presente con claridad y amabilidad.
+                        Con práctica sostenida, ayuda a reducir estrés, ansiedad y reactividad emocional."
                     </p>
 
-                    <p className="text-xl text-gray-800 font-bold leading-relaxed">
-                        "No se trata de dejar la mente en blanco. Se trata de aprender a relacionarte distinto con lo que sentís y pensás."
-                    </p>
+                    <div className="inline-block px-10 py-8 bg-white/50 backdrop-blur-sm rounded-[32px] border border-gray-100 italic text-xl md:text-2xl text-gray-700 leading-relaxed">
+                        No se trata de dejar la mente en blanco. Se trata de aprender a relacionarte distinto con lo que sentís y pensás.
+                    </div>
 
                     <div className="pt-10">
-                        <p className="text-sm text-gray-500 italic opacity-70">
+                        <p className="text-xs text-gray-400 uppercase tracking-widest font-bold max-w-lg mx-auto leading-relaxed">
                             Este acompañamiento no reemplaza terapia psicológica ni tratamiento médico.
                         </p>
                     </div>

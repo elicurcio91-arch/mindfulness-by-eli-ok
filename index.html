@@ -2,7 +2,11 @@
 <html lang="es">
 
 <head>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eli Curcio | Mindfulness 1:1 Online</title>
+  <meta name="description"
+    content="Acompañamiento personalizado de mindfulness online. Reducí tu estrés y calmá tu mente con el programa 1:1 de Eli Curcio." />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VYHVNP1PSD"></script>
@@ -13,16 +17,10 @@
     gtag('config', 'G-VYHVNP1PSD');
   </script>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eli Curcio | Mindfulness 1:1 Online</title>
-  <meta name="description"
-    content="Acompañamiento personalizado de mindfulness online. Reducí tu estrés y calmá tu mente con el programa 1:1 de Eli Curcio." />
-
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
     rel="stylesheet">
 
   <script type="importmap">
@@ -36,9 +34,27 @@
     </script>
   <link rel="stylesheet" href="/index.css">
   <style>
-    /* Prevent FOUC and set base theme color */
+    /* Prevent FOUC and ensure theme consistency */
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       background-color: #F9F7F2;
+    }
+
+    /* Simple Tailwind fix for CDN if needed */
+    .primary-button {
+      background-color: #111827;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      text-align: center;
+      transition: all 0.2s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
     }
   </style>
 </head>

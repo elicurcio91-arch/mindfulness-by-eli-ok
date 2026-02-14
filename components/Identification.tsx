@@ -11,23 +11,23 @@ const Identification: React.FC = () => {
     ];
 
     return (
-        <section className="py-24 px-6 bg-white">
+        <section className="py-28 px-6 bg-white">
             <div className="max-w-3xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center md:text-left">
+                <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-14 text-center md:text-left tracking-tight">
                     Este espacio es para vos si…
                 </h2>
 
-                <ul className="space-y-6 mb-12">
+                <ul className="space-y-8 mb-16">
                     {bullets.map((text, idx) => (
-                        <li key={idx} className="bullet-item">
-                            <span className="bullet-dot"></span>
+                        <li key={idx} className="flex items-start gap-4 text-xl text-gray-700 leading-snug">
+                            <span className="w-2.5 h-2.5 mt-2.5 rounded-full bg-emerald-400 flex-shrink-0"></span>
                             <span>{text}</span>
                         </li>
                     ))}
                 </ul>
 
-                <div className="pt-8 border-t border-gray-100 text-center md:text-left">
-                    <p className="text-xl text-gray-700 italic font-medium leading-relaxed">
+                <div className="pt-12 border-t border-gray-100 text-center md:text-left">
+                    <p className="text-2xl text-gray-800 italic font-medium leading-relaxed max-w-2xl">
                         "Lo que te pasa tiene sentido: cuando el sistema nervioso está en alerta, todo se intensifica."
                     </p>
                 </div>

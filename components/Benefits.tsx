@@ -21,18 +21,18 @@ const Benefits: React.FC = () => {
     ];
 
     return (
-        <section className="py-24 px-6 bg-[#F9F7F2]">
+        <section className="py-28 px-6 bg-[#F9F7F2]">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-16 text-center">
+                <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-20 text-center tracking-tight">
                     Lo que vas a empezar a notar
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {benefits.map((benefit, idx) => (
-                        <div key={idx} className="bg-white p-10 rounded-[32px] soft-shadow hover:shadow-md transition-shadow">
-                            <div className="text-4xl mb-6">{benefit.icon}</div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">{benefit.title}</h3>
-                            <p className="text-gray-600 leading-relaxed text-lg">
+                        <div key={idx} className="bg-white p-12 rounded-[40px] shadow-sm shadow-black/5 hover:shadow-xl hover:shadow-black/5 transition-all duration-300 border border-gray-100/50">
+                            <div className="text-5xl mb-8">{benefit.icon}</div>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-6">{benefit.title}</h3>
+                            <p className="text-gray-600 leading-relaxed text-lg font-medium">
                                 {benefit.text}
                             </p>
                         </div>

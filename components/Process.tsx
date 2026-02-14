@@ -11,28 +11,28 @@ const Process: React.FC = () => {
     ];
 
     return (
-        <section className="py-24 px-6 bg-white">
+        <section className="py-28 px-6 bg-white">
             <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
+                <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-10 text-center tracking-tight">
                     Cómo trabajamos
                 </h2>
 
-                <p className="text-xl text-gray-700 text-center mb-16 leading-relaxed max-w-2xl mx-auto">
+                <p className="text-xl md:text-2xl text-gray-600 text-center mb-20 leading-relaxed max-w-3xl mx-auto font-medium">
                     Después de una charla inicial, diseño un proceso adaptado a tu momento actual, tu nivel de estrés y tus objetivos.
                 </p>
 
-                <div className="bg-[#E0F2FE]/30 p-8 md:p-12 rounded-[40px] border border-blue-50">
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+                <div className="bg-[#E0F2FE]/20 p-10 md:p-16 rounded-[48px] border border-blue-50/50">
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
                         {items.map((item, idx) => (
-                            <li key={idx} className="flex items-center gap-4 text-gray-800 font-medium text-lg">
-                                <span className="text-blue-500 text-2xl">✓</span>
+                            <li key={idx} className="flex items-center gap-5 text-gray-800 font-bold text-lg md:text-xl">
+                                <span className="flex-shrink-0 w-8 h-8 bg-blue-500/10 rounded-full flex items-center justify-center text-blue-600 text-sm">✓</span>
                                 {item}
                             </li>
                         ))}
                     </ul>
 
-                    <div className="mt-10 pt-8 border-t border-blue-100/50 text-center">
-                        <span className="text-sm uppercase tracking-widest font-bold text-blue-600/60">
+                    <div className="mt-14 pt-10 border-t border-blue-100/50 text-center">
+                        <span className="text-sm uppercase tracking-[0.3em] font-black text-blue-600/40">
                             Todo el proceso es ONLINE.
                         </span>
                     </div>
