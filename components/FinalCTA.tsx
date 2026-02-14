@@ -15,7 +15,7 @@ const FinalCTA: React.FC = () => {
 
                 <div className="flex flex-col items-center gap-6">
                     <a
-                        href="https://calendly.com/elicurcio-91/"
+                        href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20mi%20charla%20gratuita%20de%2015%20minutos."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="primary-button text-2xl px-16 py-6 shadow-2xl shadow-violet-500/10 hover:shadow-violet-500/20"

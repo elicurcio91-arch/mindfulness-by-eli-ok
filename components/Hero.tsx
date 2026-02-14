@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
 
           <div className="flex flex-col items-start gap-4">
             <a
-              href="https://calendly.com/elicurcio-91/"
+              href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20consultarte%20por%20la%20charla%20gratuita%20de%2015%20minutos."
               target="_blank"
               rel="noopener noreferrer"
               className="primary-button w-full md:w-auto"
