@@ -1,14 +1,11 @@
 :root {
   --bg-soft: #F9F7F2;
   --text-main: #1F2937;
+  --text-body: #4b5563;
   --text-muted: #6B7280;
-  --accent-violet: #8A91F2;
-  /* Softer violet */
-  /* Soft violet */
-  --accent-green: #10B981;
-  --brand-violet: #8A91F2;
-  /* Using the softer one as brand color */
-  /* Slightly deeper violet for better contrast */
+  --btn-gradient: linear-gradient(135deg, #7B8CFF, #9F8BFF);
+  --btn-shadow: 0 8px 20px rgba(123, 140, 255, 0.35);
+  --btn-shadow-hover: 0 12px 28px rgba(123, 140, 255, 0.45);
 }
 
 html {
@@ -17,72 +14,93 @@ html {
 
 body {
   background-color: #F9F7F2;
-  color: #1F2937;
+  color: var(--text-body);
   font-family: 'Plus Jakarta Sans', sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Base section padding */
-section {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+/* Typography Hierarchy */
+h1,
+h2,
+h3,
+h4 {
+  color: #1F2937;
+  font-weight: 700;
 }
 
+h5,
+h6,
+.subtitle {
+  font-weight: 500;
+}
+
+p,
+li,
+span {
+  color: var(--text-body);
+}
+
+/* Section Spacing - Hierarchical air */
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Responsive adjustments if needed */
 @media (max-width: 768px) {
   section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
+/* optimized Buttons */
 .primary-button {
-  background-color: var(--brand-violet);
-  color: white;
-  padding: 1.25rem 2.5rem;
-  border-radius: 9999px;
-  font-weight: 700;
-  text-align: center;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--btn-gradient);
+  color: white !important;
+  font-weight: 600;
+  letter-spacing: .3px;
+  padding: 14px 22px;
+  border-radius: 14px;
+  box-shadow: var(--btn-shadow);
+  transition: all .25s ease;
+  border: none;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
-  font-size: 1.3rem;
-  /* Increased size (~15%) */
-  box-shadow: 0 4px 6px -1px rgba(124, 58, 237, 0.1), 0 2px 4px -1px rgba(124, 58, 237, 0.06);
-  border: none;
+  font-size: 1.15rem;
+  text-align: center;
 }
 
 .primary-button:hover {
-  transform: translateY(-2px);
-  background-color: #6D28D9;
-  box-shadow: 0 10px 15px -3px rgba(124, 58, 237, 0.2);
+  transform: scale(1.04);
+  box-shadow: var(--btn-shadow-hover);
 }
 
 .primary-button:active {
   transform: scale(0.98);
 }
 
+/* Card Improvements */
 .rounded-card {
-  border-radius: 40px;
-  overflow: hidden;
   background: white;
-  box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.05);
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .06);
+  padding: 26px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
-.soft-shadow {
-  box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.05);
+.rounded-card:hover {
+  transform: translateY(-5px);
 }
 
-/* Custom text sizes */
-.hero-title {
-  font-size: clamp(3.5rem, 8vw, 5.5rem);
-  /* Increased size (+20%ish) */
-}
-
-.trust-text {
-  font-size: 1.1rem;
+/* Micro copy styling */
+.micro-copy {
+  font-size: 0.95rem;
   color: #6B7280;
-  text-transform: none;
-  letter-spacing: normal;
+  margin-bottom: 12px;
+  font-weight: 500;
+  display: block;
 }

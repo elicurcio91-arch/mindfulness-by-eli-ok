@@ -6,6 +6,9 @@ const Footer: React.FC = () => {
     <footer className="bg-white border-t border-gray-100 pt-28 pb-12 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12 mb-20 text-center md:text-left">
         <div>
+          <p className="text-gray-500 font-medium italic mb-6">
+            Si preferís escribir antes de agendar, podés hacerlo acá.
+          </p>
           <a
             href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20consultarte%20por%20el%20acompa%C3%B1amiento%201%3A1"
             target="_blank"

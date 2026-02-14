@@ -3,8 +3,8 @@ import React from 'react';
 
 const Explanation: React.FC = () => {
     return (
-        <section className="py-32 px-6 bg-[#F9F7F2]">
-            <div className="max-w-4xl mx-auto">
+        <section className="bg-[#F9F7F2]">
+            <div className="max-w-4xl mx-auto px-6">
                 <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-14 text-center tracking-tight">
                     Qué es mindfulness y por qué ayuda
                 </h2>
@@ -26,14 +26,17 @@ const Explanation: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="text-center">
+                <div className="text-center flex flex-col items-center">
+                    <span className="micro-copy italic">
+                        No es compromiso. Es solo una primera conversación para ver si esto puede ayudarte.
+                    </span>
                     <a
                         href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20empezar%20mi%20proceso%20de%20mindfulness%201%3A1"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="primary-button"
+                        className="primary-button px-10"
                     >
-                        Quiero empezar
+                        Ver cómo funciona
                     </a>
                 </div>
             </div>

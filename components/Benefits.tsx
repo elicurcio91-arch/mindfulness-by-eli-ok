@@ -21,32 +21,35 @@ const Benefits: React.FC = () => {
     ];
 
     return (
-        <section className="py-32 px-6 bg-[#F9F7F2]">
-            <div className="max-w-6xl mx-auto">
+        <section className="bg-[#F9F7F2]">
+            <div className="max-w-6xl mx-auto px-6">
                 <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-20 text-center tracking-tight">
                     Lo que vas a empezar a notar
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-20">
                     {benefits.map((benefit, idx) => (
-                        <div key={idx} className="bg-white p-12 rounded-[40px] shadow-sm shadow-black/5 hover:shadow-xl hover:shadow-black/5 transition-all duration-300 border border-gray-100/50">
-                            <div className="text-5xl mb-8">{benefit.icon}</div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-6">{benefit.title}</h3>
-                            <p className="text-gray-600 leading-relaxed text-lg font-medium">
+                        <div key={idx} className="rounded-card text-center md:text-left">
+                            <div className="text-5xl mb-6">{benefit.icon}</div>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4">{benefit.title}</h3>
+                            <p className="text-gray-600 leading-relaxed text-lg">
                                 {benefit.text}
                             </p>
                         </div>
                     ))}
                 </div>
 
-                <div className="text-center">
+                <div className="text-center flex flex-col items-center">
+                    <span className="micro-copy italic">
+                        No es compromiso. Es solo una primera conversación para ver si esto puede ayudarte.
+                    </span>
                     <a
                         href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20empezar%20my%20proceso%20de%20mindfulness%201%3A1"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="primary-button"
+                        className="primary-button px-10"
                     >
-                        Quiero empezar
+                        Ver cómo funciona
                     </a>
                 </div>
             </div>
