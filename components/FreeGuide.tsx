@@ -17,17 +17,22 @@ const FreeGuide: React.FC = () => {
                         Recibí tu guía gratuita
                     </h3>
 
-                    <div className="relative max-w-[480px] mx-auto overflow-visible">
+                    <div className="relative w-full max-w-[480px] mx-auto overflow-visible">
                         <iframe
-                            src="https://tally.so/embed/xXJEov?transparentBackground=1&hide-title=1&dynamicHeight=1"
+                            data-tally-src="https://tally.so/embed/xXJEov?transparentBackground=1&hide-title=1&dynamicHeight=1"
                             width="100%"
-                            height="500"
+                            height="300"
                             frameBorder="0"
                             marginHeight={0}
                             marginWidth={0}
                             title="Formulario de suscripción"
                             scrolling="no"
                             className="w-full"
+                            style={{
+                                border: 'none',
+                                overflow: 'hidden',
+                                minHeight: '300px'
+                            }}
                         >
                             Cargando…
                         </iframe>
