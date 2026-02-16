@@ -6,6 +6,7 @@ import Identification from './components/Identification';
 import Benefits from './components/Benefits';
 import Process from './components/Process';
 import Explanation from './components/Explanation';
+import Testimonial from './components/Testimonial';
 import FreeGuide from './components/FreeGuide';
 import About from './components/About';
 import FinalCTA from './components/FinalCTA';
@@ -22,6 +23,7 @@ const App: React.FC = () => {
         <Benefits />
         <Process />
         <Explanation />
+        <Testimonial />
         <FreeGuide />
         <About />
         <FinalCTA />
