@@ -35,11 +35,11 @@ const Hero: React.FC = () => {
                 rel="noopener noreferrer"
                 className="primary-button w-full md:w-auto px-10 py-5"
               >
-                Reservar charla gratuita
+                Quiero mi charla gratuita
               </a>
               <div className="flex flex-col items-center md:items-start space-y-1">
                 <span className="text-sm text-gray-600 font-bold">
-                  En 15 minutos entendemos qué te pasa y qué hacer.
+                  En 15 minutos entendemos qué te pasa y te llevás claridad para sentirte mejor hoy.
                 </span>
                 <span className="text-xs text-gray-500 font-medium italic">
                   Gratis por Zoom • Sin compromiso
@@ -49,13 +49,13 @@ const Hero: React.FC = () => {
 
             <div className="max-w-md bg-white/40 backdrop-blur-sm p-6 rounded-2xl border border-white/60 shadow-sm relative">
               <p className="text-gray-700 italic leading-relaxed text-sm md:text-base">
-                "Hoy tuve mi primer charla con Eli y mi día cambió. En 15 minutos logré una calma que no sentía hace mucho."
+                "Hoy tuve mi primera charla con Eli y en 15 minutos sentí una calma que no lograba hace meses."
               </p>
               <div className="mt-2 flex items-center gap-2">
                 <div className="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center">
                   <svg className="w-3.5 h-3.5 text-emerald-600" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" /></svg>
                 </div>
-                <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">Testimonio real</span>
+                <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">✔ Testimonio real</span>
               </div>
             </div>
           </div>

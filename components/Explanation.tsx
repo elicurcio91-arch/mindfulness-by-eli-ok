@@ -10,13 +10,14 @@ const Explanation: React.FC = () => {
                 </h2>
 
                 <div className="space-y-12 text-center max-w-3xl mx-auto mb-20">
-                    <p className="text-2xl md:text-3xl text-gray-800 leading-relaxed font-semibold">
-                        Mindfulness es entrenar la atención para volver al presente con claridad y amabilidad.
+                    <p className="text-2xl md:text-[28px] text-gray-800 leading-relaxed font-semibold">
+                        Mindfulness es entrenar la atención para volver al presente con claridad y amabilidad. <br />
                         Con práctica sostenida, ayuda a reducir estrés, ansiedad y reactividad emocional.
                     </p>
 
-                    <div className="inline-block px-10 py-8 bg-white/50 backdrop-blur-sm rounded-[32px] border border-gray-100 italic text-xl md:text-2xl text-gray-700 leading-relaxed">
-                        No se trata de dejar la mente en blanco. Se trata de aprender a relacionarte distinto con lo que sentís y pensás.
+                    <div className="inline-block px-10 py-10 bg-white/50 backdrop-blur-sm rounded-[32px] border border-gray-100 italic text-xl md:text-2xl text-gray-700 leading-relaxed">
+                        No se trata de dejar la mente en blanco. <br />
+                        Se trata de aprender a relacionarte distinto con lo que sentís y pensás.
                     </div>
 
                     <div className="pt-10">
@@ -27,14 +28,13 @@ const Explanation: React.FC = () => {
                 </div>
 
                 <div className="text-center flex flex-col items-center">
-
                     <a
                         href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20una%20charla%20gratuita."
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="primary-button px-10"
+                        className="primary-button px-12 py-5"
                     >
-                        Reservar charla gratuita
+                        Quiero empezar mi proceso
                     </a>
                 </div>
             </div>

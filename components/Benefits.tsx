@@ -50,7 +50,7 @@ const Benefits: React.FC = () => {
                         rel="noopener noreferrer"
                         className="primary-button px-10"
                     >
-                        Reservar charla gratuita
+                        Quiero mi charla gratuita
                     </a>
                 </div>
             </div>

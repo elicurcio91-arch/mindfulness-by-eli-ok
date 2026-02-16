@@ -13,9 +13,12 @@ const FreeGuide: React.FC = () => {
                 </p>
 
                 <div className="relative w-full overflow-visible rounded-[32px] shadow-2xl shadow-black/5 bg-[#F9F7F2] border border-gray-100 p-8 md:p-14 pb-16 md:pb-24">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-8">
+                    <h3 className="text-3xl font-bold text-gray-900 mb-2">
                         Recibí tu guía gratuita
                     </h3>
+                    <p className="text-gray-600 mb-10 font-medium">
+                        Guía para practicar mindfulness todos los días
+                    </p>
 
                     <div className="relative w-full max-w-[480px] mx-auto overflow-visible">
                         <iframe

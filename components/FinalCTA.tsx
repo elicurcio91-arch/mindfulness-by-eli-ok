@@ -10,22 +10,27 @@ const FinalCTA: React.FC = () => {
                 </h2>
 
                 <p className="text-xl md:text-3xl text-gray-700 mb-16 leading-relaxed max-w-3xl mx-auto font-medium">
-                    En 15 minutos vamos a entender qué está pasando hoy, qué necesitás y cómo puedo acompañarte.
+                    En 15 minutos vamos a entender qué está pasando hoy y cómo puedo acompañarte.
                 </p>
 
                 <div className="flex flex-col items-center gap-8">
-                    <div className="flex flex-col items-center gap-3">
+                    <div className="flex flex-col items-center gap-4">
                         <a
                             href="https://calendly.com/elicurcio-91/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="primary-button text-2xl px-16 py-6"
                         >
-                            Reservar charla gratuita
+                            Quiero mi charla
                         </a>
-                        <span className="text-sm text-gray-500 font-bold uppercase tracking-wider">
-                            15 minutos • Gratis • Sin compromiso
-                        </span>
+                        <div className="flex flex-col items-center gap-1">
+                            <span className="text-sm text-gray-500 font-bold uppercase tracking-wider">
+                                15 minutos • Gratis • Sin compromiso
+                            </span>
+                            <span className="text-xs text-gray-400 font-medium">
+                                Sesión confidencial • Sin juicio • Espacio seguro
+                            </span>
+                        </div>
                     </div>
 
                     <a
@@ -34,7 +39,7 @@ const FinalCTA: React.FC = () => {
                         rel="noopener noreferrer"
                         className="secondary-button"
                     >
-                        O preferís WhatsApp?
+                        Escribirme por WhatsApp
                     </a>
 
                     <div className="mt-12 text-gray-400 font-bold uppercase tracking-widest text-sm italic">
