@@ -12,27 +12,28 @@ const FreeGuide: React.FC = () => {
                     Una práctica guiada simple para calmar tu mente cuando más lo necesitás.
                 </p>
 
-                <div className="relative w-full overflow-hidden rounded-[32px] shadow-2xl shadow-black/5 bg-[#F9F7F2] border border-gray-100 p-8 md:p-14">
+                <div className="relative w-full overflow-visible rounded-[32px] shadow-2xl shadow-black/5 bg-[#F9F7F2] border border-gray-100 p-8 md:p-14 pb-16 md:pb-24">
                     <h3 className="text-2xl font-bold text-gray-900 mb-8">
                         Recibí tu guía gratuita
                     </h3>
 
-                    <div className="relative" style={{ minHeight: '500px' }}>
+                    <div className="relative max-w-[480px] mx-auto overflow-visible">
                         <iframe
-                            src="https://tally.so/r/xXJEov?transparentBackground=1&hide-title=1"
+                            src="https://tally.so/embed/xXJEov?transparentBackground=1&hide-title=1&dynamicHeight=1"
                             width="100%"
-                            height="550"
+                            height="500"
                             frameBorder="0"
                             marginHeight={0}
                             marginWidth={0}
                             title="Formulario de suscripción"
+                            scrolling="no"
                             className="w-full"
                         >
                             Cargando…
                         </iframe>
                     </div>
 
-                    <p className="text-sm text-gray-500 mt-6 font-medium">
+                    <p className="text-sm text-gray-500 mt-10 font-medium">
                         No envío spam. Solo contenido útil y práctico.
                     </p>
                 </div>
