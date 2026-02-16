@@ -3,39 +3,42 @@ import React from 'react';
 
 const FinalCTA: React.FC = () => {
     return (
-        <section className="bg-[#F9F7F2]">
+        <section className="bg-[#F9F7F2] py-24 md:py-32">
             <div className="max-w-4xl mx-auto px-6 text-center">
                 <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-8 tracking-tight leading-tight">
-                    Podés empezar con una charla breve
+                    Empezá con una charla de claridad
                 </h2>
 
                 <p className="text-xl md:text-3xl text-gray-700 mb-16 leading-relaxed max-w-3xl mx-auto font-medium">
-                    En esta conversación inicial vamos a ver qué está pasando hoy, qué necesitás y cómo podría acompañarte.
+                    En 15 minutos vamos a entender qué está pasando hoy, qué necesitás y cómo puedo acompañarte.
                 </p>
 
-                <div className="flex flex-col items-center gap-6">
-                    <a
-                        href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20conversar%20con%20vos."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="primary-button text-2xl px-16 py-6"
-                    >
-                        Hablar conmigo
-                    </a>
+                <div className="flex flex-col items-center gap-8">
+                    <div className="flex flex-col items-center gap-3">
+                        <a
+                            href="https://calendly.com/elicurcio-91/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="primary-button text-2xl px-16 py-6"
+                        >
+                            Quiero mi charla
+                        </a>
+                        <span className="text-sm text-gray-500 font-bold uppercase tracking-wider">
+                            15 minutos • Gratis • Sin compromiso
+                        </span>
+                    </div>
 
                     <a
-                        href="https://calendly.com/elicurcio-91/"
+                        href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20tener%20la%20charla%20de%20claridad."
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="primary-button text-xl px-12 py-4 !bg-white !text-gray-900 border border-gray-200 !shadow-none hover:!bg-gray-50"
+                        className="text-lg text-gray-600 font-semibold border-b-2 border-gray-200 hover:border-gray-900 transition-colors"
                     >
-                        Agendar charla
+                        Escribirme por WhatsApp
                     </a>
 
-                    <div className="mt-6 flex items-center gap-3 text-gray-400 font-bold uppercase tracking-widest text-sm italic">
-                        <span>15 minutos</span>
-                        <span className="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
-                        <span>Por Zoom</span>
+                    <div className="mt-12 text-gray-400 font-bold uppercase tracking-widest text-sm italic">
+                        Tu bienestar merece un espacio.
                     </div>
                 </div>
             </div>
