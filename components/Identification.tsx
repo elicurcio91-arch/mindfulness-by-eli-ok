@@ -11,7 +11,7 @@ const Identification: React.FC = () => {
     ];
 
     return (
-        <section className="py-32 md:py-40 px-6 bg-white">
+        <section className="pt-12 pb-32 md:pt-16 md:pb-40 px-6 bg-white">
             <div className="max-w-3xl mx-auto">
                 <span className="block text-emerald-600 font-bold uppercase tracking-[0.15em] text-sm mb-4 text-center md:text-left">
                     No estás fallando. Tu sistema nervioso está sobrecargado.
