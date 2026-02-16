@@ -75,11 +75,30 @@ section {
 
 .primary-button:hover {
   transform: scale(1.04);
-  box-shadow: var(--btn-shadow-hover);
+  box-shadow: 0 15px 35px rgba(123, 140, 255, 0.4), 0 0 20px rgba(123, 140, 255, 0.2);
 }
 
 .primary-button:active {
   transform: scale(0.98);
+}
+
+.secondary-button {
+  background: transparent;
+  color: var(--text-muted) !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: 1px solid #E5E7EB;
+  transition: all 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.secondary-button:hover {
+  background-color: #F9FAFB;
+  border-color: #D1D5DB;
+  color: var(--text-main) !important;
 }
 
 /* Card Improvements */

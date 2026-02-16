@@ -45,12 +45,12 @@ const Process: React.FC = () => {
 
                 <div className="text-center flex flex-col items-center">
                     <a
-                        href="https://wa.me/541121829771?text=Hola%20Eli,%20quiero%20empezar%20mi%20proceso."
+                        href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20una%20charla%20gratuita."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="primary-button px-10"
                     >
-                        Quiero empezar mi proceso
+                        Reservar charla gratuita
                     </a>
                 </div>
             </div>

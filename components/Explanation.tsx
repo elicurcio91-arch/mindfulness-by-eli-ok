@@ -29,12 +29,12 @@ const Explanation: React.FC = () => {
                 <div className="text-center flex flex-col items-center">
 
                     <a
-                        href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20conversar%20con%20vos."
+                        href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20una%20charla%20gratuita."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="primary-button px-10"
                     >
-                        Hablar conmigo
+                        Reservar charla gratuita
                     </a>
                 </div>
             </div>

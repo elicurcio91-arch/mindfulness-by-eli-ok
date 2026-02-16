@@ -21,7 +21,7 @@ const FinalCTA: React.FC = () => {
                             rel="noopener noreferrer"
                             className="primary-button text-2xl px-16 py-6"
                         >
-                            Quiero mi charla
+                            Reservar charla gratuita
                         </a>
                         <span className="text-sm text-gray-500 font-bold uppercase tracking-wider">
                             15 minutos • Gratis • Sin compromiso
@@ -29,12 +29,12 @@ const FinalCTA: React.FC = () => {
                     </div>
 
                     <a
-                        href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20tener%20la%20charla%20de%20claridad."
+                        href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20una%20charla%20gratuita."
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-lg text-gray-600 font-semibold border-b-2 border-gray-200 hover:border-gray-900 transition-colors"
+                        className="secondary-button"
                     >
-                        Escribirme por WhatsApp
+                        O preferís WhatsApp?
                     </a>
 
                     <div className="mt-12 text-gray-400 font-bold uppercase tracking-widest text-sm italic">

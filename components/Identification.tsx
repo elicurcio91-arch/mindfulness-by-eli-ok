@@ -29,17 +29,17 @@ const Identification: React.FC = () => {
                     ))}
                 </ul>
 
-                <div className="pt-14 border-t border-gray-100 text-center md:text-left">
+                <div className="pt-14 border-t border-gray-100 text-center md:text-left flex flex-col items-center md:items-start">
                     <p className="text-2xl text-gray-800 font-medium leading-relaxed max-w-2xl mb-8">
                         Lo que sentís tiene sentido. Cuando el sistema nervioso está en alerta, todo se intensifica.
                     </p>
                     <a
-                        href="https://wa.me/541121829771?text=Hola%20Eli,%20me%20gustaría%20tener%20la%20charla%20breve."
+                        href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20una%20charla%20gratuita."
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-emerald-600 font-bold border-b-2 border-emerald-100 hover:border-emerald-600 transition-colors inline-block"
+                        className="primary-button px-10"
                     >
-                        Podemos empezar a cambiar esto en una charla breve.
+                        Reservar charla gratuita
                     </a>
                 </div>
             </div>

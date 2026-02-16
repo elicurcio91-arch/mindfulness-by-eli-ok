@@ -45,12 +45,12 @@ const Benefits: React.FC = () => {
                         Esto puede empezar a pasar antes de lo que imaginás.
                     </p>
                     <a
-                        href="https://wa.me/541121829771?text=Hola%20Eli,%20quiero%20empezar."
+                        href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20una%20charla%20gratuita."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="primary-button px-10"
                     >
-                        Quiero empezar
+                        Reservar charla gratuita
                     </a>
                 </div>
             </div>
