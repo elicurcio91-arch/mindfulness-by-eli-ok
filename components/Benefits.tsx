@@ -20,7 +20,7 @@ const Benefits: React.FC = () => {
     return (
         <section className="bg-[#F9F7F2]">
             <div className="max-w-6xl mx-auto px-6">
-                <div className="text-center mb-20">
+                <div className="mb-12">
                     <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
                         Así se empieza a sentir el cambio
                     </h2>
@@ -29,9 +29,9 @@ const Benefits: React.FC = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
                     {benefits.map((benefit, idx) => (
-                        <div key={idx} className="rounded-card text-center md:text-left !p-8 shadow-sm">
+                        <div key={idx} className="rounded-card text-left">
                             <h3 className="text-2xl font-bold text-gray-900 mb-4">{benefit.title}</h3>
                             <p className="text-gray-600 leading-relaxed text-lg">
                                 {benefit.text}
@@ -40,7 +40,7 @@ const Benefits: React.FC = () => {
                     ))}
                 </div>
 
-                <div className="text-center flex flex-col items-center gap-10">
+                <div className="flex flex-col items-start gap-10">
                     <p className="text-xl text-gray-700 font-medium italic">
                         Esto puede empezar a pasar antes de lo que imaginás.
                     </p>
@@ -48,7 +48,7 @@ const Benefits: React.FC = () => {
                         href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20una%20charla%20gratuita."
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="primary-button px-10"
+                        className="primary-button"
                     >
                         Quiero mi charla gratuita
                     </a>

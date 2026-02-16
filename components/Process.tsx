@@ -13,42 +13,42 @@ const Process: React.FC = () => {
     return (
         <section className="bg-white" id="proceso">
             <div className="max-w-4xl mx-auto px-6">
-                <div className="text-center mb-16">
+                <div className="mb-12">
                     <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
                         Un proceso simple, humano y adaptado a vos
                     </h2>
-                    <p className="text-xl md:text-2xl text-gray-600 font-medium max-w-3xl mx-auto">
+                    <p className="text-xl md:text-2xl text-gray-600 font-medium">
                         No seguís un método rígido. Creamos uno para tu momento actual.
                     </p>
                 </div>
 
-                <p className="text-lg text-gray-600 text-center mb-10 leading-relaxed max-w-2xl mx-auto italic">
+                <p className="text-lg text-gray-500 mb-10 leading-relaxed italic">
                     Primero tenemos una charla inicial para entender qué estás viviendo y qué necesitás.
                 </p>
 
-                <div className="bg-[#E0F2FE]/20 p-10 md:p-16 rounded-[32px] border border-blue-50/50 mb-24 shadow-sm">
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+                <div className="bg-[#F9F7F2] p-8 md:p-12 rounded-[24px] border border-gray-100 mb-16 shadow-sm">
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
                         {items.map((item, idx) => (
-                            <li key={idx} className="flex items-center gap-5 text-gray-800 font-bold text-lg md:text-xl">
-                                <span className="flex-shrink-0 w-8 h-8 bg-blue-500/10 rounded-full flex items-center justify-center text-blue-600 text-sm">✓</span>
-                                {item}
+                            <li key={idx} className="flex items-start gap-4 text-gray-800 font-bold text-lg">
+                                <span className="flex-shrink-0 w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xs mt-1">✓</span>
+                                <span>{item}</span>
                             </li>
                         ))}
                     </ul>
 
-                    <div className="mt-14 pt-10 border-t border-blue-100/50 text-center">
-                        <span className="text-sm font-bold text-blue-600/60 tracking-wide">
+                    <div className="mt-12 pt-8 border-t border-gray-200">
+                        <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest block">
                             Todo el proceso es online y flexible.
                         </span>
                     </div>
                 </div>
 
-                <div className="text-center flex flex-col items-center">
+                <div className="flex flex-col items-start px-2">
                     <a
                         href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20una%20charla%20gratuita."
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="primary-button px-10"
+                        className="primary-button"
                     >
                         Quiero mi charla gratuita
                     </a>

@@ -3,31 +3,31 @@ import React from 'react';
 
 const FinalCTA: React.FC = () => {
     return (
-        <section className="bg-[#F9F7F2] py-24 md:py-32">
+        <section className="bg-[#F9F7F2] py-20">
             <div className="max-w-4xl mx-auto px-6 text-center">
-                <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-8 tracking-tight leading-tight">
+                <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
                     Empezá con una charla de claridad
                 </h2>
 
-                <p className="text-xl md:text-3xl text-gray-700 mb-16 leading-relaxed max-w-3xl mx-auto font-medium">
+                <p className="text-lg md:text-2xl text-gray-600 mb-12 leading-relaxed max-w-2xl mx-auto font-medium">
                     En 15 minutos vamos a entender qué está pasando hoy y cómo puedo acompañarte.
                 </p>
 
-                <div className="flex flex-col items-center gap-8">
+                <div className="flex flex-col items-center gap-10">
                     <div className="flex flex-col items-center gap-4">
                         <a
                             href="https://calendly.com/elicurcio-91/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="primary-button text-2xl px-16 py-6"
+                            className="primary-button text-xl px-12 py-5"
                         >
                             Quiero mi charla
                         </a>
                         <div className="flex flex-col items-center gap-1">
-                            <span className="text-sm text-gray-500 font-bold uppercase tracking-wider">
+                            <span className="text-xs text-gray-500 font-bold uppercase tracking-widest">
                                 15 minutos • Gratis • Sin compromiso
                             </span>
-                            <span className="text-xs text-gray-400 font-medium">
+                            <span className="text-[10px] text-gray-400 font-medium uppercase tracking-widest">
                                 Sesión confidencial • Sin juicio • Espacio seguro
                             </span>
                         </div>

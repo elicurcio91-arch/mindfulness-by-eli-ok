@@ -18,45 +18,40 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto w-full">
-        <div className="max-w-3xl">
-          <h1 className="text-[54px] md:text-[80px] font-bold text-gray-900 mb-8 leading-[1.05] tracking-tight">
-            Reducí tu estrés y <br /> calmá tu mente.
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-[44px] md:text-[80px] font-bold text-gray-900 mb-6 leading-[1.1] tracking-tight">
+            Reducí tu estrés y <br className="hidden md:block" /> calmá tu mente.
           </h1>
 
-          <p className="text-base md:text-lg text-gray-700 mb-12 leading-relaxed max-w-lg font-medium">
+          <p className="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto font-medium">
             Sesión guiada 1:1 para bajar ansiedad y sobrecarga mental.
           </p>
 
-          <div className="flex flex-col items-center md:items-start gap-12">
-            <div className="flex flex-col items-center md:items-start gap-4 w-full md:w-auto">
+          <div className="flex flex-col items-center gap-10">
+            <div className="flex flex-col items-center gap-4 w-full">
               <a
                 href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20una%20charla%20gratuita."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="primary-button w-full md:w-auto px-10 py-5"
+                className="primary-button px-10 py-5"
               >
                 Quiero mi charla gratuita
               </a>
-              <div className="flex flex-col items-center md:items-start space-y-1">
-                <span className="text-sm text-gray-600 font-bold">
+              <div className="flex flex-col items-center space-y-1">
+                <span className="text-sm text-gray-700 font-bold">
                   En 15 minutos entendemos qué te pasa y te llevás claridad para sentirte mejor hoy.
                 </span>
-                <span className="text-xs text-gray-500 font-medium italic">
+                <span className="text-xs text-gray-500 font-medium">
                   Gratis por Zoom • Sin compromiso
                 </span>
               </div>
             </div>
 
-            <div className="max-w-md bg-white/40 backdrop-blur-sm p-6 rounded-2xl border border-white/60 shadow-sm relative">
+            <div className="max-w-md bg-white/60 backdrop-blur-md p-6 rounded-2xl border border-white/80 shadow-sm relative">
+              <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest block mb-1">✔ Testimonio real</span>
               <p className="text-gray-700 italic leading-relaxed text-sm md:text-base">
-                "Hoy tuve mi primera charla con Eli y en 15 minutos sentí una calma que no lograba hace meses."
+                Hoy tuve mi primera charla con Eli y en 15 minutos sentí una calma que no lograba hace meses.
               </p>
-              <div className="mt-2 flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center">
-                  <svg className="w-3.5 h-3.5 text-emerald-600" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" /></svg>
-                </div>
-                <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">✔ Testimonio real</span>
-              </div>
             </div>
           </div>
         </div>
