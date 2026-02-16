@@ -19,9 +19,9 @@ const FreeGuide: React.FC = () => {
 
                     <div className="relative w-full max-w-[480px] mx-auto overflow-visible">
                         <iframe
-                            data-tally-src="https://tally.so/embed/xXJEov?transparentBackground=1&hide-title=1&dynamicHeight=1"
+                            src="https://tally.so/embed/xXJEov?transparentBackground=1&hide-title=1&dynamicHeight=1"
                             width="100%"
-                            height="300"
+                            height="600"
                             frameBorder="0"
                             marginHeight={0}
                             marginWidth={0}
@@ -31,7 +31,7 @@ const FreeGuide: React.FC = () => {
                             style={{
                                 border: 'none',
                                 overflow: 'hidden',
-                                minHeight: '300px'
+                                minHeight: '600px'
                             }}
                         >
                             Cargando…

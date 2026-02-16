@@ -12,6 +12,7 @@ import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
+  // Website optimization build trigger
   return (
     <div className="min-h-screen">
       <main>
