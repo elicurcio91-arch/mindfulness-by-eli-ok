@@ -7,27 +7,29 @@ const About: React.FC = () => {
             <div className="max-w-6xl mx-auto">
                 <div className="flex flex-col-reverse md:flex-row items-center gap-16 md:gap-24">
                     <div className="flex-1 text-center md:text-left">
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-10 tracking-tight">
                             Sobre mí
                         </h2>
-                        <p className="text-xl md:text-2xl text-emerald-600 font-medium mb-10 leading-relaxed">
-                            Te acompaño de forma cercana, humana y personalizada. Cada proceso es único.
-                        </p>
 
                         <div className="space-y-6 mb-12">
                             <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-medium">
-                                Soy Eli Curcio, instructora de mindfulness con aval internacional, profesora de yoga y coach ontológica.
+                                Soy <span className="text-[1.1em]">Eli Curcio</span>, instructora de mindfulness certificada internacionalmente, profesora de yoga y coach ontológica.
                             </p>
                             <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-medium">
-                                Acompaño procesos individuales para que puedas regular el estrés, comprender tus emociones y construir una relación más calma con tu mente.
+                                Acompaño procesos individuales para personas que sienten estrés, ansiedad o sobrecarga mental y quieren aprender a relacionarse distinto con lo que sienten y piensan.
                             </p>
                             <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-medium">
-                                Mi enfoque es práctico, humano y personalizado.
+                                Trabajo de forma cercana, práctica y personalizada, porque cada proceso es único.
                             </p>
                         </div>
+
+                        <p className="text-2xl md:text-3xl text-emerald-600 font-bold mb-12 leading-tight">
+                            "Mi intención es que puedas sentirte más en calma dentro de tu propia mente."
+                        </p>
+
                         <div className="flex items-center justify-center md:justify-start gap-4">
                             <span className="h-[1px] w-8 bg-gray-200"></span>
-                            <p className="text-sm uppercase tracking-[0.3em] font-black text-gray-400">
+                            <p className="text-sm uppercase tracking-[0.15em] font-black text-gray-400">
                                 Instructora de Mindfulness • Yoga • Coaching
                             </p>
                         </div>
