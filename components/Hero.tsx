@@ -3,55 +3,55 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-[95vh] flex items-center pt-24 pb-24 px-6 overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div
-        className="absolute inset-0 z-0 bg-cover bg-center md:bg-right"
-        style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80")'
-        }}
-      >
-        <div
-          className="absolute inset-0"
-          style={{ background: 'linear-gradient(rgba(255,255,255,.85), rgba(255,255,255,1))' }}
-        ></div>
-      </div>
+    <section className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 px-6 overflow-hidden bg-[#FDFBF7]">
+      {/* Decorative background elements */}
+      <div className="absolute top-[-10%] right-[-5%] w-[40%] h-[60%] bg-[#D8B4FE]/10 rounded-full blur-[120px] z-0"></div>
+      <div className="absolute bottom-[-10%] left-[-5%] w-[40%] h-[60%] bg-[#A8D1B1]/10 rounded-full blur-[120px] z-0"></div>
 
-      <div className="relative z-10 max-w-6xl mx-auto w-full">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-[44px] md:text-[80px] font-bold text-gray-900 mb-6 leading-[1.1] tracking-tight">
-            Reducí tu estrés y <br className="hidden md:block" /> calmá tu mente.
+      <div className="relative z-10 max-w-6xl mx-auto w-full text-center">
+        <div className="animate-fade-in">
+          <span className="micro-copy mb-6 inline-block text-primary">Acompañamiento 1:1 Online</span>
+          <h1 className="mb-8 max-w-4xl mx-auto">
+            Recuperá la calma y <br className="hidden md:block" />
+            <span className="text-primary/80">regulá tu sistema nervioso.</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto font-medium">
-            Sesión guiada 1:1 para bajar ansiedad y sobrecarga mental.
+          <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
+            Sesiones guiadas para bajar la ansiedad, el estrés y la sobrecarga mental con herramientas prácticas.
           </p>
 
-          <div className="flex flex-col items-center gap-10">
-            <div className="flex flex-col items-center gap-4 w-full">
+          <div className="flex flex-col items-center gap-12">
+            <div className="flex flex-col items-center gap-6 w-full">
               <a
                 href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20una%20charla%20gratuita."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="primary-button px-10 py-5"
+                className="primary-button scale-110"
               >
                 Quiero mi charla gratuita
               </a>
-              <div className="flex flex-col items-center space-y-1">
-                <span className="text-sm text-gray-700 font-bold">
-                  En 15 minutos entendemos qué te pasa y te llevás claridad para sentirte mejor hoy.
+              <div className="flex flex-col items-center space-y-2">
+                <span className="text-base text-gray-700 font-semibold">
+                  En 15 minutos identificamos qué te frena y te llevás claridad hoy.
                 </span>
-                <span className="text-xs text-gray-500 font-medium">
+                <span className="text-sm text-gray-500 font-normal italic">
                   Gratis por Zoom • Sin compromiso
                 </span>
               </div>
             </div>
 
-            <div className="max-w-md bg-white/60 backdrop-blur-md p-6 rounded-2xl border border-white/80 shadow-sm relative">
-              <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest block mb-1">✔ Testimonio real</span>
-              <p className="text-gray-700 italic leading-relaxed text-sm md:text-base">
-                Hoy tuve mi primera charla con Eli y en 15 minutos sentí una calma que no lograba hace meses.
+            <div className="max-w-md glass p-8 rounded-3xl shadow-sm border border-white/40 mt-4">
+              <div className="flex items-center justify-center gap-1 mb-3">
+                {[1, 2, 3, 4, 5].map((i) => (
+                  <svg key={i} className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-700 italic leading-relaxed text-sm md:text-base mb-2">
+                "En 15 minutos sentí una calma que no lograba hace meses. Eli transmite una paz increíble."
               </p>
+              <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Testimonio Real</span>
             </div>
           </div>
         </div>

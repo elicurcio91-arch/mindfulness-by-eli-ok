@@ -13,42 +13,51 @@ const Process: React.FC = () => {
     return (
         <section className="bg-white" id="proceso">
             <div className="max-w-4xl mx-auto px-6">
-                <div className="mb-12">
-                    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
+                <div className="animate-fade-in mb-16">
+                    <span className="micro-copy mb-4 text-primary">Acompañamiento a medida</span>
+                    <h2 className="mb-6">
                         Un proceso simple, humano y adaptado a vos
                     </h2>
                     <p className="text-xl md:text-2xl text-gray-600 font-medium">
-                        No seguís un método rígido. Creamos uno para tu momento actual.
+                        No seguimos un método rígido. Creamos herramientas para tu momento actual.
                     </p>
                 </div>
 
-                <p className="text-lg text-gray-500 mb-10 leading-relaxed italic">
-                    Primero tenemos una charla inicial para entender qué estás viviendo y qué necesitás.
-                </p>
+                <div className="glass p-10 md:p-14 rounded-[40px] border border-bg-secondary/50 mb-16 shadow-lg">
+                    <p className="text-xl text-gray-800 mb-10 leading-relaxed italic font-medium">
+                        Primero tenemos una <span className="text-primary font-bold">charla inicial gratuita</span> para entender qué estás viviendo y cómo puedo ayudarte.
+                    </p>
 
-                <div className="bg-[#F9F7F2] p-8 md:p-12 rounded-[24px] border border-gray-100 mb-16 shadow-sm">
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
                         {items.map((item, idx) => (
-                            <li key={idx} className="flex items-start gap-4 text-gray-800 font-bold text-lg">
-                                <span className="flex-shrink-0 w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xs mt-1">✓</span>
-                                <span>{item}</span>
-                            </li>
+                            <div key={idx} className="flex items-start gap-5">
+                                <span className="flex-shrink-0 w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center text-emerald-800 font-bold text-sm">
+                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span className="text-gray-900 font-semibold text-lg">{item}</span>
+                            </div>
                         ))}
-                    </ul>
+                    </div>
 
-                    <div className="mt-12 pt-8 border-t border-gray-200">
-                        <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest block">
-                            Todo el proceso es online y flexible.
+                    <div className="mt-14 pt-8 border-t border-gray-100 flex items-center justify-between gap-4 flex-wrap">
+                        <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">
+                            Proceso 100% Online y Flexible
                         </span>
+                        <div className="flex gap-2">
+                            <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></div>
+                            <span className="text-xs text-emerald-600 font-bold">Cupos limitados</span>
+                        </div>
                     </div>
                 </div>
 
-                <div className="flex flex-col items-start px-2">
+                <div className="flex flex-col items-center">
                     <a
                         href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20una%20charla%20gratuita."
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="primary-button"
+                        className="primary-button scale-105"
                     >
                         Quiero mi charla gratuita
                     </a>
