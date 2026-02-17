@@ -14,7 +14,7 @@ const TrustBanner: React.FC = () => {
                         {/* Image with premium styling */}
                         <div className="relative">
                             <img
-                                src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                src="/hero-illustration.jpg"
                                 alt="Mindfulness y respiración consciente"
                                 className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-2xl border-4 border-white/80 hover:scale-105 transition-transform duration-500"
                             />
