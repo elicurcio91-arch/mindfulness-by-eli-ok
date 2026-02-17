@@ -18,7 +18,6 @@ const Explanation: React.FC = () => {
                         </p>
 
                         <div className="relative inline-block px-10 py-12 bg-bg-secondary/40 rounded-[40px] border border-bg-secondary italic text-2xl md:text-3xl text-gray-800 leading-relaxed shadow-sm">
-                            <span className="absolute top-4 left-6 text-6xl text-primary/20 font-serif">“</span>
                             No se trata de dejar la mente en blanco. <br className="hidden md:block" />
                             Se trata de aprender a relacionarte de forma funcional con lo que sentís y pensás.
                         </div>

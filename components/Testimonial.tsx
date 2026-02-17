@@ -22,18 +22,15 @@ const Testimonial: React.FC = () => {
 
                     <div className="space-y-8 mb-10 text-gray-800">
                         <div className="relative">
-                            <svg className="absolute -top-6 -left-4 w-12 h-12 text-primary/10" fill="currentColor" viewBox="0 0 32 32">
-                                <path d="M10 8c-4.418 0-8 3.582-8 8s3.582 8 8 8c.638 0 1.253-.075 1.844-.216C12.984 25.106 15 27.5 15 27.5l.5-1.5s-2.5-3-2.5-10c0-4.418-3.582-8-8-8zm14 0c-4.418 0-8 3.582-8 8s3.582 8 8 8c.638 0 1.253-.075 1.844-.216C26.984 25.106 29 27.5 29 27.5l.5-1.5s-2.5-3-2.5-10c0-4.418-3.582-8-8-8z" />
-                            </svg>
                             <p className="text-xl md:text-2xl leading-relaxed font-medium italic relative z-10">
-                                "Hoy tuve mi primera charla con Eli y mi primer acercamiento al mindfulness. No esperaba demasiado de esos 15 minutos y <span className="text-primary font-bold">WOW… mi día cambió completamente</span>."
+                                Hoy tuve mi primera charla con Eli y mi primer acercamiento al mindfulness. No esperaba demasiado de esos 15 minutos y <span className="text-primary font-bold">WOW… mi día cambió completamente</span>.
                             </p>
                         </div>
                         <p className="text-lg md:text-xl leading-relaxed font-medium text-gray-600">
                             Atravesaba días complicados y esa meditación guiada no solo me dio calma, me emocionó desde un lugar que nunca había experimentado.
                         </p>
                         <p className="text-lg md:text-xl leading-relaxed font-medium text-gray-600 italic">
-                            "Siento que después de hoy voy a conocerme a mí misma desde otro lugar."
+                            Siento que después de hoy voy a conocerme a mí misma desde otro lugar.
                         </p>
 
                         <div className="pt-6">

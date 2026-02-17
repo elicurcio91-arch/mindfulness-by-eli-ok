@@ -3,10 +3,19 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 px-6 overflow-hidden bg-[#FDFBF7]">
-      {/* Decorative background elements */}
-      <div className="absolute top-[-10%] right-[-5%] w-[40%] h-[60%] bg-[#D8B4FE]/10 rounded-full blur-[120px] z-0"></div>
-      <div className="absolute bottom-[-10%] left-[-5%] w-[40%] h-[60%] bg-[#A8D1B1]/10 rounded-full blur-[120px] z-0"></div>
+    <section className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 px-6 overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div
+        className="absolute inset-0 z-0 bg-cover bg-center md:bg-right"
+        style={{
+          backgroundImage: 'url("https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80")'
+        }}
+      >
+        <div
+          className="absolute inset-0"
+          style={{ background: 'linear-gradient(rgba(253,251,247,0.8), rgba(253,251,247,1))' }}
+        ></div>
+      </div>
 
       <div className="relative z-10 max-w-6xl mx-auto w-full text-center">
         <div className="animate-fade-in">
@@ -49,7 +58,7 @@ const Hero: React.FC = () => {
                 ))}
               </div>
               <p className="text-gray-700 italic leading-relaxed text-sm md:text-base mb-2">
-                "En 15 minutos sentí una calma que no lograba hace meses. Eli transmite una paz increíble."
+                En 15 minutos sentí una calma que no lograba hace meses. Eli transmite una paz increíble.
               </p>
               <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Testimonio Real</span>
             </div>
