@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
                 ))}
               </div>
               <p className="text-gray-700 italic leading-relaxed text-sm md:text-base mb-2">
-                En 15 minutos sentí una calma que no lograba hace meses. Eli transmite una paz increíble.
+                "En 15 minutos sentí una calma que no lograba hace meses. Eli transmite una paz increíble."
               </p>
               <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Testimonio Real</span>
             </div>

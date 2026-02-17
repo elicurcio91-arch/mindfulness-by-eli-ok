@@ -38,7 +38,6 @@ const Footer: React.FC = () => {
           </div>
           <div className="flex flex-col gap-4">
             <span className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Contacto</span>
-            <span className="text-gray-600 font-semibold font-outfit">eli@mindfulnessbyeli.com</span>
             <span className="text-gray-500 text-sm">Buenos Aires, Argentina</span>
           </div>
         </div>
