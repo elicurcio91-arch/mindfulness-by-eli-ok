@@ -3,7 +3,7 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 px-6 overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center justify-center pt-[80px] pb-[60px] px-6 overflow-hidden">
       {/* Background Image with Overlay */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center md:bg-right"
@@ -18,29 +18,30 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto w-full text-center">
-        <div className="animate-fade-in">
+        <div className="animate-fade-in flex flex-col items-center">
           <span className="micro-copy mb-6 inline-block text-primary">Acompañamiento 1:1 Online</span>
-          <h1 className="mb-8 max-w-4xl mx-auto">
-            Recuperá la calma y <br className="hidden md:block" />
-            <span className="text-primary/80">regulá tu sistema nervioso.</span>
+
+          <h1 className="mb-4 max-w-[90%] mx-auto text-[34px] font-bold leading-tight md:text-5xl">
+            Regulá tu calma y <br className="hidden md:block" />
+            <span className="text-primary/80">tu sistema nervioso.</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
-            Sesiones guiadas para bajar la ansiedad, el estrés y la sobrecarga mental con herramientas prácticas.
+          <p className="text-[18px] text-gray-500 mb-7 max-w-2xl mx-auto font-medium leading-relaxed">
+            Sesión guiada 1:1 para bajar ansiedad y sobrecarga mental
           </p>
 
-          <div className="flex flex-col items-center gap-12">
+          <div className="flex flex-col items-center gap-12 w-full">
             <div className="flex flex-col items-center gap-6 w-full">
               <a
                 href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20una%20charla%20gratuita."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="primary-button scale-110"
+                className="primary-button h-[54px] flex items-center justify-center w-full max-w-[320px] rounded-full scale-110"
               >
                 Quiero mi charla gratuita
               </a>
               <div className="flex flex-col items-center space-y-2">
-                <span className="text-base text-gray-700 font-semibold">
+                <span className="text-base text-gray-700 font-semibold text-center">
                   En 15 minutos identificamos qué te frena y te llevás claridad hoy.
                 </span>
                 <span className="text-sm text-gray-500 font-normal italic">
