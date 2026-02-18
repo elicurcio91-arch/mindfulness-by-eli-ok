@@ -40,7 +40,7 @@ const Benefits: React.FC = () => {
                     <h2 className="mb-6 max-w-3xl">
                         Así se empieza a sentir el cambio en tu día a día
                     </h2>
-                    <p className="text-xl text-gray-600 font-medium max-w-2xl">
+                    <p className="font-medium text-gray-600 max-w-2xl">
                         No es magia. Es el resultado de entrenar tu mente y regular tu sistema nervioso.
                     </p>
                 </div>
@@ -51,8 +51,8 @@ const Benefits: React.FC = () => {
                             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-300">
                                 {benefit.icon}
                             </div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">{benefit.title}</h3>
-                            <p className="text-gray-600 leading-relaxed text-lg">
+                            <h3 className="mb-4 text-gray-900">{benefit.title}</h3>
+                            <p className="text-gray-600">
                                 {benefit.text}
                             </p>
                         </div>
@@ -60,8 +60,8 @@ const Benefits: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col items-center justify-center text-center gap-10 py-12 border-t border-gray-200/50">
-                    <p className="text-2xl text-gray-700 font-medium italic max-w-2xl">
-                        Este proceso puede transformar tu relación con el estrés antes de lo que imaginás.
+                    <p className="emotional-quote text-gray-700 italic max-w-2xl">
+                        "Este proceso puede transformar tu relación con el estrés antes de lo que imaginás."
                     </p>
                     <a
                         href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20una%20charla%20gratuita."

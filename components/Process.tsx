@@ -18,14 +18,14 @@ const Process: React.FC = () => {
                     <h2 className="mb-6">
                         Un proceso simple, humano y adaptado a vos
                     </h2>
-                    <p className="text-xl md:text-2xl text-gray-600 font-medium">
+                    <p className="font-medium text-gray-600">
                         No seguimos un método rígido. Creamos herramientas para tu momento actual.
                     </p>
                 </div>
 
                 <div className="glass p-10 md:p-14 rounded-[40px] border border-bg-secondary/50 mb-16 shadow-lg">
-                    <p className="text-xl text-gray-800 mb-10 leading-relaxed italic font-medium">
-                        Primero tenemos una <span className="text-primary font-bold">charla inicial gratuita</span> para entender qué estás viviendo y cómo puedo ayudarte.
+                    <p className="emotional-quote text-gray-800 mb-10 italic">
+                        "Primero tenemos una <span className="text-primary font-bold">charla inicial gratuita</span> para entender qué estás viviendo y cómo puedo ayudarte."
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
@@ -42,12 +42,12 @@ const Process: React.FC = () => {
                     </div>
 
                     <div className="mt-14 pt-8 border-t border-gray-100 flex items-center justify-between gap-4 flex-wrap">
-                        <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">
+                        <span className="text-sm-guide font-bold text-gray-400 uppercase tracking-widest">
                             Proceso 100% Online y Flexible
                         </span>
-                        <div className="flex gap-2">
+                        <div className="flex gap-2 items-center">
                             <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></div>
-                            <span className="text-xs text-emerald-600 font-bold">Cupos limitados</span>
+                            <span className="text-sm-guide text-emerald-600 font-bold">Cupos limitados</span>
                         </div>
                     </div>
                 </div>
