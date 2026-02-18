@@ -26,7 +26,7 @@ const About: React.FC = () => {
 
                         <div className="mb-12 border-l-4 border-primary/20 pl-8 py-2">
                             <p className="emotional-quote text-gray-800 italic">
-                                "Mi intención es que puedas recuperar la estabilidad y sentirte bien con vos mismo."
+                                Mi intención es que puedas recuperar la estabilidad y sentirte bien con vos mismo.
                             </p>
                         </div>
 

@@ -25,7 +25,7 @@ const Process: React.FC = () => {
 
                 <div className="glass p-10 md:p-14 rounded-[40px] border border-bg-secondary/50 mb-16 shadow-lg">
                     <p className="emotional-quote text-gray-800 mb-10 italic">
-                        "Primero tenemos una <span className="text-primary font-bold">charla inicial gratuita</span> para entender qué estás viviendo y cómo puedo ayudarte."
+                        Primero tenemos una <span className="text-primary font-bold">charla inicial gratuita</span> para entender qué estás viviendo y cómo puedo ayudarte.
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">

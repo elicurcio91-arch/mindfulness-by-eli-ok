@@ -61,7 +61,7 @@ const Benefits: React.FC = () => {
 
                 <div className="flex flex-col items-center justify-center text-center gap-10 py-12 border-t border-gray-200/50">
                     <p className="emotional-quote text-gray-700 italic max-w-2xl">
-                        "Este proceso puede transformar tu relación con el estrés antes de lo que imaginás."
+                        Este proceso puede transformar tu relación con el estrés antes de lo que imaginás.
                     </p>
                     <a
                         href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20una%20charla%20gratuita."
