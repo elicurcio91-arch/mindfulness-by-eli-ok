@@ -7,30 +7,31 @@ const About: React.FC = () => {
             <div className="max-w-6xl mx-auto px-6">
                 <div className="flex flex-col-reverse md:flex-row items-center gap-16 md:gap-24">
                     <div className="flex-[1.2] animate-fade-in">
-                        <h2 className="mb-10">
+                        <span className="micro-copy mb-4 text-secondary">Cercanía y profesionalismo</span>
+                        <h2 className="mb-8">
                             Acompañarte a encontrar <br /> tu propio espacio de calma.
                         </h2>
 
-                        <div className="space-y-8 mb-12 text-left">
-                            <p className="text-xl md:text-2xl text-gray-800 leading-relaxed font-medium">
+                        <div className="space-y-6 mb-12 text-left">
+                            <p className="font-medium text-gray-800">
                                 Soy <span className="text-primary font-bold">Eli Curcio</span>, instructora de mindfulness certificada, profesora de yoga y coach ontológica.
                             </p>
-                            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                            <p className="text-gray-700">
                                 Acompaño procesos individuales para personas que sienten que el estrés y la ansiedad están ocupando demasiado espacio en su vida.
                             </p>
-                            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                            <p className="text-gray-700">
                                 Mi trabajo es brindarte herramientas prácticas para que puedas regular tu sistema nervioso y vivir con mayor presencia, claridad y menos reactividad emocional.
                             </p>
                         </div>
 
                         <div className="mb-12 border-l-4 border-primary/20 pl-8 py-2">
-                            <p className="text-2xl md:text-3xl text-gray-800 font-bold leading-tight italic">
-                                Mi intención es que puedas recuperar la estabilidad y sentirte bien con vos mismo.
+                            <p className="emotional-quote text-gray-800 italic">
+                                "Mi intención es que puedas recuperar la estabilidad y sentirte bien con vos mismo."
                             </p>
                         </div>
 
                         <div className="flex items-center gap-4 py-4 border-t border-gray-200/50">
-                            <p className="text-xs uppercase tracking-[0.2em] font-bold text-gray-400">
+                            <p className="text-sm-guide uppercase tracking-[0.1em] font-bold text-gray-400">
                                 Mindfulness • Yoga • Coaching Ontológico
                             </p>
                         </div>
