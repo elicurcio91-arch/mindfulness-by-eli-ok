@@ -6,20 +6,20 @@ const FreeGuide: React.FC = () => {
         <section className="bg-bg-secondary/20">
             <div className="max-w-4xl mx-auto px-6 text-center">
                 <div className="animate-fade-in">
-                    <span className="micro-copy mb-4 text-secondary">Recurso gratuito</span>
+                    <span className="micro-copy mb-4 text-secondary section-title-center">Recurso gratuito</span>
                     <h2 className="mb-6">
                         Probá mindfulness en menos de 10 minutos
                     </h2>
-                    <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
+                    <p className="font-medium text-gray-600 mb-12 max-w-2xl mx-auto">
                         Accedé a una práctica guiada diseñada para calmar tu mente cuando más lo necesitás.
                     </p>
 
-                    <div className="relative w-full overflow-hidden rounded-[40px] shadow-xl bg-white border border-white p-8 md:p-16">
+                    <div className="relative w-full overflow-hidden rounded-[40px] shadow-xl bg-white border border-white p-8 md:p-16 text-center">
                         <div className="mb-10">
-                            <h3 className="text-2xl md:text-4xl font-bold text-gray-900 mb-3">
+                            <h3 className="text-gray-900 mb-3 section-title-center">
                                 Recibí tu guía práctica
                             </h3>
-                            <p className="text-gray-500 font-medium text-lg">
+                            <p className="text-gray-500 font-medium">
                                 Herramientas para integrar la calma en tu rutina diaria.
                             </p>
                         </div>

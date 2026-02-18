@@ -35,19 +35,19 @@ const Benefits: React.FC = () => {
     return (
         <section className="bg-bg-secondary/30">
             <div className="max-w-6xl mx-auto px-6">
-                <div className="animate-fade-in mb-16">
-                    <span className="micro-copy mb-4 text-secondary">Resultados tangibles</span>
-                    <h2 className="mb-6 max-w-3xl">
+                <div className="animate-fade-in mb-16 text-center">
+                    <span className="micro-copy mb-4 text-secondary section-title-center">Resultados tangibles</span>
+                    <h2 className="mb-6 max-w-3xl mx-auto">
                         Así se empieza a sentir el cambio en tu día a día
                     </h2>
-                    <p className="font-medium text-gray-600 max-w-2xl">
+                    <p className="font-medium text-gray-600 max-w-2xl mx-auto text-left-aligned">
                         No es magia. Es el resultado de entrenar tu mente y regular tu sistema nervioso.
                     </p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
                     {benefits.map((benefit, idx) => (
-                        <div key={idx} className="rounded-card flex flex-col items-start group">
+                        <div key={idx} className="rounded-card flex flex-col items-start group text-left-aligned">
                             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-300">
                                 {benefit.icon}
                             </div>

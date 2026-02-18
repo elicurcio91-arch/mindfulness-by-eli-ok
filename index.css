@@ -33,71 +33,106 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Typography Hierarchy - Validated System */
+
+/* Global Line Height */
 body {
-  background-color: var(--bg-base);
-  color: var(--text-body);
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
-/* Typography Hierarchy */
-/* Typography Hierarchy based on Guide */
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-main);
+  font-family: 'Outfit', sans-serif;
+  margin-bottom: 16px;
+  /* Default spacing between title and text */
+}
+
+/* H1: 34px desktop / 28px mobile — weight 700 */
 h1 {
-  font-size: 34px;
-  line-height: 1.2;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: -0.01em;
 }
 
-h2 {
-  font-size: 20px;
-  line-height: 1.3;
-  font-weight: 600;
+@media (min-width: 768px) {
+  h1 {
+    font-size: 34px;
+  }
 }
 
+/* H2: 26px desktop / 22px mobile — weight 600 */
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 26px;
+  }
+}
+
+/* H3: 20px desktop / 18px mobile — weight 600 */
 h3 {
   font-size: 18px;
-  line-height: 1.5;
   font-weight: 600;
 }
 
+@media (min-width: 768px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+
+/* Body: 17px desktop / 16px mobile — weight 400 */
 p {
   color: var(--text-body);
   font-size: 16px;
-  line-height: 1.6;
   font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 24px;
 }
 
-.text-sm-guide {
+@media (min-width: 768px) {
+  p {
+    font-size: 17px;
+  }
+}
+
+/* Label pequeño: 14px — weight 500 */
+.label-small,
+.micro-copy {
   font-size: 14px;
-  line-height: 1.5;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 8px;
 }
 
-.emotional-quote {
-  font-size: 24px;
-  line-height: 1.4;
-  font-weight: 600;
+/* Alignment Utilities */
+.section-title-center {
+  text-align: center;
 }
 
-.hero-subtitle {
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 400;
+.text-left-aligned {
+  text-align: left;
 }
 
 /* Section Spacing */
 section {
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
-@media (max-width: 768px) {
-  section {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
+/* Vertical Spacing Blocks helper */
+.block-spacing {
+  margin-bottom: 48px;
 }
 
 /* Premium Buttons - Updated */

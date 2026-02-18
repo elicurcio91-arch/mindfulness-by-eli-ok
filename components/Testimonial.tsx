@@ -20,22 +20,22 @@ const Testimonial: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="space-y-8 mb-10 text-gray-800">
+                    <div className="space-y-6 mb-10 text-gray-800">
                         <div className="relative">
-                            <p className="text-xl md:text-2xl leading-relaxed font-medium italic relative z-10">
+                            <p className="emotional-quote relative z-10">
                                 "Hoy tuve mi primera charla con Eli y mi primer acercamiento al mindfulness. No esperaba demasiado de esos 15 minutos y <span className="text-primary font-bold">WOW… mi día cambió completamente</span>."
                             </p>
                         </div>
-                        <p className="text-lg md:text-xl leading-relaxed font-medium text-gray-600">
+                        <p className="font-medium text-gray-600">
                             Atravesaba días complicados y esa meditación guiada no solo me dio calma, me emocionó desde un lugar que nunca había experimentado.
                         </p>
-                        <p className="text-lg md:text-xl leading-relaxed font-medium text-gray-600 italic">
+                        <p className="emotional-quote text-gray-600 italic">
                             "Siento que después de hoy voy a conocerme a mí misma desde otro lugar."
                         </p>
 
                         <div className="pt-6">
-                            <p className="font-bold text-gray-900 text-2xl font-outfit">— Agus</p>
-                            <span className="text-sm text-gray-400 font-bold uppercase tracking-widest mt-1">Participante del programa 1:1</span>
+                            <p className="font-bold text-gray-900 font-outfit text-[20px]">— Agus</p>
+                            <span className="label-small mt-1">Participante del programa 1:1</span>
                         </div>
                     </div>
 

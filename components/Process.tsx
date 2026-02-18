@@ -13,17 +13,17 @@ const Process: React.FC = () => {
     return (
         <section className="bg-white" id="proceso">
             <div className="max-w-4xl mx-auto px-6">
-                <div className="animate-fade-in mb-16">
-                    <span className="micro-copy mb-4 text-primary">Acompañamiento a medida</span>
-                    <h2 className="mb-6">
+                <div className="animate-fade-in mb-16 text-center">
+                    <span className="micro-copy mb-4 text-primary section-title-center">Acompañamiento a medida</span>
+                    <h2 className="mb-6 mx-auto">
                         Un proceso simple, humano y adaptado a vos
                     </h2>
-                    <p className="font-medium text-gray-600">
+                    <p className="font-medium text-gray-600 max-w-2xl mx-auto text-left-aligned">
                         No seguimos un método rígido. Creamos herramientas para tu momento actual.
                     </p>
                 </div>
 
-                <div className="glass p-10 md:p-14 rounded-[40px] border border-bg-secondary/50 mb-16 shadow-lg">
+                <div className="glass p-10 md:p-14 rounded-[40px] border border-bg-secondary/50 mb-16 shadow-lg text-left-aligned">
                     <p className="emotional-quote text-gray-800 mb-10 italic">
                         Primero tenemos una <span className="text-primary font-bold">charla inicial gratuita</span> para entender qué estás viviendo y cómo puedo ayudarte.
                     </p>

@@ -5,14 +5,17 @@ const About: React.FC = () => {
     return (
         <section className="bg-bg-secondary/20">
             <div className="max-w-6xl mx-auto px-6">
-                <div className="flex flex-col-reverse md:flex-row items-center gap-16 md:gap-24">
-                    <div className="flex-[1.2] animate-fade-in">
-                        <span className="micro-copy mb-4 text-secondary">Cercanía y profesionalismo</span>
-                        <h2 className="mb-8">
-                            Acompañarte a encontrar <br /> tu propio espacio de calma.
-                        </h2>
+                {/* Centered Section Header */}
+                <div className="text-center mb-12 animate-fade-in">
+                    <span className="micro-copy mb-4 text-secondary section-title-center">Cercanía y profesionalismo</span>
+                    <h2 className="mb-6 max-w-3xl mx-auto">
+                        Acompañarte a encontrar <br className="hidden md:block" /> tu propio espacio de calma.
+                    </h2>
+                </div>
 
-                        <div className="space-y-6 mb-12 text-left">
+                <div className="flex flex-col-reverse md:flex-row items-start gap-16 md:gap-24">
+                    <div className="flex-[1.2] animate-fade-in text-left-aligned">
+                        <div className="space-y-6 mb-12">
                             <p className="font-medium text-gray-800">
                                 Soy <span className="text-primary font-bold">Eli Curcio</span>, instructora de mindfulness certificada, profesora de yoga y coach ontológica.
                             </p>
@@ -31,13 +34,13 @@ const About: React.FC = () => {
                         </div>
 
                         <div className="flex items-center gap-4 py-4 border-t border-gray-200/50">
-                            <p className="text-sm-guide uppercase tracking-[0.1em] font-bold text-gray-400">
+                            <p className="label-small text-gray-400">
                                 Mindfulness • Yoga • Coaching Ontológico
                             </p>
                         </div>
                     </div>
 
-                    <div className="flex-1 w-full max-w-sm md:max-w-md">
+                    <div className="flex-1 w-full max-w-sm md:max-w-md mx-auto md:mx-0">
                         <div className="relative">
                             <div className="absolute -inset-6 bg-white rounded-[60px] rotate-3 z-0 shadow-sm"></div>
                             <div className="absolute -inset-6 border border-primary/10 rounded-[60px] -rotate-3 z-0"></div>
