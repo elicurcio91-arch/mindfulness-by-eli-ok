@@ -99,12 +99,12 @@ const ThankYou: React.FC = () => {
                             Si querés saber cuál es mejor para vos, podés escribirme y lo vemos juntas.
                         </p>
                         <a
-                            href="https://wa.me/541121829771?text=Hola%20Eli%20quiero%20info%20sobre%20tus%20sesiones"
+                            href="https://wa.me/541121829771?text=Hola%20Eli,%20quiero%20info%20de%20tus%20sesiones"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="secondary-button mt-4 px-8"
                         >
-                            Hola Eli, quiero info sobre tus sesiones
+                            Quiero info de sesiones
                         </a>
                     </div>
                 </div>
