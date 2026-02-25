@@ -55,7 +55,7 @@ const ThankYou: React.FC = () => {
                         src="https://calendly.com/elicurcio-91/15min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=a78bfa"
                         width="100%"
                         frameBorder="0"
-                        style={{ display: 'block', height: 'fit-content', minHeight: '650px' }}
+                        style={{ display: 'block', height: 'fit-content', minHeight: '900px' }}
                     ></iframe>
                 </div>
 
