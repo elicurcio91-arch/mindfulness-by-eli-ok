@@ -18,7 +18,7 @@ const ThankYou: React.FC = () => {
     }, []);
 
     return (
-        <section className="min-h-screen bg-[#FDFBF7] flex flex-col items-center justify-center py-16 px-6 relative overflow-hidden">
+        <section className="bg-[#FDFBF7] flex flex-col items-center justify-start py-8 px-6 relative overflow-hidden">
             {/* Subtle decorative background accent */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-[#A78BFA]/5 rounded-full blur-[120px] -z-10"></div>
 
@@ -54,9 +54,8 @@ const ThankYou: React.FC = () => {
                     <iframe
                         src="https://calendly.com/elicurcio-91/15min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=a78bfa"
                         width="100%"
-                        height="700"
                         frameBorder="0"
-                        style={{ display: 'block' }}
+                        style={{ display: 'block', height: 'fit-content', minHeight: '650px' }}
                     ></iframe>
                 </div>
             </div>

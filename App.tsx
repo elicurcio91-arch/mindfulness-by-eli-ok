@@ -4,7 +4,7 @@ import ThankYou from './components/ThankYou';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen">
+    <div>
       <main>
         <ThankYou />
       </main>
