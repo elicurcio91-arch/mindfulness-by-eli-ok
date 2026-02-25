@@ -94,9 +94,19 @@ const ThankYou: React.FC = () => {
                         </div>
                     </div>
 
-                    <p className="mt-16 text-[#777777] font-medium italic text-center text-lg">
-                        Si querés saber cuál es mejor para vos, podés escribirme y lo vemos juntas.
-                    </p>
+                    <div className="mt-12 flex flex-col items-center gap-4">
+                        <p className="text-[#777777] font-medium italic text-center text-lg">
+                            Si querés saber cuál es mejor para vos, podés escribirme y lo vemos juntas.
+                        </p>
+                        <a
+                            href="https://wa.me/541121829771?text=Hola%20Eli%20quiero%20info%20sobre%20tus%20sesiones"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="secondary-button mt-4 px-8"
+                        >
+                            Hola Eli, quiero info sobre tus sesiones
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
