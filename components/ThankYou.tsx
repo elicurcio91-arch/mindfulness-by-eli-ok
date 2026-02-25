@@ -46,18 +46,13 @@ const ThankYou: React.FC = () => {
                     Elegí tu horario disponible 👇
                 </p>
 
-                {/* Calendly Iframe Embed */}
+                {/* Calendly Inline Widget */}
                 <div
-                    className="w-full rounded-2xl overflow-hidden shadow-sm border border-gray-100/50"
-                    style={{ minWidth: '320px', height: 'fit-content' }}
-                >
-                    <iframe
-                        src="https://calendly.com/elicurcio-91/15min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=a78bfa"
-                        width="100%"
-                        frameBorder="0"
-                        style={{ display: 'block', height: 'fit-content', minHeight: '900px' }}
-                    ></iframe>
-                </div>
+                    id="calendly-inline-app"
+                    className="calendly-inline-widget w-full rounded-2xl overflow-hidden shadow-sm border border-gray-100/50"
+                    data-url="https://calendly.com/elicurcio-91/15min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=a78bfa"
+                    style={{ minWidth: '320px', height: '950px', position: 'relative' }}
+                ></div>
 
                 {/* New Section: Other ways to work together */}
                 <div className="mt-24 w-full max-w-[700px]">
