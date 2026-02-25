@@ -49,7 +49,7 @@ const ThankYou: React.FC = () => {
                 {/* Calendly Inline Widget */}
                 <div
                     className="calendly-inline-widget w-full rounded-2xl overflow-hidden shadow-sm border border-gray-100/50"
-                    data-url="https://calendly.com/elicurcio-91/?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=a78bfa"
+                    data-url="https://calendly.com/elicurcio-91/15min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=a78bfa"
                     style={{ minWidth: '320px', height: '750px', backgroundColor: '#ffffff' }}
                 ></div>
             </div>
