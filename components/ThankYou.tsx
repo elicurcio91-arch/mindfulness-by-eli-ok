@@ -58,6 +58,46 @@ const ThankYou: React.FC = () => {
                         style={{ display: 'block', height: 'fit-content', minHeight: '650px' }}
                     ></iframe>
                 </div>
+
+                {/* New Section: Other ways to work together */}
+                <div className="mt-24 w-full max-w-[700px]">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-4 text-center">
+                        OTRAS FORMAS DE TRABAJAR JUNTAS
+                    </h2>
+                    <p className="text-[#555555] text-base md:text-lg mb-12 text-center max-w-[600px] mx-auto">
+                        Si sentís que todavía no es momento para el programa de 4 semanas, también podés empezar con otras modalidades de acompañamiento.
+                    </p>
+
+                    <div className="flex flex-col gap-6 w-full">
+                        {/* Card 1 */}
+                        <div className="rounded-card text-center p-8 bg-white/50 border border-white/20 shadow-sm hover:shadow-md transition-shadow">
+                            <h3 className="text-xl font-semibold text-[#333333] mb-3">Sesión individual</h3>
+                            <p className="text-[#555555] text-base leading-relaxed">
+                                Espacio personalizado para regular tu sistema nervioso y ordenar lo que hoy te está desbordando.
+                            </p>
+                        </div>
+
+                        {/* Card 2 */}
+                        <div className="rounded-card text-center p-8 bg-white/50 border border-white/20 shadow-sm hover:shadow-md transition-shadow">
+                            <h3 className="text-xl font-semibold text-[#333333] mb-3">Sesiones grupales</h3>
+                            <p className="text-[#555555] text-base leading-relaxed">
+                                Prácticas guiadas para entrenar presencia, calma y enfoque en comunidad.
+                            </p>
+                        </div>
+
+                        {/* Card 3 */}
+                        <div className="rounded-card text-center p-8 bg-white/50 border border-white/20 shadow-sm hover:shadow-md transition-shadow">
+                            <h3 className="text-xl font-semibold text-[#333333] mb-3">Meditaciones guiadas</h3>
+                            <p className="text-[#555555] text-base leading-relaxed">
+                                Audios breves para integrar mindfulness en tu rutina diaria.
+                            </p>
+                        </div>
+                    </div>
+
+                    <p className="mt-16 text-[#777777] font-medium italic text-center text-lg">
+                        Si querés saber cuál es mejor para vos, podés escribirme y lo vemos juntas.
+                    </p>
+                </div>
             </div>
         </section>
     );
