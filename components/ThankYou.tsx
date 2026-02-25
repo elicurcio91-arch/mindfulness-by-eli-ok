@@ -46,13 +46,24 @@ const ThankYou: React.FC = () => {
                     Elegí tu horario disponible 👇
                 </p>
 
-                {/* Calendly Inline Widget */}
+                {/* Calendly Inline Widget with Responsive Height */}
                 <div
                     id="calendly-inline-app"
                     className="calendly-inline-widget w-full rounded-2xl overflow-hidden shadow-sm border border-gray-100/50"
                     data-url="https://calendly.com/elicurcio-91/15min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=a78bfa"
-                    style={{ minWidth: '320px', height: '950px', position: 'relative' }}
-                ></div>
+                    style={{ minWidth: '320px', position: 'relative' }}
+                >
+                    <style>{`
+                        #calendly-inline-app {
+                            height: 600px !important;
+                        }
+                        @media (min-width: 768px) {
+                            #calendly-inline-app {
+                                height: 800px !important;
+                            }
+                        }
+                    `}</style>
+                </div>
 
                 {/* New Section: Other ways to work together */}
                 <div className="mt-24 w-full max-w-[700px]">
