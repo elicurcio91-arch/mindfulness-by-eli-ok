@@ -29,15 +29,34 @@ const ThankYou: React.FC = () => {
 
                 <div className="space-y-8 text-[#555555] text-lg md:text-xl leading-relaxed font-sans subpixel-antialiased">
                     <p>
-                        Si llegaste hasta acá, probablemente estés viviendo con la mente acelerada, tensión constante o dificultad para desconectar del trabajo.
-                    </p>
-                    <p>
-                        Este entrenamiento es un proceso <strong>1:1 de 4 semanas</strong> donde trabajamos regulación del sistema nervioso, reducción del ruido mental y herramientas concretas para gestionar ansiedad, enojo y frustración.
-                    </p>
-                    <p className="text-gray-800 font-medium italic">
-                        El siguiente paso es agendar tu charla gratuita de claridad de 15 minutos para entender qué estás necesitando hoy y ver si este acompañamiento es adecuado para vos.
+                        En este breve video te explico cómo puedo ayudarte a regular el estres y gestionar mejor las emociones.
                     </p>
                 </div>
+
+                {/* YouTube Video Embed - autoplay, muted, no controls */}
+                <div className="w-full mt-8" style={{ maxWidth: '700px' }}>
+                    <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', height: 0 }}>
+                        <iframe
+                            src="https://www.youtube.com/embed/ZQmaiV3prVo?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&loop=1&playlist=ZQmaiV3prVo&disablekb=1&fs=0"
+                            title="Video explicativo"
+                            allow="autoplay; encrypted-media"
+                            allowFullScreen={false}
+                            style={{
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                width: '100%',
+                                height: '100%',
+                                border: 'none',
+                                borderRadius: '12px',
+                            }}
+                        />
+                    </div>
+                </div>
+
+                <p className="text-gray-800 font-medium italic text-lg md:text-xl mt-6">
+                    El siguiente paso es agendar tu charla gratuita de claridad de 15 minutos para entender qué estás necesitando hoy y ver si este acompañamiento es adecuado para vos.
+                </p>
 
                 {/* Subtle separator */}
                 <div className="w-full max-w-[200px] h-[1px] bg-gray-200 my-12"></div>
