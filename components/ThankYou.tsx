@@ -27,9 +27,13 @@ const ThankYou: React.FC = () => {
                     GRACIAS POR COMPLETAR EL FORMULARIO 🤍
                 </h1>
 
-                <div className="space-y-8 text-[#555555] text-lg md:text-xl leading-relaxed font-sans subpixel-antialiased">
+                {/* Personal intro before video */}
+                <div className="w-full text-left space-y-4 mt-6 text-[#555555] text-lg md:text-xl leading-relaxed font-sans subpixel-antialiased">
                     <p>
-                        En este breve video te explico cómo puedo ayudarte a regular el estres y gestionar mejor las emociones.
+                        Yo también fui esa persona. Llegaba a casa agotada y la cabeza no paraba. Hasta que entendí que no era falta de voluntad, era mi sistema nervioso que nunca aprendió a bajar.
+                    </p>
+                    <p>
+                        Eso es lo que trabajo hoy con mis clientas. Mirá este video antes de reservar tu lugar.
                     </p>
                 </div>
 
@@ -57,6 +61,24 @@ const ThankYou: React.FC = () => {
                 <p className="text-gray-800 font-medium italic text-lg md:text-xl mt-6">
                     El siguiente paso es agendar tu charla gratuita de claridad de 15 minutos para entender qué estás necesitando hoy y ver si este acompañamiento es adecuado para vos.
                 </p>
+
+                {/* Agus testimonial */}
+                <div className="w-full mt-10 bg-[#F5F0FF] border border-[#A78BFA]/30 rounded-2xl p-6 md:p-8 text-left shadow-sm">
+                    <p className="text-[#555555] text-base md:text-lg leading-relaxed italic">
+                        Agus llegó a su primera charla sin esperar demasiado. A las 21hs me escribió: <span className="not-italic font-semibold text-[#7C3AED]">'mi día cambió… esa meditación guiada no solo me hizo bien, también me hizo emocionar desde un lugar que nunca había experimentado. Creo que me voy a conocer a mí misma desde otro lugar'.</span>
+                    </p>
+                </div>
+
+                {/* Guarantee */}
+                <div className="w-full mt-6 bg-white border border-[#A78BFA]/20 rounded-2xl p-6 md:p-8 text-center shadow-sm">
+                    <p className="text-2xl mb-2">🛡️</p>
+                    <p className="text-[#333333] font-semibold text-lg md:text-xl">
+                        Garantía total
+                    </p>
+                    <p className="text-[#555555] text-base md:text-lg leading-relaxed mt-2">
+                        Si después de la primera sesión sentís que no es para vos, te devuelvo el 100%. Sin preguntas.
+                    </p>
+                </div>
 
                 {/* Subtle separator */}
                 <div className="w-full max-w-[200px] h-[1px] bg-gray-200 my-12"></div>
