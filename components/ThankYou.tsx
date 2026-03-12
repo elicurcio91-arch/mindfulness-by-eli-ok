@@ -18,27 +18,30 @@ const ThankYou: React.FC = () => {
     }, []);
 
     return (
-        <section className="bg-[#FDFBF7] flex flex-col items-center justify-start py-8 px-6 relative overflow-hidden">
+        <section className="bg-[#FDFBF7] flex flex-col items-center justify-start py-12 px-5 md:px-6 relative overflow-hidden">
             {/* Subtle decorative background accent */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-[#A78BFA]/5 rounded-full blur-[120px] -z-10"></div>
 
             <div className="max-w-[700px] w-full text-center animate-fade-in flex flex-col items-center">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#333333] mb-10 leading-tight">
+                <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#333333] mb-6 leading-snug tracking-tight">
                     GRACIAS POR COMPLETAR EL FORMULARIO 🤍
                 </h1>
 
                 {/* Personal intro before video */}
-                <div className="w-full text-left space-y-4 mt-6 text-[#555555] text-lg md:text-xl leading-relaxed font-sans subpixel-antialiased">
+                <div className="w-full text-left space-y-5 mt-4 text-[#555555] text-base md:text-lg leading-[1.75] font-sans subpixel-antialiased">
                     <p>
-                        Yo también fui esa persona. Llegaba a casa agotada y la cabeza no paraba. Hasta que entendí que no era falta de voluntad, era mi sistema nervioso que nunca aprendió a bajar.
+                        Yo también fui esa persona. Llegaba a casa agotada y la cabeza no paraba.
                     </p>
                     <p>
+                        Hasta que entendí que no era falta de voluntad, era mi sistema nervioso que nunca aprendió a bajar.
+                    </p>
+                    <p className="font-medium text-[#444444]">
                         Eso es lo que trabajo hoy con mis clientas. Mirá este video antes de reservar tu lugar.
                     </p>
                 </div>
 
                 {/* YouTube Video Embed - autoplay muted, native controls visible */}
-                <div className="w-full mt-8" style={{ maxWidth: '700px' }}>
+                <div className="w-full mt-10" style={{ maxWidth: '700px' }}>
                     <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', height: 0 }}>
                         <iframe
                             src="https://www.youtube.com/embed/I-q8GGv5hRQ?autoplay=1&mute=1&controls=1&rel=0&modestbranding=1"
@@ -58,33 +61,36 @@ const ThankYou: React.FC = () => {
                     </div>
                 </div>
 
-                <p className="text-gray-800 font-medium italic text-lg md:text-xl mt-6">
+                <p className="text-[#444444] font-medium italic text-base md:text-lg leading-[1.75] mt-8 text-left">
                     El siguiente paso es agendar tu charla gratuita de claridad de 15 minutos para entender qué estás necesitando hoy y ver si este acompañamiento es adecuado para vos.
                 </p>
 
                 {/* Agus testimonial */}
-                <div className="w-full mt-10 bg-[#F5F0FF] border border-[#A78BFA]/30 rounded-2xl p-6 md:p-8 text-left shadow-sm">
-                    <p className="text-[#555555] text-base md:text-lg leading-relaxed italic">
+                <div className="w-full mt-10 bg-[#F5F0FF] border border-[#A78BFA]/30 rounded-2xl p-7 md:p-10 text-left shadow-sm">
+                    <p className="text-[#4A4A4A] text-base md:text-[17px] leading-[1.8] italic">
                         Agus llegó a su primera charla sin esperar demasiado. A las 21hs me escribió: <span className="not-italic font-semibold text-[#7C3AED]">'mi día cambió… esa meditación guiada no solo me hizo bien, también me hizo emocionar desde un lugar que nunca había experimentado. Creo que me voy a conocer a mí misma desde otro lugar'.</span>
                     </p>
                 </div>
 
                 {/* Guarantee */}
-                <div className="w-full mt-6 bg-white border border-[#A78BFA]/20 rounded-2xl p-6 md:p-8 text-center shadow-sm">
-                    <p className="text-2xl mb-2">🛡️</p>
-                    <p className="text-[#333333] font-semibold text-lg md:text-xl">
+                <div className="w-full mt-6 bg-white border border-[#A78BFA]/20 rounded-2xl p-7 md:p-10 text-center shadow-sm">
+                    <p className="text-3xl mb-3">🛡️</p>
+                    <p className="text-[#333333] font-semibold text-lg md:text-xl mb-3">
                         Garantía total
                     </p>
-                    <p className="text-[#555555] text-base md:text-lg leading-relaxed mt-2">
+                    <p className="text-[#555555] text-base md:text-[17px] leading-[1.75] max-w-[480px] mx-auto">
                         Si después de la primera sesión sentís que no es para vos, te devuelvo el 100%. Sin preguntas.
                     </p>
                 </div>
 
                 {/* Subtle separator */}
-                <div className="w-full max-w-[200px] h-[1px] bg-gray-200 my-12"></div>
+                <div className="w-full max-w-[160px] h-[1px] bg-gray-200 my-14"></div>
 
-                <p className="text-lg md:text-xl text-[#333333] font-semibold mb-10">
+                <p className="text-xl md:text-2xl text-[#333333] font-bold mb-3 tracking-tight">
                     Elegí tu horario disponible 👇
+                </p>
+                <p className="text-sm md:text-base text-[#888888] mb-10">
+                    La charla es gratuita y dura 15 minutos.
                 </p>
 
                 {/* Calendly Inline Widget with Responsive Height */}
