@@ -36,7 +36,7 @@ const ThankYou: React.FC = () => {
                         Hasta que entendí que no era falta de voluntad, era mi sistema nervioso que nunca aprendió a bajar.
                     </p>
                     <p className="font-semibold text-[#333333] border-l-2 border-[#A78BFA]/40 pl-4 py-1 bg-[#A78BFA]/5 rounded-r-lg">
-                        Eso es lo que trabajo hoy con mis clientas. Mirá este video antes de reservar tu lugar.
+                        Eso es lo que trabajo hoy con mis consultantes. Mirá este video antes de reservar tu lugar.
                     </p>
                 </div>
 
