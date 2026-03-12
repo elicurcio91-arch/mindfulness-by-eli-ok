@@ -41,7 +41,7 @@ const ThankYou: React.FC = () => {
                 <div className="w-full mt-8" style={{ maxWidth: '700px' }}>
                     <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', height: 0 }}>
                         <iframe
-                            src="https://www.youtube.com/embed/ZQmaiV3prVo?autoplay=1&mute=1&controls=1&rel=0&modestbranding=1"
+                            src="https://www.youtube.com/embed/I-q8GGv5hRQ?autoplay=1&mute=1&controls=1&rel=0&modestbranding=1"
                             title="Video explicativo"
                             allow="autoplay; encrypted-media"
                             allowFullScreen
