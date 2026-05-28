@@ -1,53 +1,52 @@
-
 import React from 'react';
 
 const Testimonial: React.FC = () => {
-    return (
-        <section className="bg-bg-secondary/10 pt-0 pb-16">
-            <div className="max-w-4xl mx-auto px-6">
-                <div className="glass rounded-[48px] shadow-2xl shadow-primary/5 p-10 md:p-16 text-center relative overflow-hidden border border-white">
-                    <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary to-accent opacity-30"></div>
+    const testimonialImages = [
+        "/testimonio (1).png",
+        "/testimonio (5).png",
+        "/testimonio (6).png",
+        "/testimonio (7).png",
+        "/testimonio (8).png",
+        "/testimonio (10).png",
+        "/testimonio 11.png",
+        "/testimonio 12.jpg"
+    ];
 
-                    <div className="mb-10 animate-fade-in">
-                        <span className="micro-copy mb-8 text-primary/60">Historia de transformación</span>
-                        <div className="relative inline-block">
-                            <div className="absolute -inset-2 bg-primary/10 rounded-full blur-lg"></div>
-                            <img
-                                src="/testimonio-agusdeslous.jpg"
-                                alt="Testimonio de Agus"
-                                className="relative z-10 w-24 md:w-28 mx-auto rounded-full shadow-md border-4 border-white"
+    return (
+        <section className="bg-bg-secondary/10 py-10">
+            <div className="max-w-4xl mx-auto px-6">
+                <div className="text-center mb-16 animate-fade-in">
+                    <h2 className="text-3xl md:text-4xl text-gray-800 font-light tracking-wide mb-4">
+                        Testimonios
+                    </h2>
+                    <div className="w-12 h-[1px] bg-secondary mx-auto mt-6 mb-6"></div>
+                    <p className="text-gray-500 text-lg max-w-2xl mx-auto font-light">
+                        Leé lo que otras mujeres dicen después de animarse a dar el primer paso.
+                    </p>
+                </div>
+
+                <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
+                    {testimonialImages.map((src, index) => (
+                        <div key={index} className="mb-6 break-inside-avoid rounded-[28px] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 bg-white">
+                            <img 
+                                src={`${src}?v=3`} 
+                                alt={`Testimonio ${index + 1}`} 
+                                className="w-full h-auto object-cover"
+                                loading="lazy"
                             />
                         </div>
-                    </div>
+                    ))}
+                </div>
 
-                    <div className="space-y-6 mb-10 text-gray-800">
-                        <div className="relative">
-                            <p className="emotional-quote relative z-10">
-                                "Hoy tuve mi primera charla con Eli y mi primer acercamiento al mindfulness. No esperaba demasiado de esos 15 minutos y <span className="text-primary font-bold">WOW… mi día cambió completamente</span>."
-                            </p>
-                        </div>
-                        <p className="font-medium text-gray-600">
-                            Atravesaba días complicados y esa meditación guiada no solo me dio calma, me emocionó desde un lugar que nunca había experimentado.
-                        </p>
-                        <p className="emotional-quote text-gray-600 italic">
-                            "Siento que después de hoy voy a conocerme a mí misma desde otro lugar."
-                        </p>
-
-                        <div className="pt-6">
-                            <p className="font-bold text-gray-900 font-outfit text-[20px]">— Agus</p>
-                            <span className="label-small mt-1">Participante del programa 1:1</span>
-                        </div>
-                    </div>
-
-                    <div className="pt-10 border-t border-gray-100/50">
-                        <div className="flex items-center justify-center gap-2">
-                            {[1, 2, 3, 4, 5].map((i) => (
-                                <svg key={i} className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
-                            ))}
-                        </div>
-                    </div>
+                <div className="mt-20 flex justify-center animate-fade-in">
+                    <a
+                        href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20una%20charla%20gratuita."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="primary-button"
+                    >
+                        Quiero comenzar
+                    </a>
                 </div>
             </div>
         </section>

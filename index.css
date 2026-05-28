@@ -126,8 +126,7 @@ p {
 
 /* Section Spacing */
 section {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  /* Padding handled by Tailwind utility classes for better responsiveness */
 }
 
 /* Vertical Spacing Blocks helper */
@@ -137,35 +136,29 @@ section {
 
 /* Premium Buttons - Updated */
 .primary-button {
-  background: var(--btn-gradient);
+  background: #4A7C59; /* Strong Action Green */
   color: white !important;
   font-family: 'Outfit', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
+  letter-spacing: 0.03em;
   height: 54px;
-  padding: 0 24px;
-  border-radius: 28px;
-  box-shadow: 0 4px 15px rgba(167, 139, 250, 0.25);
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 0 32px;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(74, 124, 89, 0.4);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   border: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   cursor: pointer;
-  font-size: 16px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+  font-size: 17px;
 }
 
 .primary-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(167, 139, 250, 0.35);
-  filter: brightness(1.05);
-}
-
-.primary-button:active {
-  transform: translateY(0);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(74, 124, 89, 0.5);
+  background: #3A6347;
 }
 
 .secondary-button {

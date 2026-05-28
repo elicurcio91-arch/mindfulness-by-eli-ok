@@ -1,12 +1,23 @@
-
 import React from 'react';
-import ThankYou from './components/ThankYou';
+import Hero from './components/Hero';
+import VideoPlaceholder from './components/VideoPlaceholder';
+import Benefits from './components/Benefits';
+import Testimonial from './components/Testimonial';
+import About from './components/About';
+import Services from './components/Services';
+import CtaSection from './components/CtaSection';
 
 const App: React.FC = () => {
   return (
-    <div>
+    <div className="font-sans antialiased text-gray-900">
       <main>
-        <ThankYou />
+        <Hero />
+        <VideoPlaceholder />
+        <Benefits />
+        <Testimonial />
+        <About />
+        <Services />
+        <CtaSection />
       </main>
     </div>
   );
