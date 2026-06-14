@@ -28,9 +28,7 @@ const Hero: React.FC = () => {
           </p>
 
           <a
-            href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20una%20charla%20gratuita."
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#services"
             className="primary-button h-[54px] flex items-center justify-center w-full max-w-[320px] rounded-full shadow-xl border border-white/20 text-lg hover:scale-105 transition-transform origin-left"
           >
             Quiero comenzar
