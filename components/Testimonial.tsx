@@ -40,9 +40,7 @@ const Testimonial: React.FC = () => {
 
                 <div className="mt-20 flex justify-center animate-fade-in">
                     <a
-                        href="https://wa.me/541121829771?text=Hola%20Eli,%20quisiera%20reservar%20una%20charla%20gratuita."
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="#services"
                         className="primary-button"
                     >
                         Quiero comenzar
