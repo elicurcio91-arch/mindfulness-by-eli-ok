@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
           </h1>
 
           <p className="text-[18px] md:text-[22px] text-white/95 mb-10 max-w-xl font-medium leading-relaxed drop-shadow-md">
-            Para quienes quieren salir del piloto automático y poder vivir y disfrutar con más presencia
+            Un espacio para hacer una pausa, reconectar con vos y habitar la vida con más presencia
           </p>
 
           <a

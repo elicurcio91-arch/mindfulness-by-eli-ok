@@ -21,7 +21,7 @@ const Testimonial: React.FC = () => {
                     </h2>
                     <div className="w-12 h-[1px] bg-secondary mx-auto mt-6 mb-6"></div>
                     <p className="text-gray-500 text-lg max-w-2xl mx-auto font-light">
-                        Leé lo que otras mujeres dicen después de animarse a dar el primer paso.
+                        Leé lo que dicen quienes se animaron a dar el primer paso.
                     </p>
                 </div>
 
