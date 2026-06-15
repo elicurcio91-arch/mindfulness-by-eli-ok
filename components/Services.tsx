@@ -42,6 +42,10 @@ const Services: React.FC = () => {
 
                     {/* Card 1 — On-Demand */}
                     <div className="rounded-[28px] bg-white flex flex-col border border-gray-100/80 shadow-[0_2px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.06)] transition-all duration-600 ease-out">
+                        {/* Badge Oferta */}
+                        <div className="bg-[#F0F7F2] text-[#4A7C59] text-[11px] font-bold tracking-[0.12em] uppercase text-center py-2.5 px-4 rounded-t-[28px] border-b border-[#E3EFE6]">
+                            ✨ Oferta lanzamiento · Mes de junio
+                        </div>
                         <div className="p-8 md:p-9 flex flex-col flex-grow">
                             <h3 className="text-lg font-medium text-gray-800 mb-6 tracking-wide">Método Calma On-Demand</h3>
                             <ul className="space-y-3.5 mb-8 flex-grow">
