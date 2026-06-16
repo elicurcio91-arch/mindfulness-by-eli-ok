@@ -4,6 +4,7 @@ import VideoPlaceholder from './components/VideoPlaceholder';
 import Benefits from './components/Benefits';
 import Testimonial from './components/Testimonial';
 import About from './components/About';
+import ProgramIncludes from './components/ProgramIncludes';
 import Services from './components/Services';
 import CtaSection from './components/CtaSection';
 
@@ -16,6 +17,7 @@ const App: React.FC = () => {
         <Benefits />
         <Testimonial />
         <About />
+        <ProgramIncludes />
         <Services />
         <CtaSection />
       </main>
