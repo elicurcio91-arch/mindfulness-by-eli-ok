@@ -17,7 +17,7 @@ const Services: React.FC = () => {
                 </div>
 
                 {/* Program Description */}
-                <div className="max-w-3xl mx-auto text-center mb-14 space-y-5 animate-fade-in">
+                <div className="max-w-3xl mx-auto text-center mb-16 space-y-5 animate-fade-in">
                     <p className="text-gray-600 leading-relaxed">
                         Aprendés prácticas concretas de mindfulness para entrenar la mente a volver al presente.
                     </p>
@@ -27,6 +27,82 @@ const Services: React.FC = () => {
                     <p className="text-gray-600 leading-relaxed">
                         Al terminar vas a poder gestionar el estrés de una manera más saludable. Vas a tener más presencia en tu día a día, vas a lograr salir del piloto automático y disfrutar de vos, de tu familia, de tus amigos y de tus momentos de descanso con más plenitud.
                     </p>
+                </div>
+
+                {/* Floating Cards & Big Image Layout */}
+                <div className="relative max-w-[1100px] mx-auto flex flex-col md:block items-center mb-28 animate-fade-in">
+                    
+                    {/* Central Image - BIGGER */}
+                    <div className="relative z-0 w-full max-w-2xl mx-auto md:max-w-none md:w-[90%] rounded-[32px] md:rounded-[48px] overflow-hidden mb-16 md:mb-0">
+                        <img 
+                            src="/programa.png" 
+                            alt="Programa Mindfulness" 
+                            className="w-full h-auto object-cover rounded-[32px] md:rounded-[48px] shadow-[0_12px_48px_rgba(0,0,0,0.05)] border border-gray-100"
+                        />
+                    </div>
+
+                    {/* Desktop Floating Cards (Overlapping image elegantly) */}
+                    <div className="hidden md:block">
+                        {/* Card 1 — Sage Green Accent */}
+                        <div className="absolute top-[8%] left-[-1%] lg:left-[-4%] z-10 bg-white/95 backdrop-blur-lg px-6 py-4.5 rounded-[20px] shadow-[0_20px_45px_rgba(0,0,0,0.05)] border-l-4 border-l-[#4A7C59] border-y border-r border-gray-100/80 hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(0,0,0,0.09)] transition-all duration-300 animate-float max-w-[280px]">
+                            <span className="text-[10px] font-bold tracking-[0.15em] text-[#4A7C59] uppercase block mb-1">Herramientas</span>
+                            <p className="text-gray-800 font-semibold text-[15px] leading-relaxed">
+                                Gestioná el estrés con más herramientas
+                            </p>
+                        </div>
+                        {/* Card 2 — Muted Gold Accent */}
+                        <div className="absolute top-[22%] right-[-1%] lg:right-[-4%] z-10 bg-white/95 backdrop-blur-lg px-6 py-4.5 rounded-[20px] shadow-[0_20px_45px_rgba(0,0,0,0.05)] border-l-4 border-l-[#D4AF37] border-y border-r border-gray-100/80 hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(0,0,0,0.09)] transition-all duration-300 animate-float max-w-[280px]" style={{animationDelay: '1s'}}>
+                            <span className="text-[10px] font-bold tracking-[0.15em] text-[#B59424] uppercase block mb-1">Emociones</span>
+                            <p className="text-[#614D38] font-semibold text-[15px] leading-relaxed">
+                                Aprendé a acompañar tus emociones
+                            </p>
+                        </div>
+                        {/* Card 3 — Lilac Accent */}
+                        <div className="absolute top-[48%] left-[-3%] lg:left-[-6%] z-10 bg-white/95 backdrop-blur-lg px-6 py-4.5 rounded-[20px] shadow-[0_20px_45px_rgba(0,0,0,0.05)] border-l-4 border-l-[#7E6B8F] border-y border-r border-gray-100/80 hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(0,0,0,0.09)] transition-all duration-300 animate-float max-w-[280px]" style={{animationDelay: '2s'}}>
+                            <span className="text-[10px] font-bold tracking-[0.15em] text-[#7E6B8F] uppercase block mb-1">Presencia</span>
+                            <p className="text-gray-800 font-semibold text-[15px] leading-relaxed">
+                                Cultivá más presencia en tu día a día
+                            </p>
+                        </div>
+                        {/* Card 4 — Taupe Accent */}
+                        <div className="absolute top-[64%] right-[-3%] lg:right-[-6%] z-10 bg-white/95 backdrop-blur-lg px-6 py-4.5 rounded-[20px] shadow-[0_20px_45px_rgba(0,0,0,0.05)] border-l-4 border-l-[#8B7355] border-y border-r border-gray-100/80 hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(0,0,0,0.09)] transition-all duration-300 animate-float max-w-[280px]" style={{animationDelay: '1.5s'}}>
+                            <span className="text-[10px] font-bold tracking-[0.15em] text-[#8B7355] uppercase block mb-1">Acompañamiento</span>
+                            <p className="text-gray-800 font-semibold text-[15px] leading-relaxed">
+                                Recibí acompañamiento durante el proceso
+                            </p>
+                        </div>
+                        {/* Card 5 — Mint Accent */}
+                        <div className="absolute bottom-[-4%] left-[50%] transform -translate-x-1/2 z-10 bg-white/95 backdrop-blur-lg px-8 py-4.5 rounded-[20px] shadow-[0_20px_45px_rgba(0,0,0,0.05)] border-l-4 border-l-[#5F8575] border-y border-r border-gray-100/80 hover:-translate-y-1 hover:shadow-[0_25px_50px_rgba(0,0,0,0.09)] transition-all duration-300 animate-float max-w-[320px] text-center" style={{animationDelay: '0.5s'}}>
+                            <span className="text-[10px] font-bold tracking-[0.15em] text-[#5F8575] uppercase block mb-1">Práctica</span>
+                            <p className="text-gray-800 font-semibold text-[15px] leading-relaxed">
+                                Construí una práctica sostenible
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Mobile Cards (Visible only on Mobile) */}
+                    <div className="md:hidden grid grid-cols-1 sm:grid-cols-2 gap-4 w-full px-4 mt-[-40px] relative z-10">
+                        <div className="bg-white/95 backdrop-blur-lg p-5 rounded-2xl shadow-[0_12px_24px_rgba(0,0,0,0.04)] border-l-4 border-l-[#4A7C59] border-y border-r border-gray-100 text-left">
+                            <span className="text-[10px] font-bold tracking-[0.15em] text-[#4A7C59] uppercase block mb-1">Herramientas</span>
+                            <p className="text-gray-800 font-semibold text-[15px] leading-relaxed">Gestioná el estrés con más herramientas</p>
+                        </div>
+                        <div className="bg-white/95 backdrop-blur-lg p-5 rounded-2xl shadow-[0_12px_24px_rgba(0,0,0,0.04)] border-l-4 border-l-[#D4AF37] border-y border-r border-gray-100 text-left">
+                            <span className="text-[10px] font-bold tracking-[0.15em] text-[#B59424] uppercase block mb-1">Emociones</span>
+                            <p className="text-[#614D38] font-semibold text-[15px] leading-relaxed">Aprendé a acompañar tus emociones</p>
+                        </div>
+                        <div className="bg-white/95 backdrop-blur-lg p-5 rounded-2xl shadow-[0_12px_24px_rgba(0,0,0,0.04)] border-l-4 border-l-[#7E6B8F] border-y border-r border-gray-100 text-left">
+                            <span className="text-[10px] font-bold tracking-[0.15em] text-[#7E6B8F] uppercase block mb-1">Presencia</span>
+                            <p className="text-gray-800 font-semibold text-[15px] leading-relaxed">Cultivá más presencia en tu día a día</p>
+                        </div>
+                        <div className="bg-white/95 backdrop-blur-lg p-5 rounded-2xl shadow-[0_12px_24px_rgba(0,0,0,0.04)] border-l-4 border-l-[#8B7355] border-y border-r border-gray-100 text-left">
+                            <span className="text-[10px] font-bold tracking-[0.15em] text-[#8B7355] uppercase block mb-1">Acompañamiento</span>
+                            <p className="text-gray-800 font-semibold text-[15px] leading-relaxed">Recibí acompañamiento durante el proceso</p>
+                        </div>
+                        <div className="bg-white/95 backdrop-blur-lg p-5 rounded-2xl shadow-[0_12px_24px_rgba(0,0,0,0.04)] border-l-4 border-l-[#5F8575] border-y border-r border-gray-100 text-left sm:col-span-2">
+                            <span className="text-[10px] font-bold tracking-[0.15em] text-[#5F8575] uppercase block mb-1">Práctica</span>
+                            <p className="text-gray-800 font-semibold text-[15px] leading-relaxed">Construí una práctica sostenible</p>
+                        </div>
+                    </div>
                 </div>
 
                 {/* Subtitle */}
@@ -169,6 +245,25 @@ const Services: React.FC = () => {
                     </div>
 
                 </div>
+
+                {/* PDF Download Section */}
+                <div className="mt-16 text-center max-w-xl mx-auto animate-fade-in">
+                    <p className="text-gray-500 text-sm mb-4 font-light uppercase tracking-wider">
+                        ¿Querés descargar la información del programa?
+                    </p>
+                    <a
+                        href="/programa 4 semanas .pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-3 bg-white hover:bg-[#FAF9F6] text-gray-800 font-medium px-8 py-4 rounded-full transition-all duration-300 text-sm border border-gray-200 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] hover:-translate-y-0.5"
+                    >
+                        <svg className="w-5 h-5 text-[#4A7C59]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        Descargar programa en PDF
+                    </a>
+                </div>
+
             </div>
         </section>
     );
