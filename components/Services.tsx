@@ -114,7 +114,7 @@ const Services: React.FC = () => {
                 </div>
 
                 {/* Pricing Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto items-stretch">
 
                     {/* Card 1 — On-Demand */}
                     <div className="rounded-[28px] bg-white flex flex-col border border-gray-100/80 shadow-[0_2px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.06)] transition-all duration-600 ease-out">
@@ -126,13 +126,12 @@ const Services: React.FC = () => {
                             <h3 className="text-lg font-medium text-gray-800 mb-6 tracking-wide">Método Calma On-Demand</h3>
                             <ul className="space-y-3.5 mb-8 flex-grow">
                                 {[
-                                    'Acceso inmediato',
-                                    'Acceso de por vida',
-                                    'A tu propio ritmo',
-                                    'Sin horarios fijos',
-                                    'Repetí videos y meditaciones las veces que quieras',
-                                    'Flexibilidad total',
-                                    'Videos + lecturas + material descargable'
+                                    'Acceso inmediato y de por vida',
+                                    'A tu propio ritmo y sin horarios fijos',
+                                    'Repetí videos y meditaciones cuando quieras',
+                                    'Flexibilidad total desde cualquier dispositivo',
+                                    'Videos explicativos + lecturas de apoyo',
+                                    'Material complementario descargable',
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-start gap-3 text-gray-500 text-[13px] leading-relaxed">
                                         <svg className="w-4 h-4 text-[#7BAE8A] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
@@ -141,12 +140,20 @@ const Services: React.FC = () => {
                                         {item}
                                     </li>
                                 ))}
+                                {/* Plus item — highlighted */}
+                                <li className="flex items-start gap-3 text-[13px] leading-relaxed mt-1">
+                                    <svg className="w-4 h-4 text-[#4A7C59] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+                                    </svg>
+                                    <span className="text-[#4A7C59] font-semibold">
+                                        Plus: podés sumar una primera sesión online
+                                    </span>
+                                </li>
                             </ul>
                             <div className="border-t border-gray-100 pt-6 mb-6">
-                                <p className="text-2xl font-semibold text-gray-800">USD $78</p>
+                                <p className="text-2xl font-semibold text-gray-800">ARS $60.000</p>
                                 <div className="mt-2 inline-flex items-center gap-2 bg-[#F0F7F2] rounded-full px-3.5 py-1.5">
-                                    <span className="text-[#4A7C59] text-sm font-semibold">ARS $60.000</span>
-                                    <span className="text-[#4A7C59]/60 text-xs">· Residentes en Argentina</span>
+                                    <span className="text-[#4A7C59] text-xs font-semibold">🇦🇷 Descuento especial para Argentina</span>
                                 </div>
                             </div>
                             <a
@@ -160,22 +167,23 @@ const Services: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* Card 2 — Híbrida (DESTACADA) */}
-                    <div className="rounded-[28px] bg-[#4A7C59] flex flex-col relative md:-mt-3 md:mb-[-12px] shadow-[0_8px_40px_rgba(74,124,89,0.20)] hover:shadow-[0_12px_48px_rgba(74,124,89,0.28)] transition-all duration-600 ease-out">
+                    {/* Card 2 — Personalizado */}
+                    <div className="rounded-[28px] bg-[#4A7C59] flex flex-col relative shadow-[0_8px_40px_rgba(74,124,89,0.20)] hover:shadow-[0_12px_48px_rgba(74,124,89,0.28)] transition-all duration-600 ease-out">
                         {/* Badge */}
                         <div className="bg-white/15 text-white/95 text-[11px] font-medium tracking-[0.12em] uppercase text-center py-2.5 px-4 rounded-t-[28px]">
-                            ✨ La opción más elegida
+                            ✨ Acompañamiento 100% individual
                         </div>
                         <div className="p-8 md:p-9 flex flex-col flex-grow">
-                            <h3 className="text-lg font-medium text-white mb-6 tracking-wide">Método Calma Híbrida</h3>
+                            <h3 className="text-lg font-medium text-white mb-6 tracking-wide">Método Calma Personalizado</h3>
                             <ul className="space-y-3.5 mb-8 flex-grow">
                                 {[
-                                    '1 sesión inicial 1:1',
-                                    '4 semanas on-demand',
-                                    'Acceso de por vida',
-                                    'A tu propio ritmo después de la sesión',
-                                    'Comienzo acompañado',
-                                    'Videos + lecturas + material descargable'
+                                    '100% personalizado para vos',
+                                    'Sesiones 1:1 por Zoom (50 min)',
+                                    'Prácticas adaptadas a tu momento actual',
+                                    'Feedback directo en cada sesión',
+                                    'Acompañamiento semana a semana por WhatsApp',
+                                    'Agenda flexible para tus sesiones',
+                                    'Material complementario exclusivo',
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-start gap-3 text-white/85 text-[13px] leading-relaxed">
                                         <svg className="w-4 h-4 text-white/90 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
@@ -186,82 +194,22 @@ const Services: React.FC = () => {
                                 ))}
                             </ul>
                             <div className="border-t border-white/15 pt-6 mb-6">
-                                <p className="text-2xl font-semibold text-white">USD $110.50</p>
+                                <p className="text-2xl font-semibold text-white">ARS $90.000</p>
                                 <div className="mt-2 inline-flex items-center gap-2 bg-white/15 rounded-full px-3.5 py-1.5">
-                                    <span className="text-white text-sm font-semibold">ARS $85.000</span>
-                                    <span className="text-white/60 text-xs">· Residentes en Argentina</span>
+                                    <span className="text-white/90 text-xs font-semibold">🇦🇷 Descuento especial para Argentina</span>
                                 </div>
                             </div>
                             <a
-                                href="https://wa.me/541121829771?text=Hola%20Eli,%20quiero%20hacer%20el%20programa%20H%C3%ADbrida%20de%20M%C3%A9todo%20Calma"
+                                href="https://wa.me/541121829771?text=Hola%20Eli,%20quiero%20hacer%20el%20programa%20Personalizado%20de%20M%C3%A9todo%20Calma"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-full h-[46px] rounded-full bg-white text-[#4A7C59] font-semibold flex items-center justify-center hover:bg-white/90 transition-all duration-500 text-sm tracking-wide shadow-[0_2px_12px_rgba(0,0,0,0.08)]"
                             >
-                                Quiero Híbrida
+                                Quiero empezar
                             </a>
                         </div>
                     </div>
 
-                    {/* Card 3 — Con Acompañamiento */}
-                    <div className="rounded-[28px] bg-white flex flex-col border border-gray-100/80 shadow-[0_2px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.06)] transition-all duration-600 ease-out">
-                        <div className="p-8 md:p-9 flex flex-col flex-grow">
-                            <h3 className="text-lg font-medium text-gray-800 mb-6 tracking-wide">Método Calma con Acompañamiento</h3>
-                            <ul className="space-y-3.5 mb-8 flex-grow">
-                                {[
-                                    'Prácticas personalizadas',
-                                    'Feedback directo en cada sesión',
-                                    'Sesiones fijas',
-                                    'Agenda amplia que se adapta a tus días y horarios',
-                                    'Profundidad mayor',
-                                    'Seguimiento semana a semana',
-                                    'Adaptación según tu progreso',
-                                    '100% personalizado'
-                                ].map((item, i) => (
-                                    <li key={i} className="flex items-start gap-3 text-gray-500 text-[13px] leading-relaxed">
-                                        <svg className="w-4 h-4 text-[#7BAE8A] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                                        </svg>
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
-                            <div className="border-t border-gray-100 pt-6 mb-6">
-                                <p className="text-2xl font-semibold text-gray-800">USD $214.50</p>
-                                <div className="mt-2 inline-flex items-center gap-2 bg-[#F0F7F2] rounded-full px-3.5 py-1.5">
-                                    <span className="text-[#4A7C59] text-sm font-semibold">ARS $165.000</span>
-                                    <span className="text-[#4A7C59]/60 text-xs">· Residentes en Argentina</span>
-                                </div>
-                            </div>
-                            <a
-                                href="https://wa.me/541121829771?text=Hola%20Eli,%20quiero%20saber%20m%C3%A1s%20sobre%20el%20programa%20con%20Acompa%C3%B1amiento%20de%20M%C3%A9todo%20Calma"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="w-full h-[46px] rounded-full border border-[#4A7C59] text-[#4A7C59] font-medium flex items-center justify-center hover:bg-[#4A7C59] hover:text-white transition-all duration-500 text-sm tracking-wide"
-                            >
-                                Quiero con acompañamiento
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-                {/* PDF Download Section */}
-                <div className="mt-16 text-center max-w-xl mx-auto animate-fade-in">
-                    <p className="text-gray-500 text-sm mb-4 font-light uppercase tracking-wider">
-                        ¿Querés descargar la información del programa?
-                    </p>
-                    <a
-                        href="/programa 4 semanas .pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-3 bg-white hover:bg-[#FAF9F6] text-gray-800 font-medium px-8 py-4 rounded-full transition-all duration-300 text-sm border border-gray-200 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] hover:-translate-y-0.5"
-                    >
-                        <svg className="w-5 h-5 text-[#4A7C59]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                        </svg>
-                        Descargar programa en PDF
-                    </a>
                 </div>
 
             </div>
