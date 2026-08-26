@@ -7,7 +7,7 @@ import WhatWeExplore from './components/WhatWeExplore';
 import WhoIsThisFor from './components/WhoIsThisFor';
 import WaitlistForm from './components/WaitlistForm';
 import AboutInstructor from './components/AboutInstructor';
-import FinalCta from './components/FinalCta';
+import FinalCta from './components/FinalCTA';
 
 const App: React.FC = () => {
   return (
