@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import HeroWaitlist from './components/HeroWaitlist';
 import TheProblem from './components/TheProblem';
 import WhatIsIt from './components/WhatIsIt';
@@ -8,8 +8,24 @@ import WhoIsThisFor from './components/WhoIsThisFor';
 import WaitlistForm from './components/WaitlistForm';
 import AboutInstructor from './components/AboutInstructor';
 import FinalCta from './components/FinalCTA';
+import WorkshopPage from './components/workshop/WorkshopPage';
 
 const App: React.FC = () => {
+  const [currentPath, setCurrentPath] = useState<string>(() => window.location.pathname);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      setCurrentPath(window.location.pathname);
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  const normalizedPath = currentPath.toLowerCase().replace(/\/$/, '');
+  if (normalizedPath === '/workshop') {
+    return <WorkshopPage />;
+  }
+
   return (
     <div className="font-sans antialiased text-[#2D2D2D] bg-[#FAFAFA]">
       <main>
