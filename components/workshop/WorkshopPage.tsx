@@ -47,12 +47,12 @@ const WorkshopPage: React.FC = () => {
 
       <main className="pb-16 md:pb-0">
         
-        {/* 1. HERO SECTION - Controlled vertical rhythm & scanning */}
+        {/* 1. HERO SECTION - Controlled vertical rhythm & exact mobile element order */}
         <section className="relative bg-[#F5F3EF] border-b border-[#E8ECE9] pt-6 pb-8 md:pt-8 md:pb-12 lg:pt-10 lg:pb-14 px-6 overflow-hidden">
-          <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+          <div className="max-w-6xl mx-auto flex flex-col lg:grid lg:grid-cols-12 gap-6 lg:gap-8 items-center">
             
-            {/* Text Content */}
-            <div className="lg:col-span-7 flex flex-col items-start z-10">
+            {/* Mobile Part 1 / Desktop Top Left (Cols 1-7, Row 1): Kicker, Title & Description */}
+            <div className="lg:col-span-7 lg:col-start-1 lg:row-start-1 flex flex-col items-start z-10 w-full">
               <span className="text-[#8DA396] font-semibold text-xs sm:text-sm uppercase tracking-widest block mb-1">
                 Estrés y autoexigencia
               </span>
@@ -61,7 +61,7 @@ const WorkshopPage: React.FC = () => {
                 Cómo salir del piloto automático
               </h1>
 
-              <div className="space-y-3 text-[#5A5A5A] text-base sm:text-lg leading-relaxed mb-6 max-w-2xl">
+              <div className="space-y-3 text-[#5A5A5A] text-base sm:text-lg leading-relaxed max-w-2xl">
                 <p>
                   Una experiencia práctica para mujeres que sienten que están todo el día resolviendo, pensando en lo que sigue y a las que incluso descansar les cuesta.
                 </p>
@@ -69,7 +69,21 @@ const WorkshopPage: React.FC = () => {
                   Un encuentro para entender qué está pasando y empezar a relacionarte de otra manera con el estrés y la autoexigencia.
                 </p>
               </div>
+            </div>
 
+            {/* Mobile Part 2 / Desktop Right (Cols 8-12, Rows 1-2): Hero Image */}
+            <div className="lg:col-span-5 lg:col-start-8 lg:row-start-1 lg:row-span-2 relative w-full flex justify-center items-center my-2 lg:my-0 z-10">
+              <div className="relative w-full max-w-md lg:max-w-none aspect-[4/3] lg:aspect-[4/5] rounded-2xl overflow-hidden shadow-md border-2 border-white">
+                <img
+                  src="/hero principal workshop.png"
+                  alt="Eli facilitando una experiencia de mindfulness"
+                  className="w-full h-full object-cover object-top sm:object-[center_20%] lg:object-center"
+                />
+              </div>
+            </div>
+
+            {/* Mobile Part 3 / Desktop Bottom Left (Cols 1-7, Row 2): Metadata Box & CTA */}
+            <div className="lg:col-span-7 lg:col-start-1 lg:row-start-2 flex flex-col items-start z-10 w-full">
               {/* Event Metadata */}
               <div className="w-full bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-[#E8ECE9] shadow-sm mb-6 space-y-2 max-w-2xl">
                 <div className="flex flex-wrap items-center gap-y-1 text-sm sm:text-base text-charcoal font-medium">
@@ -96,17 +110,6 @@ const WorkshopPage: React.FC = () => {
               >
                 QUIERO RESERVAR MI LUGAR
               </a>
-            </div>
-
-            {/* Hero Image */}
-            <div className="lg:col-span-5 relative w-full flex justify-center items-center">
-              <div className="relative w-full max-w-md lg:max-w-none aspect-[4/3] lg:aspect-[4/5] rounded-2xl overflow-hidden shadow-md border-2 border-white">
-                <img
-                  src="/hero principal workshop.png"
-                  alt="Eli facilitando una experiencia de mindfulness"
-                  className="w-full h-full object-cover object-top sm:object-[center_20%] lg:object-center"
-                />
-              </div>
             </div>
 
           </div>
