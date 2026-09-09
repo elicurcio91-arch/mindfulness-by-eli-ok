@@ -40,28 +40,24 @@ const WorkshopPage: React.FC = () => {
             rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center text-xs font-semibold uppercase tracking-widest text-[#5A5A5A] hover:text-[#8DA396] transition-colors"
           >
-            Reservar lugar →
+            RESERVAR LUGAR →
           </a>
         </div>
       </header>
 
       <main className="pb-16 md:pb-0">
         
-        {/* 1. HERO SECTION - Reduced vertical spacing, exact photo & composition */}
-        <section className="relative bg-[#F5F3EF] border-b border-[#E8ECE9] pt-6 pb-10 md:pt-10 md:pb-14 lg:pt-12 lg:pb-16 px-6 overflow-hidden">
-          <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        {/* 1. HERO SECTION - Controlled vertical rhythm & scanning */}
+        <section className="relative bg-[#F5F3EF] border-b border-[#E8ECE9] pt-6 pb-8 md:pt-8 md:pb-12 lg:pt-10 lg:pb-14 px-6 overflow-hidden">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
             
             {/* Text Content */}
             <div className="lg:col-span-7 flex flex-col items-start z-10">
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#E8ECE9] text-[#5A5A5A] text-xs font-semibold tracking-wider uppercase mb-4">
-                Workshop Online · En vivo
-              </div>
-
               <span className="text-[#8DA396] font-semibold text-xs sm:text-sm uppercase tracking-widest block mb-1">
                 Estrés y autoexigencia
               </span>
 
-              <h1 className="font-editorial text-4xl sm:text-5xl lg:text-6xl text-charcoal leading-[1.15] mb-5">
+              <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl text-charcoal leading-[1.18] mb-4">
                 Cómo salir del piloto automático
               </h1>
 
@@ -75,7 +71,7 @@ const WorkshopPage: React.FC = () => {
               </div>
 
               {/* Event Metadata */}
-              <div className="w-full bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-[#E8ECE9] shadow-sm mb-6 space-y-2">
+              <div className="w-full bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-[#E8ECE9] shadow-sm mb-6 space-y-2 max-w-2xl">
                 <div className="flex flex-wrap items-center gap-y-1 text-sm sm:text-base text-charcoal font-medium">
                   <div className="flex items-center gap-2 mr-6">
                     <span className="w-2 h-2 rounded-full bg-[#8DA396]"></span>
@@ -104,7 +100,7 @@ const WorkshopPage: React.FC = () => {
 
             {/* Hero Image */}
             <div className="lg:col-span-5 relative w-full flex justify-center items-center">
-              <div className="relative w-full max-w-md lg:max-w-none aspect-[4/3] lg:aspect-[4/5] rounded-2xl overflow-hidden shadow-lg border-2 border-white">
+              <div className="relative w-full max-w-md lg:max-w-none aspect-[4/3] lg:aspect-[4/5] rounded-2xl overflow-hidden shadow-md border-2 border-white">
                 <img
                   src="/hero principal workshop.png"
                   alt="Eli facilitando una experiencia de mindfulness"
@@ -116,14 +112,14 @@ const WorkshopPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 2. SECCIÓN "¿TE PASA QUE...?" - Editorial list, no boxed cards */}
-        <section className="py-14 md:py-20 px-6 bg-[#FAFAFA]">
+        {/* 2. SECCIÓN "¿TE PASA QUE...?" */}
+        <section className="py-10 md:py-14 px-6 bg-[#FAFAFA]">
           <div className="max-w-3xl mx-auto">
-            <h2 className="font-editorial text-3xl sm:text-4xl text-charcoal text-center mb-10">
+            <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl text-charcoal text-center mb-8">
               ¿Te pasa que...?
             </h2>
 
-            <div className="divide-y divide-[#E8ECE9] mb-10">
+            <div className="divide-y divide-[#E8ECE9] mb-8">
               {[
                 "Terminás algo y tu cabeza ya está pensando en lo siguiente.",
                 "Tenés un rato libre, pero enseguida aparece algo que podrías hacer.",
@@ -133,7 +129,7 @@ const WorkshopPage: React.FC = () => {
               ].map((item, index) => (
                 <div 
                   key={index} 
-                  className="py-4 sm:py-5 flex items-start gap-4"
+                  className="py-3.5 sm:py-4 flex items-start gap-4"
                 >
                   <span className="text-[#8DA396] font-editorial text-xl font-medium leading-none select-none mt-0.5">
                     —
@@ -145,8 +141,8 @@ const WorkshopPage: React.FC = () => {
               ))}
             </div>
 
-            {/* Closing text - Editorial & light */}
-            <div className="text-center pt-6 border-t-2 border-[#8DA396]/30 max-w-xl mx-auto space-y-2">
+            {/* Closing text */}
+            <div className="text-center pt-5 border-t-2 border-[#8DA396]/30 max-w-xl mx-auto space-y-1.5">
               <p className="text-lg sm:text-xl font-editorial text-charcoal">
                 No necesariamente tenés que hacer menos.
               </p>
@@ -157,10 +153,10 @@ const WorkshopPage: React.FC = () => {
           </div>
         </section>
 
-        {/* NUEVA SECCIÓN: "¿CÓMO ES EL ENCUENTRO?" - Simple & light editorial */}
-        <section className="py-12 md:py-16 px-6 bg-[#F5F3EF] border-y border-[#E8ECE9]">
-          <div className="max-w-3xl mx-auto text-center space-y-6">
-            <h2 className="font-editorial text-3xl sm:text-4xl text-charcoal">
+        {/* 3. SECCIÓN "¿CÓMO ES EL ENCUENTRO?" */}
+        <section className="py-10 md:py-12 px-6 bg-[#F5F3EF] border-y border-[#E8ECE9]">
+          <div className="max-w-3xl mx-auto text-center space-y-5">
+            <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl text-charcoal">
               ¿Cómo es el encuentro?
             </h2>
 
@@ -172,19 +168,19 @@ const WorkshopPage: React.FC = () => {
               Vamos a combinar explicación, ejercicios y prácticas breves de mindfulness para que puedas reconocer cómo funciona tu piloto automático y empezar a observarlo en situaciones concretas de tu vida.
             </p>
 
-            <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-sm text-[#828282] font-medium">
+            <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-sm text-[#828282] font-medium">
               <span>No es una clase teórica.</span>
               <span className="hidden sm:inline text-[#D1D1D1]">|</span>
-              <span>Tampoco necesitás saber meditar.</span>
+              <span>No necesitás saber meditar.</span>
             </div>
           </div>
         </section>
 
-        {/* 3. SECCIÓN "¿QUÉ VAMOS A TRABAJAR?" - Clean editorial layout */}
-        <section className="py-14 md:py-20 px-6 bg-[#FAFAFA]">
+        {/* 4. SECCIÓN "¿QUÉ VAMOS A TRABAJAR?" */}
+        <section className="py-10 md:py-14 px-6 bg-[#FAFAFA]">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center max-w-2xl mx-auto mb-12">
-              <h2 className="font-editorial text-3xl sm:text-4xl text-charcoal mb-4">
+            <div className="text-center max-w-2xl mx-auto mb-10">
+              <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl text-charcoal mb-3">
                 ¿Qué vamos a trabajar?
               </h2>
               <p className="text-base sm:text-lg text-[#5A5A5A] leading-relaxed">
@@ -192,8 +188,8 @@ const WorkshopPage: React.FC = () => {
               </p>
             </div>
 
-            {/* Editorial numbered list */}
-            <div className="space-y-6 mb-10">
+            {/* Numbered list */}
+            <div className="space-y-5 mb-8">
               {[
                 "Cómo reconocer patrones de pensamiento y reacción.",
                 "Qué pasa cuando actuamos automáticamente frente a lo que aparece en nuestra cabeza.",
@@ -203,7 +199,7 @@ const WorkshopPage: React.FC = () => {
               ].map((point, index) => (
                 <div 
                   key={index}
-                  className="flex items-start gap-4 pb-5 border-b border-[#E8ECE9]"
+                  className="flex items-start gap-4 pb-4 border-b border-[#E8ECE9]"
                 >
                   <span className="font-editorial text-2xl text-[#8DA396] font-normal leading-none select-none min-w-[32px]">
                     0{index + 1}
@@ -215,23 +211,22 @@ const WorkshopPage: React.FC = () => {
               ))}
             </div>
 
-            {/* Clarification Note - Light text */}
-            <div className="text-center text-sm text-[#5A5A5A] font-medium py-2">
+            <div className="text-center text-sm text-[#5A5A5A] font-medium py-1">
               No necesitás experiencia previa en mindfulness ni meditación.
             </div>
           </div>
         </section>
 
-        {/* 4. SECCIÓN "¿QUÉ TE LLEVÁS?" - Specific takeaways, lightweight blocks */}
-        <section className="py-14 md:py-20 px-6 bg-[#F5F3EF] border-t border-[#E8ECE9]">
+        {/* 5. SECCIÓN "¿QUÉ TE LLEVÁS?" */}
+        <section className="py-10 md:py-14 px-6 bg-[#F5F3EF] border-t border-[#E8ECE9]">
           <div className="max-w-3xl mx-auto">
-            <h2 className="font-editorial text-3xl sm:text-4xl text-charcoal text-center mb-12">
+            <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl text-charcoal text-center mb-10">
               ¿Qué te llevás?
             </h2>
 
-            <div className="space-y-8">
+            <div className="space-y-7">
               {/* Point 1 */}
-              <div className="pl-6 border-l-2 border-[#8DA396] space-y-1">
+              <div className="pl-5 border-l-2 border-[#8DA396] space-y-1">
                 <span className="text-charcoal font-semibold text-lg sm:text-xl block">
                   Vas a poder reconocer
                 </span>
@@ -241,7 +236,7 @@ const WorkshopPage: React.FC = () => {
               </div>
 
               {/* Point 2 */}
-              <div className="pl-6 border-l-2 border-[#8DA396] space-y-1">
+              <div className="pl-5 border-l-2 border-[#8DA396] space-y-1">
                 <span className="text-charcoal font-semibold text-lg sm:text-xl block">
                   Vas a aprender a observar
                 </span>
@@ -251,7 +246,7 @@ const WorkshopPage: React.FC = () => {
               </div>
 
               {/* Point 3 */}
-              <div className="pl-6 border-l-2 border-[#8DA396] space-y-1">
+              <div className="pl-5 border-l-2 border-[#8DA396] space-y-1">
                 <span className="text-charcoal font-semibold text-lg sm:text-xl block">
                   Vas a practicar
                 </span>
@@ -263,9 +258,9 @@ const WorkshopPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 5. SECCIÓN "SOBRE ELI" - Group photo, editorial layout */}
-        <section className="py-14 md:py-20 px-6 bg-[#FAFAFA] border-t border-[#E8ECE9]">
-          <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        {/* 6. SECCIÓN "SOBRE ELI" - Un-redundant bio */}
+        <section className="py-10 md:py-14 px-6 bg-[#FAFAFA] border-t border-[#E8ECE9]">
+          <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
             
             {/* Image */}
             <div className="lg:col-span-5 order-2 lg:order-1">
@@ -279,15 +274,12 @@ const WorkshopPage: React.FC = () => {
             </div>
 
             {/* Bio Text */}
-            <div className="lg:col-span-7 order-1 lg:order-2 space-y-5">
-              <h2 className="font-editorial text-3xl sm:text-4xl text-charcoal">
+            <div className="lg:col-span-7 order-1 lg:order-2 space-y-4">
+              <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl text-charcoal">
                 Sobre Eli
               </h2>
 
-              <div className="space-y-4 text-[#5A5A5A] text-base sm:text-lg leading-relaxed">
-                <p className="text-xl font-editorial text-charcoal">
-                  Soy Eli.
-                </p>
+              <div className="space-y-3.5 text-[#5A5A5A] text-base sm:text-lg leading-relaxed">
                 <p className="font-medium text-charcoal">
                   Soy instructora de mindfulness, profesora de yoga y coach ontológica.
                 </p>
@@ -297,7 +289,7 @@ const WorkshopPage: React.FC = () => {
                 <p>
                   Mi enfoque es práctico: llevar estas herramientas a la vida real.
                 </p>
-                <p className="pt-2 text-charcoal font-normal text-base sm:text-lg leading-relaxed border-t border-[#E8ECE9]">
+                <p className="pt-3 text-charcoal font-normal text-base sm:text-lg leading-relaxed border-t border-[#E8ECE9]">
                   Porque el objetivo no es vivir sin estrés ni dejar de tener responsabilidades. Es poder relacionarnos de otra manera con todo lo que pasa mientras vivimos nuestra vida.
                 </p>
               </div>
@@ -306,26 +298,22 @@ const WorkshopPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 6. SECCIÓN DE INFORMACIÓN - Structured Card */}
-        <section className="py-14 md:py-20 px-6 bg-[#F5F3EF] border-t border-[#E8ECE9]">
-          <div className="max-w-3xl mx-auto">
-            <div className="bg-white rounded-2xl p-8 sm:p-12 border border-[#E8ECE9] shadow-sm text-center">
+        {/* 7. SECCIÓN DE INFORMACIÓN DEL WORKSHOP - Compact structured card */}
+        <section className="py-10 md:py-14 px-6 bg-[#F5F3EF] border-t border-[#E8ECE9]">
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-white rounded-2xl p-6 sm:p-10 border border-[#E8ECE9] shadow-sm text-center">
               
-              <span className="text-[#8DA396] font-semibold text-xs sm:text-sm uppercase tracking-widest block mb-2">
-                Resumen práctico
-              </span>
-
-              <h2 className="font-editorial text-3xl sm:text-4xl text-charcoal mb-8">
+              <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl text-charcoal mb-6">
                 Información del workshop
               </h2>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 text-left mb-10 max-w-xl mx-auto">
-                <div className="bg-[#F5F3EF]/60 p-4 rounded-xl border border-[#E8ECE9]/60">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left mb-8 max-w-lg mx-auto">
+                <div className="bg-[#F5F3EF]/60 p-3.5 rounded-xl border border-[#E8ECE9]/60">
                   <span className="text-xs uppercase tracking-wider text-[#828282] block mb-1">Fecha</span>
                   <span className="text-charcoal font-medium text-base">Sábado 3 de octubre</span>
                 </div>
 
-                <div className="bg-[#F5F3EF]/60 p-4 rounded-xl border border-[#E8ECE9]/60">
+                <div className="bg-[#F5F3EF]/60 p-3.5 rounded-xl border border-[#E8ECE9]/60">
                   <span className="text-xs uppercase tracking-wider text-[#828282] block mb-1">Horarios</span>
                   <span className="text-charcoal font-medium text-sm sm:text-base leading-tight block">
                     10:00 h Argentina<br />
@@ -334,16 +322,16 @@ const WorkshopPage: React.FC = () => {
                   </span>
                 </div>
 
-                <div className="bg-[#F5F3EF]/60 p-4 rounded-xl border border-[#E8ECE9]/60">
+                <div className="bg-[#F5F3EF]/60 p-3.5 rounded-xl border border-[#E8ECE9]/60">
                   <span className="text-xs uppercase tracking-wider text-[#828282] block mb-1">Modalidad</span>
                   <span className="text-charcoal font-medium text-base">Online · En vivo</span>
-                  <span className="text-[#5A5A5A] text-xs block mt-1">Duración: 90 minutos</span>
+                  <span className="text-[#5A5A5A] text-xs block mt-0.5">Duración: 90 minutos</span>
                 </div>
 
-                <div className="bg-[#F5F3EF]/60 p-4 rounded-xl border border-[#E8ECE9]/60">
+                <div className="bg-[#F5F3EF]/60 p-3.5 rounded-xl border border-[#E8ECE9]/60">
                   <span className="text-xs uppercase tracking-wider text-[#828282] block mb-1">Cupos y Valor</span>
                   <span className="text-charcoal font-semibold text-base block">ARS 30.000</span>
-                  <span className="text-[#5A5A5A] text-xs block mt-1">Cupos: 15 personas</span>
+                  <span className="text-[#5A5A5A] text-xs block mt-0.5">Cupos: 15 personas</span>
                 </div>
               </div>
 
@@ -351,7 +339,7 @@ const WorkshopPage: React.FC = () => {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-accent w-full sm:w-auto px-10 py-4 text-base shadow-md"
+                className="btn-accent w-full sm:w-auto px-10 py-3.5 text-base shadow-md"
               >
                 QUIERO RESERVAR MI LUGAR
               </a>
@@ -360,9 +348,9 @@ const WorkshopPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 7. CIERRE */}
-        <section className="py-16 md:py-24 px-6 bg-[#FAFAFA] text-center border-t border-[#E8ECE9]">
-          <div className="max-w-2xl mx-auto space-y-8">
+        {/* 8. CIERRE */}
+        <section className="py-12 md:py-16 px-6 bg-[#FAFAFA] text-center border-t border-[#E8ECE9]">
+          <div className="max-w-2xl mx-auto space-y-6">
             <p className="font-editorial text-2xl sm:text-3xl md:text-4xl text-charcoal leading-snug">
               No necesitás esperar a estar desbordada para empezar a prestar atención a cómo estás viviendo.
             </p>
@@ -372,9 +360,9 @@ const WorkshopPage: React.FC = () => {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary px-10 py-4 text-base shadow-md hover:shadow-lg"
+                className="btn-primary px-10 py-3.5 text-base shadow-md hover:shadow-lg"
               >
-                QUIERO PARTICIPAR
+                QUIERO RESERVAR MI LUGAR
               </a>
             </div>
           </div>
@@ -383,7 +371,7 @@ const WorkshopPage: React.FC = () => {
       </main>
 
       {/* Footer Minimal */}
-      <footer className="w-full bg-[#FAF9F6] py-10 px-6 border-t border-[#E8ECE9]">
+      <footer className="w-full bg-[#FAF9F6] py-8 px-6 border-t border-[#E8ECE9]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-[#828282]">
           <div>
             © {new Date().getFullYear()} Eli Curcio. Todos los derechos reservados.
