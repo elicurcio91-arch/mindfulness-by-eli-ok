@@ -296,39 +296,59 @@ const WorkshopPage: React.FC = () => {
             {/* Testimonials Grid (Desktop: 2 cols, Mobile: 1 col stacked) */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
               {/* Testimonio Workshop 1 */}
-              <div className="bg-white rounded-2xl p-2.5 sm:p-4 border border-[#E8ECE9] shadow-sm flex items-center justify-center">
-                <img
-                  src="/testimonioworkshop1.png"
-                  alt="Testimonio real de participante"
-                  className="w-full h-auto object-contain max-h-[500px] rounded-xl"
-                />
+              <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
+                <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
+                  <img
+                    src="/testimonioworkshop1.png"
+                    alt="Testimonio real de participante"
+                    className="w-full h-auto object-contain max-h-[500px] rounded-xl"
+                  />
+                </div>
+                <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
+                  “Me llevé herramientas que vengo aplicando muy bien.”
+                </blockquote>
               </div>
 
               {/* Testimonio Workshop 2 */}
-              <div className="bg-white rounded-2xl p-2.5 sm:p-4 border border-[#E8ECE9] shadow-sm flex items-center justify-center">
-                <img
-                  src="/testimonioworkshop2.png"
-                  alt="Testimonio real de participante"
-                  className="w-full h-auto object-contain max-h-[500px] rounded-xl"
-                />
+              <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
+                <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
+                  <img
+                    src="/testimonioworkshop2.png"
+                    alt="Testimonio real de participante"
+                    className="w-full h-auto object-contain max-h-[500px] rounded-xl"
+                  />
+                </div>
+                <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
+                  “Las prácticas que hicimos las vengo haciendo a diario.”
+                </blockquote>
               </div>
 
               {/* Testimonio Workshop 3 */}
-              <div className="bg-white rounded-2xl p-2.5 sm:p-4 border border-[#E8ECE9] shadow-sm flex items-center justify-center">
-                <img
-                  src="/testimonioworkshop3.png"
-                  alt="Testimonio real de participante"
-                  className="w-full h-auto object-contain max-h-[500px] rounded-xl"
-                />
+              <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
+                <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
+                  <img
+                    src="/testimonioworkshop3.png"
+                    alt="Testimonio real de participante"
+                    className="w-full h-auto object-contain max-h-[500px] rounded-xl"
+                  />
+                </div>
+                <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
+                  “Me sirvió para salir del piloto automático y poder escucharme.”
+                </blockquote>
               </div>
 
               {/* Testimonio Workshop 4 */}
-              <div className="bg-white rounded-2xl p-2.5 sm:p-4 border border-[#E8ECE9] shadow-sm flex items-center justify-center">
-                <img
-                  src="/testimonioworkshop4.png"
-                  alt="Testimonio real de participante"
-                  className="w-full h-auto object-contain max-h-[500px] rounded-xl"
-                />
+              <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
+                <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
+                  <img
+                    src="/testimonioworkshop4.png"
+                    alt="Testimonio real de participante"
+                    className="w-full h-auto object-contain max-h-[500px] rounded-xl"
+                  />
+                </div>
+                <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
+                  “Pude meditar y hacer las prácticas antes y me re sirvió.”
+                </blockquote>
               </div>
             </div>
           </div>
