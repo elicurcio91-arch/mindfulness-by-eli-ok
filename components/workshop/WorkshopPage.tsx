@@ -1,13 +1,33 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const WHATSAPP_NUMBER = "541121829771";
 const WHATSAPP_MESSAGE = "Hola Eli, vi el workshop “Estrés y autoexigencia: cómo salir del piloto automático” y quiero reservar mi lugar. ¿Me pasás la información para inscribirme?";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
 const WorkshopPage: React.FC = () => {
+  const [isInlineCtaVisible, setIsInlineCtaVisible] = useState(false);
+
   useEffect(() => {
     document.title = "Estrés y autoexigencia: Cómo salir del piloto automático | Workshop Online con Eli";
     window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    const inlineCtas = document.querySelectorAll('.inline-cta-btn');
+    if (inlineCtas.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const isAnyVisible = entries.some((entry) => entry.isIntersecting);
+        setIsInlineCtaVisible(isAnyVisible);
+      },
+      { threshold: 0.1 }
+    );
+
+    inlineCtas.forEach((el) => observer.observe(el));
+    return () => {
+      inlineCtas.forEach((el) => observer.unobserve(el));
+    };
   }, []);
 
   const handleNavigateHome = (e: React.MouseEvent) => {
@@ -19,16 +39,16 @@ const WorkshopPage: React.FC = () => {
   return (
     <div className="font-sans antialiased text-[#2D2D2D] bg-[#FAFAFA] min-h-screen selection:bg-[#8DA396]/20">
       
-      {/* Header / Navigation Bar */}
+      {/* Header / Navigation Bar - Reduced vertical padding on mobile */}
       <header className="sticky top-0 z-40 bg-[#FAFAFA]/90 backdrop-blur-md border-b border-[#E8ECE9]">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-6 py-2.5 sm:py-4 flex items-center justify-between">
           <a 
             href="/" 
             onClick={handleNavigateHome}
             className="flex items-center gap-3 group focus:outline-none"
             aria-label="Ir a inicio"
           >
-            <img src="/logo.png" alt="Mindfulness by Eli" className="h-8 w-auto transition-transform group-hover:scale-105" />
+            <img src="/logo.png" alt="Mindfulness by Eli" className="h-7 sm:h-8 w-auto transition-transform group-hover:scale-105" />
             <span className="font-editorial text-lg text-charcoal tracking-wide hidden sm:inline">
               Mindfulness by Eli
             </span>
@@ -45,11 +65,11 @@ const WorkshopPage: React.FC = () => {
         </div>
       </header>
 
-      <main className="pb-16 md:pb-0">
+      <main className="pb-28 md:pb-0">
         
-        {/* 1. HERO SECTION - Controlled vertical rhythm & exact mobile element order */}
-        <section className="relative bg-[#F5F3EF] border-b border-[#E8ECE9] pt-6 pb-8 md:pt-8 md:pb-12 lg:pt-10 lg:pb-14 px-6 overflow-hidden">
-          <div className="max-w-6xl mx-auto flex flex-col lg:grid lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+        {/* 1. HERO SECTION - Minimal top empty space on mobile */}
+        <section className="relative bg-[#F5F3EF] border-b border-[#E8ECE9] pt-3 pb-8 md:pt-6 md:pb-12 lg:pt-8 lg:pb-14 px-6 overflow-hidden">
+          <div className="max-w-6xl mx-auto flex flex-col lg:grid lg:grid-cols-12 gap-5 lg:gap-8 items-center">
             
             {/* Mobile Part 1 / Desktop Top Left (Cols 1-7, Row 1): Kicker, Title & Description */}
             <div className="lg:col-span-7 lg:col-start-1 lg:row-start-1 flex flex-col items-start z-10 w-full">
@@ -57,7 +77,7 @@ const WorkshopPage: React.FC = () => {
                 Estrés y autoexigencia
               </span>
 
-              <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl text-charcoal leading-[1.18] mb-4">
+              <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl text-charcoal leading-[1.18] mb-3 sm:mb-4">
                 Cómo salir del piloto automático
               </h1>
 
@@ -85,7 +105,7 @@ const WorkshopPage: React.FC = () => {
             {/* Mobile Part 3 / Desktop Bottom Left (Cols 1-7, Row 2): Metadata Box & CTA */}
             <div className="lg:col-span-7 lg:col-start-1 lg:row-start-2 flex flex-col items-start z-10 w-full">
               {/* Event Metadata */}
-              <div className="w-full bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-[#E8ECE9] shadow-sm mb-6 space-y-2 max-w-2xl">
+              <div className="w-full bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-[#E8ECE9] shadow-sm mb-5 sm:mb-6 space-y-2 max-w-2xl">
                 <div className="flex flex-wrap items-center gap-y-1 text-sm sm:text-base text-charcoal font-medium">
                   <div className="flex items-center gap-2 mr-6">
                     <span className="w-2 h-2 rounded-full bg-[#8DA396]"></span>
@@ -106,7 +126,7 @@ const WorkshopPage: React.FC = () => {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary w-full sm:w-auto text-center shadow-md hover:shadow-lg"
+                className="btn-primary inline-cta-btn w-full sm:w-auto text-center shadow-md hover:shadow-lg"
               >
                 QUIERO RESERVAR MI LUGAR
               </a>
@@ -144,13 +164,13 @@ const WorkshopPage: React.FC = () => {
               ))}
             </div>
 
-            {/* Closing text */}
+            {/* Closing text - Updated exact copy */}
             <div className="text-center pt-5 border-t-2 border-[#8DA396]/30 max-w-xl mx-auto space-y-1.5">
               <p className="text-lg sm:text-xl font-editorial text-charcoal">
                 No necesariamente tenés que hacer menos.
               </p>
               <p className="text-base sm:text-lg text-[#5A5A5A] font-light">
-                Quizás necesitás entender qué sucede en vos mientras hacés todo eso.
+                También podés empezar por entender qué sucede en vos mientras hacés todo eso.
               </p>
             </div>
           </div>
@@ -262,9 +282,9 @@ const WorkshopPage: React.FC = () => {
         </section>
 
         {/* SECCIÓN TESTIMONIOS: "Lo que dicen quienes ya participaron" */}
-        <section className="py-12 md:py-16 px-6 bg-[#FAFAFA] border-t border-[#E8ECE9]">
+        <section className="py-10 md:py-14 px-6 bg-[#FAFAFA] border-t border-[#E8ECE9]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center max-w-2xl mx-auto mb-10 md:mb-12 space-y-3">
+            <div className="text-center max-w-2xl mx-auto mb-8 md:mb-10 space-y-2">
               <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl text-charcoal">
                 Lo que dicen quienes ya participaron
               </h2>
@@ -274,95 +294,47 @@ const WorkshopPage: React.FC = () => {
             </div>
 
             {/* Testimonials Grid (Desktop: 2 cols, Mobile: 1 col stacked) */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
               {/* Testimonio Workshop 1 */}
-              <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
-                <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
-                  <img
-                    src="/testimonioworkshop1.png"
-                    alt="Testimonio de experiencia de mindfulness"
-                    className="w-full h-auto object-contain max-h-[420px] rounded-xl"
-                  />
-                </div>
-                <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
-                  “Las prácticas que hicimos las vengo haciendo a diario.”
-                </blockquote>
+              <div className="bg-white rounded-2xl p-2.5 sm:p-4 border border-[#E8ECE9] shadow-sm flex items-center justify-center">
+                <img
+                  src="/testimonioworkshop1.png"
+                  alt="Testimonio real de participante"
+                  className="w-full h-auto object-contain max-h-[500px] rounded-xl"
+                />
               </div>
 
               {/* Testimonio Workshop 2 */}
-              <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
-                <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
-                  <img
-                    src="/testimonioworkshop2.png"
-                    alt="Testimonio de experiencia de mindfulness"
-                    className="w-full h-auto object-contain max-h-[420px] rounded-xl"
-                  />
-                </div>
-                <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
-                  “Me llevé herramientas que vengo aplicando muy bien.”
-                </blockquote>
+              <div className="bg-white rounded-2xl p-2.5 sm:p-4 border border-[#E8ECE9] shadow-sm flex items-center justify-center">
+                <img
+                  src="/testimonioworkshop2.png"
+                  alt="Testimonio real de participante"
+                  className="w-full h-auto object-contain max-h-[500px] rounded-xl"
+                />
               </div>
 
               {/* Testimonio Workshop 3 */}
-              <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
-                <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
-                  <img
-                    src="/testimonioworkshop3.png"
-                    alt="Testimonio de experiencia de mindfulness"
-                    className="w-full h-auto object-contain max-h-[420px] rounded-xl"
-                  />
-                </div>
-                <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
-                  “Me sirvió para salir del piloto automático y poder escucharme.”
-                </blockquote>
+              <div className="bg-white rounded-2xl p-2.5 sm:p-4 border border-[#E8ECE9] shadow-sm flex items-center justify-center">
+                <img
+                  src="/testimonioworkshop3.png"
+                  alt="Testimonio real de participante"
+                  className="w-full h-auto object-contain max-h-[500px] rounded-xl"
+                />
               </div>
 
               {/* Testimonio Workshop 4 */}
-              <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
-                <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
-                  <img
-                    src="/testimonioworkshop4.png"
-                    alt="Testimonio de experiencia de mindfulness"
-                    className="w-full h-auto object-contain max-h-[420px] rounded-xl"
-                  />
-                </div>
-                <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
-                  “Pude meditar y hacer las prácticas antes y me re sirvió.”
-                </blockquote>
-              </div>
-
-              {/* Testimonial adicional 1 */}
-              <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
-                <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
-                  <img
-                    src="/testimonio (1).png"
-                    alt="Testimonio de experiencia de mindfulness"
-                    className="w-full h-auto object-contain max-h-[420px] rounded-xl"
-                  />
-                </div>
-                <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
-                  “De verdad siento que me voy con herramientas chiquitas pero reales para el día a día.”
-                </blockquote>
-              </div>
-
-              {/* Testimonial adicional 2 */}
-              <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
-                <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
-                  <img
-                    src="/testimonio (6).png"
-                    alt="Testimonio de experiencia de mindfulness"
-                    className="w-full h-auto object-contain max-h-[420px] rounded-xl"
-                  />
-                </div>
-                <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
-                  “Lo más valioso que me llevo es esa sensación de presencia y de empezar a mirarme con más compasión.”
-                </blockquote>
+              <div className="bg-white rounded-2xl p-2.5 sm:p-4 border border-[#E8ECE9] shadow-sm flex items-center justify-center">
+                <img
+                  src="/testimonioworkshop4.png"
+                  alt="Testimonio real de participante"
+                  className="w-full h-auto object-contain max-h-[500px] rounded-xl"
+                />
               </div>
             </div>
           </div>
         </section>
 
-        {/* 6. SECCIÓN "SOBRE ELI" - Un-redundant bio */}
+        {/* 6. SECCIÓN "SOBRE ELI" */}
         <section className="py-10 md:py-14 px-6 bg-[#FAFAFA] border-t border-[#E8ECE9]">
           <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
             
@@ -443,7 +415,7 @@ const WorkshopPage: React.FC = () => {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-accent w-full sm:w-auto px-10 py-3.5 text-base shadow-md"
+                className="btn-accent inline-cta-btn w-full sm:w-auto px-10 py-3.5 text-base shadow-md"
               >
                 QUIERO RESERVAR MI LUGAR
               </a>
@@ -464,7 +436,7 @@ const WorkshopPage: React.FC = () => {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary px-10 py-3.5 text-base shadow-md hover:shadow-lg"
+                className="btn-primary inline-cta-btn px-10 py-3.5 text-base shadow-md hover:shadow-lg"
               >
                 QUIERO RESERVAR MI LUGAR
               </a>
@@ -501,8 +473,12 @@ const WorkshopPage: React.FC = () => {
         </div>
       </footer>
 
-      {/* Sticky Mobile CTA */}
-      <div className="fixed bottom-0 left-0 right-0 p-4 bg-white/95 backdrop-blur-md border-t border-[#E8ECE9] md:hidden z-50 flex justify-center shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+      {/* Sticky Mobile CTA - Hides when an inline CTA button is in view */}
+      <div 
+        className={`fixed bottom-0 left-0 right-0 p-4 bg-white/95 backdrop-blur-md border-t border-[#E8ECE9] md:hidden z-50 flex justify-center shadow-[0_-4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 ${
+          isInlineCtaVisible ? 'translate-y-full opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'
+        }`}
+      >
         <a 
           href={WHATSAPP_URL} 
           target="_blank" 
