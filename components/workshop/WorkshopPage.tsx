@@ -261,6 +261,79 @@ const WorkshopPage: React.FC = () => {
           </div>
         </section>
 
+        {/* SECCIÓN TESTIMONIOS: "Lo que dicen quienes ya participaron" */}
+        <section className="py-12 md:py-16 px-6 bg-[#FAFAFA] border-t border-[#E8ECE9]">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center max-w-2xl mx-auto mb-10 md:mb-12 space-y-3">
+              <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl text-charcoal">
+                Lo que dicen quienes ya participaron
+              </h2>
+              <p className="text-[#5A5A5A] text-base sm:text-lg leading-relaxed">
+                Testimonios reales de personas que ya participaron en experiencias de mindfulness conmigo.
+              </p>
+            </div>
+
+            {/* Testimonials Grid (Desktop: 2 cols, Mobile: 1 col stacked) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+              {/* Testimonial 1 */}
+              <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
+                <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
+                  <img
+                    src="/testimonioworkshop1.png"
+                    alt="Testimonio de experiencia de mindfulness"
+                    className="w-full h-auto object-contain max-h-[420px] rounded-xl"
+                  />
+                </div>
+                <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
+                  “Me llevé herramientas que vengo aplicando muy bien.”
+                </blockquote>
+              </div>
+
+              {/* Testimonial 2 */}
+              <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
+                <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
+                  <img
+                    src="/testimonioworkshop2.png"
+                    alt="Testimonio de experiencia de mindfulness"
+                    className="w-full h-auto object-contain max-h-[420px] rounded-xl"
+                  />
+                </div>
+                <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
+                  “Las prácticas que hicimos las vengo haciendo a diario.”
+                </blockquote>
+              </div>
+
+              {/* Testimonial 3 */}
+              <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
+                <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
+                  <img
+                    src="/testimonioworkshop3.png"
+                    alt="Testimonio de experiencia de mindfulness"
+                    className="w-full h-auto object-contain max-h-[420px] rounded-xl"
+                  />
+                </div>
+                <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
+                  “Pude meditar y hacer las prácticas antes y me re sirvió.”
+                </blockquote>
+              </div>
+
+              {/* Testimonial 4 */}
+              <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
+                <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
+                  <img
+                    src="/testimonioworkshop4.png"
+                    alt="Testimonio de experiencia de mindfulness"
+                    className="w-full h-auto object-contain max-h-[420px] rounded-xl"
+                  />
+                </div>
+                <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
+                  “Me sirvió para salir del piloto automático y poder escucharme.”
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* 6. SECCIÓN "SOBRE ELI" - Un-redundant bio */}
         <section className="py-10 md:py-14 px-6 bg-[#FAFAFA] border-t border-[#E8ECE9]">
           <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
