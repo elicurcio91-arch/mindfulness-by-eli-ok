@@ -275,7 +275,7 @@ const WorkshopPage: React.FC = () => {
 
             {/* Testimonials Grid (Desktop: 2 cols, Mobile: 1 col stacked) */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
-              {/* Testimonial 1 */}
+              {/* Testimonio Workshop 1 */}
               <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
                 <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
                   <img
@@ -285,11 +285,11 @@ const WorkshopPage: React.FC = () => {
                   />
                 </div>
                 <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
-                  “Me llevé herramientas que vengo aplicando muy bien.”
+                  “Las prácticas que hicimos las vengo haciendo a diario.”
                 </blockquote>
               </div>
 
-              {/* Testimonial 2 */}
+              {/* Testimonio Workshop 2 */}
               <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
                 <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
                   <img
@@ -299,11 +299,11 @@ const WorkshopPage: React.FC = () => {
                   />
                 </div>
                 <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
-                  “Las prácticas que hicimos las vengo haciendo a diario.”
+                  “Me llevé herramientas que vengo aplicando muy bien.”
                 </blockquote>
               </div>
 
-              {/* Testimonial 3 */}
+              {/* Testimonio Workshop 3 */}
               <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
                 <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
                   <img
@@ -313,11 +313,11 @@ const WorkshopPage: React.FC = () => {
                   />
                 </div>
                 <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
-                  “Pude meditar y hacer las prácticas antes y me re sirvió.”
+                  “Me sirvió para salir del piloto automático y poder escucharme.”
                 </blockquote>
               </div>
 
-              {/* Testimonial 4 */}
+              {/* Testimonio Workshop 4 */}
               <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
                 <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
                   <img
@@ -327,7 +327,35 @@ const WorkshopPage: React.FC = () => {
                   />
                 </div>
                 <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
-                  “Me sirvió para salir del piloto automático y poder escucharme.”
+                  “Pude meditar y hacer las prácticas antes y me re sirvió.”
+                </blockquote>
+              </div>
+
+              {/* Testimonial adicional 1 */}
+              <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
+                <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
+                  <img
+                    src="/testimonio (1).png"
+                    alt="Testimonio de experiencia de mindfulness"
+                    className="w-full h-auto object-contain max-h-[420px] rounded-xl"
+                  />
+                </div>
+                <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
+                  “De verdad siento que me voy con herramientas chiquitas pero reales para el día a día.”
+                </blockquote>
+              </div>
+
+              {/* Testimonial adicional 2 */}
+              <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
+                <div className="w-full mb-4 overflow-hidden rounded-xl bg-[#1e1e1e] flex items-center justify-center">
+                  <img
+                    src="/testimonio (6).png"
+                    alt="Testimonio de experiencia de mindfulness"
+                    className="w-full h-auto object-contain max-h-[420px] rounded-xl"
+                  />
+                </div>
+                <blockquote className="text-charcoal font-medium text-base sm:text-lg leading-snug px-2">
+                  “Lo más valioso que me llevo es esa sensación de presencia y de empezar a mirarme con más compasión.”
                 </blockquote>
               </div>
             </div>
