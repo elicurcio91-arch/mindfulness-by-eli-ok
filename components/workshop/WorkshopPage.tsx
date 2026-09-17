@@ -95,7 +95,7 @@ const WorkshopPage: React.FC = () => {
             <div className="lg:col-span-5 lg:col-start-8 lg:row-start-1 lg:row-span-2 relative w-full flex justify-center items-center my-2 lg:my-0 z-10">
               <div className="relative w-full max-w-md lg:max-w-none aspect-[4/3] lg:aspect-[4/5] rounded-2xl overflow-hidden shadow-md border-2 border-white">
                 <img
-                  src="/hero principal workshop.png"
+                  src="/hero%20principal%20workshop.png"
                   alt="Eli facilitando una experiencia de mindfulness"
                   className="w-full h-full object-cover object-top sm:object-[center_20%] lg:object-center"
                 />
@@ -362,7 +362,7 @@ const WorkshopPage: React.FC = () => {
             <div className="lg:col-span-5 order-2 lg:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-md border-2 border-white max-w-md mx-auto lg:max-w-none aspect-[4/5]">
                 <img
-                  src="/quien soy workshop.png"
+                  src="/quien%20soy%20workshop.png"
                   alt="Eli facilitando una actividad grupal"
                   className="w-full h-full object-cover object-center"
                 />

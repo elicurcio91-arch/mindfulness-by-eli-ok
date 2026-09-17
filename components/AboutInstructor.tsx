@@ -8,19 +8,14 @@ const AboutInstructor: React.FC = () => {
                 <div className="w-full md:w-1/3 flex-shrink-0">
                     {/* Placeholder for real photo. Do not generate artificial faces. */}
                     <div className="aspect-[3/4] bg-[#E8ECE9] rounded-sm overflow-hidden flex items-center justify-center relative">
-                        {/* If public/sobre mi.jpg exists and works, we can use it. But leaving placeholder text for clarity as requested. */}
                         <img 
                             src="/sobre mi.jpg" 
                             alt="Eli - Instructora de Mindfulness" 
-                            className="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-multiply"
+                            className="absolute inset-0 w-full h-full object-cover"
                             onError={(e) => {
-                                // Fallback to placeholder text if image is not found
                                 (e.target as HTMLElement).style.display = 'none';
                             }}
                         />
-                        <span className="text-[#8DA396] text-sm uppercase tracking-widest text-center px-4 z-10">
-                            [FOTOGRAFÍA REAL DE LA INSTRUCTORA]
-                        </span>
                     </div>
                 </div>
 
