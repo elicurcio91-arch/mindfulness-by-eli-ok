@@ -15,89 +15,89 @@ const PaymentCtaBlock: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-xl space-y-4 text-left my-2">
+    <div id="datos-pago" className="w-full max-w-md space-y-4 text-left my-2 font-sans">
       
-      {/* 1. OPCIÓN PRINCIPAL / VALOR REAL: TRANSFERENCIA $30.000 */}
-      <div className="bg-white border-2 border-[#8DA396] rounded-2xl p-4 sm:p-5 shadow-sm space-y-3 relative overflow-hidden">
-        <div className="bg-[#8DA396]/15 text-[#2D2D2D] text-[11px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full inline-block">
-          Opción principal (Precio oficial: $30.000)
-        </div>
+      {/* A) Título corto */}
+      <h3 className="font-editorial text-2xl sm:text-3xl text-charcoal font-normal">
+        Inscripción
+      </h3>
 
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
+      {/* B) Una línea de precio */}
+      <p className="text-sm sm:text-base font-medium text-[#5A5A5A]">
+        Precio del workshop: <span className="font-semibold text-charcoal font-editorial text-xl">$30.000</span>
+      </p>
+
+      {/* C) Card principal (destacada, no gigante) */}
+      <div className="bg-white border border-[#8DA396]/60 rounded-xl p-4 sm:p-5 shadow-sm space-y-3">
+        <div className="flex items-center justify-between gap-3">
           <div>
-            <h3 className="font-editorial text-2xl text-charcoal font-semibold">
-              Transferir $30.000
-            </h3>
-            <p className="text-xs sm:text-sm text-[#5A5A5A] mt-0.5">
-              Alias: <code className="bg-[#F5F3EF] px-2.5 py-1 rounded-md font-mono text-charcoal font-bold text-sm select-all">{ALIAS}</code>
-            </p>
+            <span className="font-semibold text-charcoal text-base sm:text-lg block">
+              Transferencia — $30.000
+            </span>
+            <span className="text-xs text-[#5A5A5A] mt-0.5 block">
+              Alias: <code className="bg-[#F5F3EF] px-2 py-0.5 rounded font-mono text-charcoal font-semibold text-xs sm:text-sm select-all">{ALIAS}</code>
+            </span>
           </div>
 
           <button
             type="button"
             onClick={handleCopyAlias}
-            className="btn-primary self-start sm:self-center text-xs font-semibold px-4 py-2.5 rounded-xl shadow-sm hover:shadow transition-colors flex items-center gap-1.5"
+            className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-[#8DA396] text-[#2D2D2D] hover:bg-[#8DA396]/10 transition-colors flex items-center gap-1 shrink-0"
           >
             {copiedAlias ? (
-              <span className="text-emerald-300 font-bold">¡Alias copiado!</span>
+              <span className="text-emerald-700 font-bold">¡Copiado!</span>
             ) : (
-              <span>Copiar alias</span>
+              <span>Copiar</span>
             )}
           </button>
         </div>
 
-        {/* Botón de Comprobante para confirmar la vacante */}
-        <div className="pt-2 border-t border-[#E8ECE9]">
-          <a
-            href={PROOF_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary inline-cta-btn w-full text-center py-3.5 px-5 text-sm sm:text-base font-semibold shadow-md hover:shadow-lg flex items-center justify-center gap-2"
-          >
-            <span>Ya pagué — enviar comprobante</span>
-          </a>
-        </div>
-      </div>
-
-      {/* 2. OPCIÓN SECUNDARIA: MERCADO PAGO $35.000 (Tarjeta / Cuotas) */}
-      <div className="border border-[#E8ECE9] bg-[#FAF9F6] rounded-xl p-3.5 sm:p-4 space-y-2">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-          <span className="text-xs sm:text-sm font-medium text-[#5A5A5A]">
-            ¿Preferís pagar con tarjeta o en cuotas?
-          </span>
-          <a
-            href={MERCADO_PAGO_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs sm:text-sm font-semibold text-charcoal border border-charcoal/30 bg-white hover:bg-charcoal hover:text-white transition-all px-4 py-2 rounded-lg text-center w-full sm:w-auto"
-          >
-            Preferís tarjeta: Mercado Pago — $35.000
-          </a>
-        </div>
-        <p className="text-[11px] sm:text-xs text-[#828282] leading-tight italic">
-          El workshop sale $30.000; con MP el total es $35.000 por el costo del medio de pago.
+        <p className="text-xs text-[#828282] italic pt-2 border-t border-[#E8ECE9]">
+          Después de pagar, enviá el comprobante.
         </p>
       </div>
 
-      {/* 3. AVISO OBLIGATORIO UNIFICADO (Aplica a AMBOS medios de pago) */}
-      <div className="bg-[#FAF9F5] border border-[#E8ECE9] rounded-xl p-3.5 sm:p-4 text-xs sm:text-sm text-[#5A5A5A] leading-relaxed">
-        <p className="font-semibold text-charcoal mb-0.5">
-          ⚠️ Importante para confirmar tu lugar:
-        </p>
-        <p>
-          Después de pagar, mandame el comprobante por WhatsApp al 11 2182-9771 con tu nombre y mail. Sin comprobante no te reservo el cupo.
+      {/* D) Debajo, opción secundaria compacta (NO card enorme) */}
+      <div className="space-y-1 pt-1">
+        <a
+          href={MERCADO_PAGO_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block text-xs sm:text-sm font-medium text-[#5A5A5A] hover:text-charcoal border border-[#E8ECE9] bg-white hover:bg-[#F5F3EF] transition-colors px-3.5 py-2 rounded-lg text-left"
+        >
+          Pagar con tarjeta (Mercado Pago) — $35.000 →
+        </a>
+        <p className="text-[11px] text-[#828282] pl-1">
+          $30.000 del workshop + costo del medio de pago.
         </p>
       </div>
 
-      {/* 4. LINK DE DUDAS (Terciario, solo texto) */}
-      <div className="text-center sm:text-right pt-1">
+      {/* E) Un solo CTA de comprobante (botón outline chico / link, NUNCA primary/gigante) */}
+      <div className="pt-2">
+        <a
+          href={PROOF_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-[#8DA396] hover:text-[#798e82] border border-[#8DA396]/40 bg-[#8DA396]/10 hover:bg-[#8DA396]/20 transition-colors px-4 py-2 rounded-lg"
+        >
+          <span>Ya pagué — enviar comprobante</span>
+        </a>
+      </div>
+
+      {/* F) Una sola nota de confirmación */}
+      <p className="text-xs text-[#5A5A5A] leading-relaxed pt-1">
+        Para confirmar tu lugar: después de pagar, mandame el comprobante al 11 2182-9771 con tu nombre y mail.
+      </p>
+
+      {/* G) Link texto de dudas */}
+      <div>
         <a
           href={DOUBTS_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs text-[#5A5A5A] hover:text-charcoal underline underline-offset-4 transition-colors"
+          className="text-xs text-[#828282] hover:text-charcoal underline underline-offset-4 transition-colors"
         >
-          ¿Dudas antes de pagar? Escribime
+          ¿Dudas? Escribime
         </a>
       </div>
 
@@ -109,7 +109,11 @@ const WorkshopPage: React.FC = () => {
   const [isInlineCtaVisible, setIsInlineCtaVisible] = useState(false);
 
   useEffect(() => {
-    document.title = "Estrés y autoexigencia: Cómo salir del piloto automático | Workshop Online con Eli";
+    document.title = "Estrés y autoexigencia: cómo salir del piloto automático | Workshop Online con Eli";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute('content', 'Workshop online en vivo de 90 minutos con Eli Curcio el sábado 3 de octubre. Herramientas prácticas de mindfulness para el estrés y la autoexigencia.');
+    }
     window.scrollTo(0, 0);
   }, []);
 
@@ -170,12 +174,12 @@ const WorkshopPage: React.FC = () => {
             onClick={handleScrollToPayment}
             className="hidden sm:inline-flex items-center text-xs font-semibold uppercase tracking-widest text-charcoal hover:text-[#8DA396] transition-colors"
           >
-            TRANSFERIR $30.000 (ALIAS: MINDFULNESSBYELI) →
+            INSCRIBIRME — $30.000 →
           </a>
         </div>
       </header>
 
-      <main className="pb-40 md:pb-0">
+      <main className="pb-28 md:pb-0">
         
         {/* 1. HERO SECTION */}
         <section className="relative bg-[#F5F3EF] border-b border-[#E8ECE9] pt-3 pb-8 md:pt-6 md:pb-12 lg:pt-8 lg:pb-14 px-6 overflow-hidden">
@@ -534,7 +538,7 @@ const WorkshopPage: React.FC = () => {
                 <div className="bg-[#F5F3EF]/60 p-3.5 rounded-xl border border-[#E8ECE9]/60">
                   <span className="text-xs uppercase tracking-wider text-[#828282] block mb-1">Precios y Cupos</span>
                   <span className="text-charcoal font-semibold text-xs sm:text-sm block">Transferencia: ARS 30.000</span>
-                  <span className="text-[#5A5A5A] text-xs block mt-0.5">Mercado Pago: ARS 35.000 (Tarjetas/cuotas)</span>
+                  <span className="text-[#5A5A5A] text-xs block mt-0.5">Mercado Pago: ARS 35.000</span>
                   <span className="text-[#8DA396] font-semibold text-xs block mt-1">Cupos: 15 personas</span>
                 </div>
               </div>
@@ -588,34 +592,19 @@ const WorkshopPage: React.FC = () => {
         </div>
       </footer>
 
-      {/* Sticky Mobile CTA - Inverted Hierarchy for Mobile */}
+      {/* Sticky Mobile CTA */}
       <div 
-        className={`fixed bottom-0 left-0 right-0 p-3 bg-white/95 backdrop-blur-md border-t border-[#E8ECE9] md:hidden z-50 flex flex-col gap-1.5 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 ${
+        className={`fixed bottom-0 left-0 right-0 p-3 bg-white/95 backdrop-blur-md border-t border-[#E8ECE9] md:hidden z-50 flex justify-center shadow-[0_-4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 ${
           isInlineCtaVisible ? 'translate-y-full opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'
         }`}
       >
-        <div className="flex items-center justify-between bg-[#F5F3EF] px-3 py-1 rounded-lg border border-[#E8ECE9]">
-          <span className="text-xs text-charcoal font-bold">
-            Transferencia $30.000
-          </span>
-          <span className="text-[11px] text-[#5A5A5A]">
-            Alias: <code className="font-mono font-bold text-charcoal">{ALIAS}</code>
-          </span>
-        </div>
-
         <a 
-          href={PROOF_URL}
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="btn-primary w-full text-center py-2.5 text-xs sm:text-sm font-semibold tracking-wide"
+          href="#datos-pago"
+          onClick={handleScrollToPayment}
+          className="btn-primary w-full text-center py-3 text-sm font-semibold tracking-wide"
         >
-          Ya pagué — enviar comprobante
+          Inscribirme — $30.000
         </a>
-
-        <div className="flex items-center justify-between text-[10px] sm:text-[11px] text-[#5A5A5A] px-1">
-          <span>¿Tarjeta? <a href={MERCADO_PAGO_URL} target="_blank" rel="noopener noreferrer" className="underline font-medium text-charcoal">MP $35.000</a></span>
-          <span>Comprobante al 11 2182-9771</span>
-        </div>
       </div>
 
     </div>
