@@ -543,9 +543,14 @@ const WorkshopPage: React.FC = () => {
                 </div>
               </div>
 
-              {/* Payment CTA Block */}
-              <div className="flex justify-center">
-                <PaymentCtaBlock />
+              <div className="flex justify-center pt-2">
+                <a
+                  href="#datos-pago"
+                  onClick={handleScrollToPayment}
+                  className="btn-primary inline-flex items-center justify-center px-6 py-3 text-sm font-semibold tracking-wide"
+                >
+                  Inscribirme — $30.000
+                </a>
               </div>
 
             </div>
@@ -559,7 +564,13 @@ const WorkshopPage: React.FC = () => {
               No necesitás esperar a estar desbordada para empezar a prestar atención a cómo estás viviendo.
             </p>
 
-            <PaymentCtaBlock />
+            <a
+              href="#datos-pago"
+              onClick={handleScrollToPayment}
+              className="btn-primary inline-flex items-center justify-center px-6 py-3 text-sm font-semibold tracking-wide"
+            >
+              Inscribirme — $30.000
+            </a>
           </div>
         </section>
 
