@@ -72,7 +72,7 @@ const PaymentCtaBlock: React.FC = () => {
           <span>Ya pagué — enviar comprobante</span>
         </a>
         <p className="text-xs text-[#5A5A5A] leading-relaxed">
-          WhatsApp 11 2182-9771 · nombre y mail. Sin comprobante no confirmo el cupo.
+          Para confirmar tu lugar: después de pagar, mandame el comprobante al 11 2182-9771 con tu nombre y mail.
         </p>
       </div>
 
