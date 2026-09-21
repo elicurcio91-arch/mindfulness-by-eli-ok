@@ -56,7 +56,7 @@ const PaymentCtaBlock: React.FC = () => {
           rel="noopener noreferrer"
           className="inline-block text-xs sm:text-sm font-medium text-[#5A5A5A] hover:text-charcoal border border-[#E8ECE9] bg-white hover:bg-[#F5F3EF] transition-colors px-3.5 py-2 rounded-lg text-left"
         >
-          Pagar con tarjeta (Mercado Pago) — $35.000 →
+          Pagar con tarjeta (Mercado Pago) — $33.500 →
         </a>
         <p className="text-[11px] text-[#828282] pl-1">
           $30.000 del workshop + costo del medio de pago.
@@ -523,7 +523,7 @@ const WorkshopPage: React.FC = () => {
                 <div className="bg-[#F5F3EF]/60 p-3.5 rounded-xl border border-[#E8ECE9]/60">
                   <span className="text-xs uppercase tracking-wider text-[#828282] block mb-1">Precios y Cupos</span>
                   <span className="text-charcoal font-semibold text-xs sm:text-sm block">Transferencia: ARS 30.000</span>
-                  <span className="text-[#5A5A5A] text-xs block mt-0.5">Mercado Pago: ARS 35.000</span>
+                  <span className="text-[#5A5A5A] text-xs block mt-0.5">Mercado Pago: ARS 33.500</span>
                   <span className="text-[#8DA396] font-semibold text-xs block mt-1">Cupos: 15 personas</span>
                 </div>
               </div>
