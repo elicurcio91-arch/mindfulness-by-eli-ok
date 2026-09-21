@@ -16,77 +16,91 @@ const PaymentCtaBlock: React.FC = () => {
 
   return (
     <div className="w-full max-w-xl space-y-4 text-left my-2">
-      {/* Copy obligatorio cerca de los botones de pago */}
-      <div className="bg-[#FAF9F5] border border-[#E8ECE9] rounded-xl p-3.5 sm:p-4 text-xs sm:text-sm text-[#5A5A5A] leading-relaxed">
-        <p className="font-semibold text-charcoal mb-1">
-          ⚠️ Para confirmar tu lugar:
-        </p>
-        <p>
-          Para confirmar tu lugar: pagá y mandame el comprobante por WhatsApp al 11 2182-9771 con tu nombre y mail. Sin comprobante no puedo reservarte el cupo.
-        </p>
-      </div>
-
-      {/* Bloque de Botones */}
-      <div className="space-y-3">
-        {/* 1) Botón Primario: Mercado Pago */}
-        <a
-          href={MERCADO_PAGO_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-primary inline-cta-btn w-full text-center py-3.5 px-5 text-sm sm:text-base font-semibold shadow-md hover:shadow-lg flex items-center justify-center gap-2"
-        >
-          <span>Pagar con Mercado Pago — $35.000</span>
-        </a>
-
-        {/* 2) Botón Secundario / Caja de Transferencia */}
-        <div className="border border-[#E8ECE9] bg-white rounded-xl p-3.5 sm:p-4 space-y-2">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#E8ECE9] pb-2.5">
-            <div>
-              <span className="font-semibold text-charcoal text-sm sm:text-base block">
-                Transferir $30.000
-              </span>
-              <span className="text-xs text-[#5A5A5A]">
-                Alias: <code className="bg-[#F5F3EF] px-2 py-0.5 rounded font-mono text-charcoal font-semibold text-sm select-all">{ALIAS}</code>
-              </span>
-            </div>
-            <button
-              type="button"
-              onClick={handleCopyAlias}
-              className="self-start sm:self-center text-xs font-semibold px-3 py-1.5 rounded-lg border border-[#8DA396] text-[#2D2D2D] hover:bg-[#8DA396]/10 transition-colors flex items-center gap-1.5"
-            >
-              {copiedAlias ? (
-                <span className="text-emerald-700 font-bold">¡Alias copiado!</span>
-              ) : (
-                <span>Copiar alias</span>
-              )}
-            </button>
-          </div>
-          <p className="text-xs text-[#5A5A5A] italic">
-            Después transferí, mandá el comprobante al WhatsApp.
-          </p>
+      
+      {/* 1. OPCIÓN PRINCIPAL / VALOR REAL: TRANSFERENCIA $30.000 */}
+      <div className="bg-white border-2 border-[#8DA396] rounded-2xl p-4 sm:p-5 shadow-sm space-y-3 relative overflow-hidden">
+        <div className="bg-[#8DA396]/15 text-[#2D2D2D] text-[11px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full inline-block">
+          Opción principal (Precio oficial: $30.000)
         </div>
 
-        {/* 3) Botón/link de comprobante & 4) Link de dudas */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-1">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
+          <div>
+            <h3 className="font-editorial text-2xl text-charcoal font-semibold">
+              Transferir $30.000
+            </h3>
+            <p className="text-xs sm:text-sm text-[#5A5A5A] mt-0.5">
+              Alias: <code className="bg-[#F5F3EF] px-2.5 py-1 rounded-md font-mono text-charcoal font-bold text-sm select-all">{ALIAS}</code>
+            </p>
+          </div>
+
+          <button
+            type="button"
+            onClick={handleCopyAlias}
+            className="btn-primary self-start sm:self-center text-xs font-semibold px-4 py-2.5 rounded-xl shadow-sm hover:shadow transition-colors flex items-center gap-1.5"
+          >
+            {copiedAlias ? (
+              <span className="text-emerald-300 font-bold">¡Alias copiado!</span>
+            ) : (
+              <span>Copiar alias</span>
+            )}
+          </button>
+        </div>
+
+        {/* Botón de Comprobante para confirmar la vacante */}
+        <div className="pt-2 border-t border-[#E8ECE9]">
           <a
             href={PROOF_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto text-center bg-[#8DA396]/15 hover:bg-[#8DA396]/25 text-[#2D2D2D] font-semibold text-xs sm:text-sm py-2.5 px-4 rounded-xl border border-[#8DA396]/40 transition-colors flex items-center justify-center gap-2"
+            className="btn-primary inline-cta-btn w-full text-center py-3.5 px-5 text-sm sm:text-base font-semibold shadow-md hover:shadow-lg flex items-center justify-center gap-2"
           >
             <span>Ya pagué — enviar comprobante</span>
           </a>
-
-          <a
-            href={DOUBTS_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-[#5A5A5A] hover:text-charcoal underline underline-offset-4 transition-colors"
-          >
-            ¿Dudas antes de pagar? Escribime
-          </a>
         </div>
       </div>
+
+      {/* 2. OPCIÓN SECUNDARIA: MERCADO PAGO $35.000 (Tarjeta / Cuotas) */}
+      <div className="border border-[#E8ECE9] bg-[#FAF9F6] rounded-xl p-3.5 sm:p-4 space-y-2">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+          <span className="text-xs sm:text-sm font-medium text-[#5A5A5A]">
+            ¿Preferís pagar con tarjeta o en cuotas?
+          </span>
+          <a
+            href={MERCADO_PAGO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs sm:text-sm font-semibold text-charcoal border border-charcoal/30 bg-white hover:bg-charcoal hover:text-white transition-all px-4 py-2 rounded-lg text-center w-full sm:w-auto"
+          >
+            Preferís tarjeta: Mercado Pago — $35.000
+          </a>
+        </div>
+        <p className="text-[11px] sm:text-xs text-[#828282] leading-tight italic">
+          El workshop sale $30.000; con MP el total es $35.000 por el costo del medio de pago.
+        </p>
+      </div>
+
+      {/* 3. AVISO OBLIGATORIO UNIFICADO (Aplica a AMBOS medios de pago) */}
+      <div className="bg-[#FAF9F5] border border-[#E8ECE9] rounded-xl p-3.5 sm:p-4 text-xs sm:text-sm text-[#5A5A5A] leading-relaxed">
+        <p className="font-semibold text-charcoal mb-0.5">
+          ⚠️ Importante para confirmar tu lugar:
+        </p>
+        <p>
+          Después de pagar, mandame el comprobante por WhatsApp al 11 2182-9771 con tu nombre y mail. Sin comprobante no te reservo el cupo.
+        </p>
+      </div>
+
+      {/* 4. LINK DE DUDAS (Terciario, solo texto) */}
+      <div className="text-center sm:text-right pt-1">
+        <a
+          href={DOUBTS_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs text-[#5A5A5A] hover:text-charcoal underline underline-offset-4 transition-colors"
+        >
+          ¿Dudas antes de pagar? Escribime
+        </a>
+      </div>
+
     </div>
   );
 };
@@ -123,6 +137,16 @@ const WorkshopPage: React.FC = () => {
     window.dispatchEvent(new Event('popstate'));
   };
 
+  const handleScrollToPayment = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const paymentEl = document.getElementById('datos-pago');
+    if (paymentEl) {
+      paymentEl.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="font-sans antialiased text-[#2D2D2D] bg-[#FAFAFA] min-h-screen selection:bg-[#8DA396]/20">
       
@@ -142,17 +166,16 @@ const WorkshopPage: React.FC = () => {
           </a>
 
           <a
-            href={MERCADO_PAGO_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center text-xs font-semibold uppercase tracking-widest text-[#5A5A5A] hover:text-[#8DA396] transition-colors"
+            href="#datos-pago"
+            onClick={handleScrollToPayment}
+            className="hidden sm:inline-flex items-center text-xs font-semibold uppercase tracking-widest text-charcoal hover:text-[#8DA396] transition-colors"
           >
-            PAGAR CON MERCADO PAGO — $35.000 →
+            TRANSFERIR $30.000 (ALIAS: MINDFULNESSBYELI) →
           </a>
         </div>
       </header>
 
-      <main className="pb-36 md:pb-0">
+      <main className="pb-40 md:pb-0">
         
         {/* 1. HERO SECTION */}
         <section className="relative bg-[#F5F3EF] border-b border-[#E8ECE9] pt-3 pb-8 md:pt-6 md:pb-12 lg:pt-8 lg:pb-14 px-6 overflow-hidden">
@@ -206,8 +229,8 @@ const WorkshopPage: React.FC = () => {
                 <div className="pt-2 border-t border-[#E8ECE9]/60 flex flex-wrap items-center justify-between text-xs sm:text-sm text-[#5A5A5A] gap-2">
                   <span>Online · En vivo · 90 min · Queda grabado</span>
                   <div className="flex items-center gap-2 font-semibold text-charcoal">
-                    <span className="bg-[#E8ECE9]/70 px-2.5 py-0.5 rounded">Transferencia: $30.000</span>
-                    <span className="bg-[#E8ECE9]/70 px-2.5 py-0.5 rounded">MP: $35.000</span>
+                    <span className="bg-[#8DA396]/20 px-2.5 py-0.5 rounded text-charcoal border border-[#8DA396]/40">Transferencia: $30.000</span>
+                    <span className="bg-[#E8ECE9]/70 px-2.5 py-0.5 rounded text-[#5A5A5A]">MP: $35.000</span>
                   </div>
                 </div>
               </div>
@@ -565,23 +588,34 @@ const WorkshopPage: React.FC = () => {
         </div>
       </footer>
 
-      {/* Sticky Mobile CTA - Hides when an inline CTA button is in view */}
+      {/* Sticky Mobile CTA - Inverted Hierarchy for Mobile */}
       <div 
-        className={`fixed bottom-0 left-0 right-0 p-3 bg-white/95 backdrop-blur-md border-t border-[#E8ECE9] md:hidden z-50 flex flex-col items-center shadow-[0_-4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 ${
+        className={`fixed bottom-0 left-0 right-0 p-3 bg-white/95 backdrop-blur-md border-t border-[#E8ECE9] md:hidden z-50 flex flex-col gap-1.5 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 ${
           isInlineCtaVisible ? 'translate-y-full opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'
         }`}
       >
+        <div className="flex items-center justify-between bg-[#F5F3EF] px-3 py-1 rounded-lg border border-[#E8ECE9]">
+          <span className="text-xs text-charcoal font-bold">
+            Transferencia $30.000
+          </span>
+          <span className="text-[11px] text-[#5A5A5A]">
+            Alias: <code className="font-mono font-bold text-charcoal">{ALIAS}</code>
+          </span>
+        </div>
+
         <a 
-          href={MERCADO_PAGO_URL} 
+          href={PROOF_URL}
           target="_blank" 
           rel="noopener noreferrer" 
-          className="btn-primary w-full text-center py-3 text-xs sm:text-sm font-semibold tracking-wide"
+          className="btn-primary w-full text-center py-2.5 text-xs sm:text-sm font-semibold tracking-wide"
         >
-          Pagar con Mercado Pago — $35.000
+          Ya pagué — enviar comprobante
         </a>
-        <p className="text-[11px] text-center text-[#5A5A5A] mt-1.5 leading-tight">
-          Para confirmar tu lugar: enviá el comprobante al 11 2182-9771 con tu nombre y mail.
-        </p>
+
+        <div className="flex items-center justify-between text-[10px] sm:text-[11px] text-[#5A5A5A] px-1">
+          <span>¿Tarjeta? <a href={MERCADO_PAGO_URL} target="_blank" rel="noopener noreferrer" className="underline font-medium text-charcoal">MP $35.000</a></span>
+          <span>Comprobante al 11 2182-9771</span>
+        </div>
       </div>
 
     </div>
