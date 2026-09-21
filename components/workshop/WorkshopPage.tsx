@@ -46,11 +46,7 @@ const PaymentCtaBlock: React.FC = () => {
             )}
           </button>
         </div>
-
-        <p className="text-xs text-[#828282] italic pt-2 border-t border-[#E8ECE9]">
-          Después de pagar, enviá el comprobante.
-        </p>
-      </div>
+</div>
 
       {/* D) Debajo, opción secundaria compacta (NO card enorme) */}
       <div className="space-y-1 pt-1">
@@ -66,9 +62,7 @@ const PaymentCtaBlock: React.FC = () => {
           $30.000 del workshop + costo del medio de pago.
         </p>
       </div>
-
-      {/* E) Un solo CTA de comprobante (botón outline chico / link, NUNCA primary/gigante) */}
-      <div className="pt-2">
+      <div className="pt-3 space-y-2">
         <a
           href={PROOF_URL}
           target="_blank"
@@ -77,14 +71,14 @@ const PaymentCtaBlock: React.FC = () => {
         >
           <span>Ya pagué — enviar comprobante</span>
         </a>
+        <p className="text-xs text-[#5A5A5A] leading-relaxed">
+          WhatsApp 11 2182-9771 · nombre y mail. Sin comprobante no confirmo el cupo.
+        </p>
       </div>
 
-      {/* F) Una sola nota de confirmación */}
-      <p className="text-xs text-[#5A5A5A] leading-relaxed pt-1">
-        Para confirmar tu lugar: después de pagar, mandame el comprobante al 11 2182-9771 con tu nombre y mail.
-      </p>
 
-      {/* G) Link texto de dudas */}
+      {/* F) Una sola nota de confirmación */}
+{/* G) Link texto de dudas */}
       <div>
         <a
           href={DOUBTS_URL}
