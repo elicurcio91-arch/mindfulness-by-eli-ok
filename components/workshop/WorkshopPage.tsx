@@ -1,8 +1,95 @@
 import React, { useEffect, useState } from 'react';
 
-const WHATSAPP_NUMBER = "541121829771";
-const WHATSAPP_MESSAGE = "Hola Eli, vi el workshop “Estrés y autoexigencia: cómo salir del piloto automático” y quiero reservar mi lugar. ¿Me pasás la información para inscribirme?";
-const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+const MERCADO_PAGO_URL = "https://mpago.la/2AfhLjk";
+const PROOF_URL = "https://wa.me/541121829771?text=Hola%20Eli%2C%20te%20envio%20el%20comprobante%20del%20workshop%20del%203%2F10.%20Nombre%3A%20%0AMail%3A%20";
+const DOUBTS_URL = "https://wa.me/541121829771?text=Hola%20Eli%2C%20tengo%20una%20duda%20sobre%20el%20workshop%20del%203%2F10.";
+const ALIAS = "mindfulnessbyeli";
+
+const PaymentCtaBlock: React.FC = () => {
+  const [copiedAlias, setCopiedAlias] = useState(false);
+
+  const handleCopyAlias = () => {
+    navigator.clipboard.writeText(ALIAS);
+    setCopiedAlias(true);
+    setTimeout(() => setCopiedAlias(false), 2000);
+  };
+
+  return (
+    <div className="w-full max-w-xl space-y-4 text-left my-2">
+      {/* Copy obligatorio cerca de los botones de pago */}
+      <div className="bg-[#FAF9F5] border border-[#E8ECE9] rounded-xl p-3.5 sm:p-4 text-xs sm:text-sm text-[#5A5A5A] leading-relaxed">
+        <p className="font-semibold text-charcoal mb-1">
+          ⚠️ Para confirmar tu lugar:
+        </p>
+        <p>
+          Para confirmar tu lugar: pagá y mandame el comprobante por WhatsApp al 11 2182-9771 con tu nombre y mail. Sin comprobante no puedo reservarte el cupo.
+        </p>
+      </div>
+
+      {/* Bloque de Botones */}
+      <div className="space-y-3">
+        {/* 1) Botón Primario: Mercado Pago */}
+        <a
+          href={MERCADO_PAGO_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary inline-cta-btn w-full text-center py-3.5 px-5 text-sm sm:text-base font-semibold shadow-md hover:shadow-lg flex items-center justify-center gap-2"
+        >
+          <span>Pagar con Mercado Pago — $35.000</span>
+        </a>
+
+        {/* 2) Botón Secundario / Caja de Transferencia */}
+        <div className="border border-[#E8ECE9] bg-white rounded-xl p-3.5 sm:p-4 space-y-2">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#E8ECE9] pb-2.5">
+            <div>
+              <span className="font-semibold text-charcoal text-sm sm:text-base block">
+                Transferir $30.000
+              </span>
+              <span className="text-xs text-[#5A5A5A]">
+                Alias: <code className="bg-[#F5F3EF] px-2 py-0.5 rounded font-mono text-charcoal font-semibold text-sm select-all">{ALIAS}</code>
+              </span>
+            </div>
+            <button
+              type="button"
+              onClick={handleCopyAlias}
+              className="self-start sm:self-center text-xs font-semibold px-3 py-1.5 rounded-lg border border-[#8DA396] text-[#2D2D2D] hover:bg-[#8DA396]/10 transition-colors flex items-center gap-1.5"
+            >
+              {copiedAlias ? (
+                <span className="text-emerald-700 font-bold">¡Alias copiado!</span>
+              ) : (
+                <span>Copiar alias</span>
+              )}
+            </button>
+          </div>
+          <p className="text-xs text-[#5A5A5A] italic">
+            Después transferí, mandá el comprobante al WhatsApp.
+          </p>
+        </div>
+
+        {/* 3) Botón/link de comprobante & 4) Link de dudas */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-1">
+          <a
+            href={PROOF_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto text-center bg-[#8DA396]/15 hover:bg-[#8DA396]/25 text-[#2D2D2D] font-semibold text-xs sm:text-sm py-2.5 px-4 rounded-xl border border-[#8DA396]/40 transition-colors flex items-center justify-center gap-2"
+          >
+            <span>Ya pagué — enviar comprobante</span>
+          </a>
+
+          <a
+            href={DOUBTS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-[#5A5A5A] hover:text-charcoal underline underline-offset-4 transition-colors"
+          >
+            ¿Dudas antes de pagar? Escribime
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const WorkshopPage: React.FC = () => {
   const [isInlineCtaVisible, setIsInlineCtaVisible] = useState(false);
@@ -39,7 +126,7 @@ const WorkshopPage: React.FC = () => {
   return (
     <div className="font-sans antialiased text-[#2D2D2D] bg-[#FAFAFA] min-h-screen selection:bg-[#8DA396]/20">
       
-      {/* Header / Navigation Bar - Reduced vertical padding on mobile */}
+      {/* Header / Navigation Bar */}
       <header className="sticky top-0 z-40 bg-[#FAFAFA]/90 backdrop-blur-md border-b border-[#E8ECE9]">
         <div className="max-w-6xl mx-auto px-6 py-2.5 sm:py-4 flex items-center justify-between">
           <a 
@@ -55,19 +142,19 @@ const WorkshopPage: React.FC = () => {
           </a>
 
           <a
-            href={WHATSAPP_URL}
+            href={MERCADO_PAGO_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center text-xs font-semibold uppercase tracking-widest text-[#5A5A5A] hover:text-[#8DA396] transition-colors"
           >
-            RESERVAR LUGAR →
+            PAGAR CON MERCADO PAGO — $35.000 →
           </a>
         </div>
       </header>
 
-      <main className="pb-28 md:pb-0">
+      <main className="pb-36 md:pb-0">
         
-        {/* 1. HERO SECTION - Minimal top empty space on mobile */}
+        {/* 1. HERO SECTION */}
         <section className="relative bg-[#F5F3EF] border-b border-[#E8ECE9] pt-3 pb-8 md:pt-6 md:pb-12 lg:pt-8 lg:pb-14 px-6 overflow-hidden">
           <div className="max-w-6xl mx-auto flex flex-col lg:grid lg:grid-cols-12 gap-5 lg:gap-8 items-center">
             
@@ -102,10 +189,10 @@ const WorkshopPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Mobile Part 3 / Desktop Bottom Left (Cols 1-7, Row 2): Metadata Box & CTA */}
+            {/* Mobile Part 3 / Desktop Bottom Left (Cols 1-7, Row 2): Metadata Box & Payment CTA */}
             <div className="lg:col-span-7 lg:col-start-1 lg:row-start-2 flex flex-col items-start z-10 w-full">
               {/* Event Metadata */}
-              <div className="w-full bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-[#E8ECE9] shadow-sm mb-5 sm:mb-6 space-y-2 max-w-2xl">
+              <div className="w-full bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-[#E8ECE9] shadow-sm mb-4 space-y-2 max-w-2xl">
                 <div className="flex flex-wrap items-center gap-y-1 text-sm sm:text-base text-charcoal font-medium">
                   <div className="flex items-center gap-2 mr-6">
                     <span className="w-2 h-2 rounded-full bg-[#8DA396]"></span>
@@ -117,19 +204,16 @@ const WorkshopPage: React.FC = () => {
                 </div>
 
                 <div className="pt-2 border-t border-[#E8ECE9]/60 flex flex-wrap items-center justify-between text-xs sm:text-sm text-[#5A5A5A] gap-2">
-                  <span>Online · En vivo · 90 minutos</span>
-                  <span className="font-semibold text-charcoal bg-[#E8ECE9]/70 px-2.5 py-0.5 rounded">ARS 30.000</span>
+                  <span>Online · En vivo · 90 min · Queda grabado</span>
+                  <div className="flex items-center gap-2 font-semibold text-charcoal">
+                    <span className="bg-[#E8ECE9]/70 px-2.5 py-0.5 rounded">Transferencia: $30.000</span>
+                    <span className="bg-[#E8ECE9]/70 px-2.5 py-0.5 rounded">MP: $35.000</span>
+                  </div>
                 </div>
               </div>
 
-              <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary inline-cta-btn w-full sm:w-auto text-center shadow-md hover:shadow-lg"
-              >
-                QUIERO RESERVAR MI LUGAR
-              </a>
+              {/* Payment CTA Block */}
+              <PaymentCtaBlock />
             </div>
 
           </div>
@@ -164,7 +248,7 @@ const WorkshopPage: React.FC = () => {
               ))}
             </div>
 
-            {/* Closing text - Updated exact copy */}
+            {/* Closing text */}
             <div className="text-center pt-5 border-t-2 border-[#8DA396]/30 max-w-xl mx-auto space-y-1.5">
               <p className="text-lg sm:text-xl font-editorial text-charcoal">
                 No necesariamente tenés que hacer menos.
@@ -293,7 +377,7 @@ const WorkshopPage: React.FC = () => {
               </p>
             </div>
 
-            {/* Testimonials Grid (Desktop: 2 cols, Mobile: 1 col stacked) */}
+            {/* Testimonials Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
               {/* Testimonio Workshop 1 */}
               <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#E8ECE9] shadow-sm flex flex-col justify-between items-center text-center">
@@ -421,24 +505,21 @@ const WorkshopPage: React.FC = () => {
                 <div className="bg-[#F5F3EF]/60 p-3.5 rounded-xl border border-[#E8ECE9]/60">
                   <span className="text-xs uppercase tracking-wider text-[#828282] block mb-1">Modalidad</span>
                   <span className="text-charcoal font-medium text-base">Online · En vivo</span>
-                  <span className="text-[#5A5A5A] text-xs block mt-0.5">Duración: 90 minutos</span>
+                  <span className="text-[#5A5A5A] text-xs block mt-0.5">Duración: 90 min · Queda grabado</span>
                 </div>
 
                 <div className="bg-[#F5F3EF]/60 p-3.5 rounded-xl border border-[#E8ECE9]/60">
-                  <span className="text-xs uppercase tracking-wider text-[#828282] block mb-1">Cupos y Valor</span>
-                  <span className="text-charcoal font-semibold text-base block">ARS 30.000</span>
-                  <span className="text-[#5A5A5A] text-xs block mt-0.5">Cupos: 15 personas</span>
+                  <span className="text-xs uppercase tracking-wider text-[#828282] block mb-1">Precios y Cupos</span>
+                  <span className="text-charcoal font-semibold text-xs sm:text-sm block">Transferencia: ARS 30.000</span>
+                  <span className="text-[#5A5A5A] text-xs block mt-0.5">Mercado Pago: ARS 35.000 (Tarjetas/cuotas)</span>
+                  <span className="text-[#8DA396] font-semibold text-xs block mt-1">Cupos: 15 personas</span>
                 </div>
               </div>
 
-              <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-accent inline-cta-btn w-full sm:w-auto px-10 py-3.5 text-base shadow-md"
-              >
-                QUIERO RESERVAR MI LUGAR
-              </a>
+              {/* Payment CTA Block */}
+              <div className="flex justify-center">
+                <PaymentCtaBlock />
+              </div>
 
             </div>
           </div>
@@ -446,21 +527,12 @@ const WorkshopPage: React.FC = () => {
 
         {/* 8. CIERRE */}
         <section className="py-12 md:py-16 px-6 bg-[#FAFAFA] text-center border-t border-[#E8ECE9]">
-          <div className="max-w-2xl mx-auto space-y-6">
+          <div className="max-w-2xl mx-auto space-y-6 flex flex-col items-center">
             <p className="font-editorial text-2xl sm:text-3xl md:text-4xl text-charcoal leading-snug">
               No necesitás esperar a estar desbordada para empezar a prestar atención a cómo estás viviendo.
             </p>
 
-            <div>
-              <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary inline-cta-btn px-10 py-3.5 text-base shadow-md hover:shadow-lg"
-              >
-                QUIERO RESERVAR MI LUGAR
-              </a>
-            </div>
+            <PaymentCtaBlock />
           </div>
         </section>
 
@@ -474,7 +546,7 @@ const WorkshopPage: React.FC = () => {
           </div>
           <div className="flex items-center gap-6">
             <a 
-              href={WHATSAPP_URL} 
+              href={PROOF_URL} 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-charcoal transition-colors"
@@ -495,18 +567,21 @@ const WorkshopPage: React.FC = () => {
 
       {/* Sticky Mobile CTA - Hides when an inline CTA button is in view */}
       <div 
-        className={`fixed bottom-0 left-0 right-0 p-4 bg-white/95 backdrop-blur-md border-t border-[#E8ECE9] md:hidden z-50 flex justify-center shadow-[0_-4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 ${
+        className={`fixed bottom-0 left-0 right-0 p-3 bg-white/95 backdrop-blur-md border-t border-[#E8ECE9] md:hidden z-50 flex flex-col items-center shadow-[0_-4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 ${
           isInlineCtaVisible ? 'translate-y-full opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'
         }`}
       >
         <a 
-          href={WHATSAPP_URL} 
+          href={MERCADO_PAGO_URL} 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="btn-primary w-full text-center py-3 text-sm tracking-wider"
+          className="btn-primary w-full text-center py-3 text-xs sm:text-sm font-semibold tracking-wide"
         >
-          QUIERO RESERVAR MI LUGAR
+          Pagar con Mercado Pago — $35.000
         </a>
+        <p className="text-[11px] text-center text-[#5A5A5A] mt-1.5 leading-tight">
+          Para confirmar tu lugar: enviá el comprobante al 11 2182-9771 con tu nombre y mail.
+        </p>
       </div>
 
     </div>
