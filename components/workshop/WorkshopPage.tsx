@@ -22,12 +22,7 @@ const PaymentCtaBlock: React.FC = () => {
         Inscripción
       </h3>
 
-      {/* B) Una línea de precio */}
-      <p className="text-sm sm:text-base font-medium text-[#5A5A5A]">
-        Precio del workshop: <span className="font-semibold text-charcoal font-editorial text-xl">$30.000</span>
-      </p>
-
-      {/* C) Card principal (destacada, no gigante) */}
+      {/* Card principal */}
       <div className="bg-white border border-[#8DA396]/60 rounded-xl p-4 sm:p-5 shadow-sm space-y-3">
         <div className="flex items-center justify-between gap-3">
           <div>
@@ -174,7 +169,7 @@ const WorkshopPage: React.FC = () => {
             onClick={handleScrollToPayment}
             className="hidden sm:inline-flex items-center text-xs font-semibold uppercase tracking-widest text-charcoal hover:text-[#8DA396] transition-colors"
           >
-            INSCRIBIRME — $30.000 →
+            INSCRIBIRME →
           </a>
         </div>
       </header>
@@ -230,12 +225,8 @@ const WorkshopPage: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="pt-2 border-t border-[#E8ECE9]/60 flex flex-wrap items-center justify-between text-xs sm:text-sm text-[#5A5A5A] gap-2">
+                <div className="pt-2 border-t border-[#E8ECE9]/60 text-xs sm:text-sm text-[#5A5A5A]">
                   <span>Online · En vivo · 90 min · Queda grabado</span>
-                  <div className="flex items-center gap-2 font-semibold text-charcoal">
-                    <span className="bg-[#8DA396]/20 px-2.5 py-0.5 rounded text-charcoal border border-[#8DA396]/40">Transferencia: $30.000</span>
-                    <span className="bg-[#E8ECE9]/70 px-2.5 py-0.5 rounded text-[#5A5A5A]">MP: $35.000</span>
-                  </div>
                 </div>
               </div>
 
@@ -549,7 +540,7 @@ const WorkshopPage: React.FC = () => {
                   onClick={handleScrollToPayment}
                   className="btn-primary inline-flex items-center justify-center px-6 py-3 text-sm font-semibold tracking-wide"
                 >
-                  Inscribirme — $30.000
+                  Inscribirme
                 </a>
               </div>
 
@@ -569,7 +560,7 @@ const WorkshopPage: React.FC = () => {
               onClick={handleScrollToPayment}
               className="btn-primary inline-flex items-center justify-center px-6 py-3 text-sm font-semibold tracking-wide"
             >
-              Inscribirme — $30.000
+              Inscribirme
             </a>
           </div>
         </section>
@@ -614,7 +605,7 @@ const WorkshopPage: React.FC = () => {
           onClick={handleScrollToPayment}
           className="btn-primary w-full text-center py-3 text-sm font-semibold tracking-wide"
         >
-          Inscribirme — $30.000
+          Inscribirme
         </a>
       </div>
 
