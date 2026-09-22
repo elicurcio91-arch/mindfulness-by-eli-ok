@@ -1,14 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import HeroWaitlist from './components/HeroWaitlist';
-import TheProblem from './components/TheProblem';
-import WhatIsIt from './components/WhatIsIt';
-import HowItWorks from './components/HowItWorks';
-import WhatWeExplore from './components/WhatWeExplore';
-import WhoIsThisFor from './components/WhoIsThisFor';
-import WaitlistForm from './components/WaitlistForm';
-import AboutInstructor from './components/AboutInstructor';
-import FinalCta from './components/FinalCTA';
+import React, { useEffect, useState } from 'react';
 import WorkshopPage from './components/workshop/WorkshopPage';
+import HomeChooser from './components/home/HomeChooser';
+import PersonasPage from './components/personas/PersonasPage';
+import EmpresasPage from './components/empresas/EmpresasPage';
+import SiteNav from './components/site/SiteNav';
+import SiteFooter from './components/site/SiteFooter';
+import { normalizePath, ROUTES } from './components/site/navigate';
+
+const PAGE_META: Record<string, { title: string; description: string }> = {
+  [ROUTES.home]: {
+    title: 'Mindfulness by Eli',
+    description: 'Calma y presencia, para vos o para tu equipo. Workshops de mindfulness para personas y para equipos.',
+  },
+  [ROUTES.personas]: {
+    title: 'Para personas | Mindfulness by Eli',
+    description: 'Workshop online de octubre sobre estrés y autoexigencia, y el recorrido de 30 Días de Calma.',
+  },
+  [ROUTES.empresas]: {
+    title: 'Mindfulness para equipos | Mindfulness by Eli',
+    description: 'Workshops online para bajar el estrés y la autoexigencia en el trabajo. Pedí una propuesta a medida.',
+  },
+};
 
 const App: React.FC = () => {
   const [currentPath, setCurrentPath] = useState<string>(() => window.location.pathname);
@@ -21,31 +33,41 @@ const App: React.FC = () => {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
-  const normalizedPath = currentPath.toLowerCase().replace(/\/$/, '');
-  if (normalizedPath === '/workshop') {
+  const normalizedPath = normalizePath(currentPath);
+
+  useEffect(() => {
+    if (normalizedPath !== ROUTES.workshop && !window.location.hash) {
+      window.scrollTo(0, 0);
+    }
+
+    if (normalizedPath === ROUTES.workshop) return;
+
+    const meta = PAGE_META[normalizedPath] ?? PAGE_META[ROUTES.home];
+    document.title = meta.title;
+    const description = document.querySelector('meta[name="description"]');
+    if (description) {
+      description.setAttribute('content', meta.description);
+    }
+  }, [normalizedPath]);
+
+  if (normalizedPath === ROUTES.workshop) {
     return <WorkshopPage />;
   }
 
+  let page = <HomeChooser />;
+  if (normalizedPath === ROUTES.personas) {
+    page = <PersonasPage />;
+  } else if (normalizedPath === ROUTES.empresas) {
+    page = <EmpresasPage />;
+  }
+
   return (
-    <div className="font-sans antialiased text-[#2D2D2D] bg-[#FAFAFA]">
-      <main>
-        <HeroWaitlist />
-        <TheProblem />
-        <WhatIsIt />
-        <HowItWorks />
-        <WhatWeExplore />
-        <WhoIsThisFor />
-        <WaitlistForm />
-        <AboutInstructor />
-        <FinalCta />
+    <div className="min-h-screen flex flex-col font-sans antialiased text-[#2D2D2D] bg-[#FAFAFA] selection:bg-[#8DA396]/20">
+      <SiteNav currentPath={normalizedPath} />
+      <main className="flex-1 flex flex-col">
+        {page}
       </main>
-      
-      {/* Sticky Mobile CTA */}
-      <div className="fixed bottom-0 left-0 right-0 p-4 bg-white/90 backdrop-blur-md border-t border-[#E8ECE9] md:hidden z-50 flex justify-center shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
-        <a href="#waitlist-form" className="btn-primary w-full text-center">
-            QUIERO ENTERARME
-        </a>
-      </div>
+      <SiteFooter />
     </div>
   );
 };
