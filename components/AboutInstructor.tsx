@@ -26,7 +26,7 @@ const AboutInstructor: React.FC = () => {
                     
                     <div className="space-y-5 text-[#5A5A5A] text-base md:text-lg leading-relaxed">
                         <p>
-                            Soy profesora de mindfulness certificada, instructora de yoga y coach ontológica.
+                            Soy profesora de mindfulness (Asociación Argentina de Mindfulness; formación con base en MBSR), instructora de yoga y coach ontológica.
                         </p>
                         <p>
                             Hace años trabajo creando espacios y experiencias relacionadas con el bienestar y me interesa especialmente acercar herramientas prácticas que ayuden a las personas a relacionarse de otra manera con el estrés, las emociones y su experiencia cotidiana.
