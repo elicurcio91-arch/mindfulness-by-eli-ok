@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const PROPOSAL_EMAIL = 'elicurcio.91@gmail.com';
 
 const POINTS = [
-  'Mejor balance entre laburo y vida personal',
+  'Mejor balance entre trabajo y vida personal',
   'Herramientas de regulación emocional',
   'Mejor clima en el equipo',
 ] as const;
