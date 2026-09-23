@@ -295,7 +295,7 @@ const WorkshopPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="mt-8 md:mt-10 grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-5 items-stretch">
+            <div className="mt-8 md:mt-10 grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-5 items-start">
               <figure className="md:col-span-3">
                 <div className="aspect-[6/5] rounded-2xl overflow-hidden shadow-md border-2 border-white bg-[#E8ECE9]">
                   <img
@@ -305,12 +305,12 @@ const WorkshopPage: React.FC = () => {
                   />
                 </div>
               </figure>
-              <figure className="md:col-span-2 h-full">
-                <div className="aspect-[3/2] md:aspect-auto md:h-full rounded-2xl overflow-hidden shadow-md border-2 border-white bg-[#E8ECE9]">
+              <figure className="md:col-span-2">
+                <div className="aspect-[3/2] rounded-2xl overflow-hidden shadow-md border-2 border-white bg-[#E8ECE9]">
                   <img
                     src="/eli-facilitando-grupo.jpg"
                     alt="Eli facilitando un encuentro, sentada con el grupo"
-                    className="w-full h-full object-cover object-[center_40%]"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
               </figure>
