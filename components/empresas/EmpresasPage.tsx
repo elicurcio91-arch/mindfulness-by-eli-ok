@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const PROPOSAL_EMAIL = 'elicurcio.91@gmail.com';
 
 const POINTS = [
-  'Mejor balance entre laburo y vida personal',
+  'Mejor balance entre trabajo y vida personal',
   'Herramientas de regulación emocional',
   'Mejor clima en el equipo',
 ] as const;
@@ -178,7 +178,7 @@ const EmpresasPage: React.FC = () => {
             </h2>
             <div className="w-12 h-[2px] bg-[#8DA396] mb-8" />
             <p className="text-lg text-[#5A5A5A] leading-relaxed">
-              Contadora Pública (UBA). Magíster en gestión ambiental. Instructora de yoga. Profesora de mindfulness. Formación en coaching ontológico en curso.
+              Contadora Pública (UBA). Magíster en gestión ambiental. Profesora de mindfulness (Asociación Argentina de Mindfulness; formación con base en MBSR). Instructora de yoga. Formación en coaching ontológico en curso.
             </p>
           </div>
         </div>

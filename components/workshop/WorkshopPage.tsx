@@ -273,25 +273,51 @@ const WorkshopPage: React.FC = () => {
         </section>
 
         {/* 3. SECCIÓN "¿CÓMO ES EL ENCUENTRO?" */}
-        <section className="py-10 md:py-12 px-6 bg-[#F5F3EF] border-y border-[#E8ECE9]">
-          <div className="max-w-3xl mx-auto text-center space-y-5">
-            <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl text-charcoal">
-              ¿Cómo es el encuentro?
-            </h2>
+        <section className="py-10 md:py-14 px-6 bg-[#F5F3EF] border-y border-[#E8ECE9]">
+          <div className="max-w-5xl mx-auto">
+            <div className="max-w-3xl mx-auto text-center space-y-5">
+              <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl text-charcoal">
+                ¿Cómo es el encuentro?
+              </h2>
 
-            <p className="font-editorial text-xl sm:text-2xl text-charcoal leading-snug">
-              Es un workshop práctico y participativo de 90 minutos.
-            </p>
+              <p className="font-editorial text-xl sm:text-2xl text-charcoal leading-snug">
+                Es un workshop práctico y participativo de 90 minutos.
+              </p>
 
-            <p className="text-[#5A5A5A] text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
-              Vamos a combinar explicación, ejercicios y prácticas breves de mindfulness para que puedas reconocer cómo funciona tu piloto automático y empezar a observarlo en situaciones concretas de tu vida.
-            </p>
+              <p className="text-[#5A5A5A] text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+                Vamos a combinar explicación, ejercicios y prácticas breves de mindfulness para que puedas reconocer cómo funciona tu piloto automático y empezar a observarlo en situaciones concretas de tu vida.
+              </p>
 
-            <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-sm text-[#828282] font-medium">
-              <span>No es una clase teórica.</span>
-              <span className="hidden sm:inline text-[#D1D1D1]">|</span>
-              <span>No necesitás saber meditar.</span>
+              <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-sm text-[#828282] font-medium">
+                <span>No es una clase teórica.</span>
+                <span className="hidden sm:inline text-[#D1D1D1]">|</span>
+                <span>No necesitás saber meditar.</span>
+              </div>
             </div>
+
+            <div className="mt-8 md:mt-10 grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-5 items-start">
+              <figure className="md:col-span-3">
+                <div className="aspect-[6/5] rounded-2xl overflow-hidden shadow-md border-2 border-white bg-[#E8ECE9]">
+                  <img
+                    src="/eli-facilitando-pantalla.jpg"
+                    alt="Eli facilitando un encuentro presencial"
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+              </figure>
+              <figure className="md:col-span-2">
+                <div className="aspect-[3/2] rounded-2xl overflow-hidden shadow-md border-2 border-white bg-[#E8ECE9]">
+                  <img
+                    src="/eli-facilitando-grupo.jpg"
+                    alt="Eli facilitando un encuentro, sentada con el grupo"
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+              </figure>
+            </div>
+            <p className="mt-4 text-center text-sm text-[#5A5A5A]">
+              Eli facilitando encuentros presenciales.
+            </p>
           </div>
         </section>
 
@@ -458,9 +484,9 @@ const WorkshopPage: React.FC = () => {
             <div className="lg:col-span-5 order-2 lg:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-md border-2 border-white max-w-md mx-auto lg:max-w-none aspect-[4/5]">
                 <img
-                  src="/quien%20soy%20workshop.png"
-                  alt="Eli facilitando una actividad grupal"
-                  className="w-full h-full object-cover object-center"
+                  src="/eli-sobre-eli.jpg"
+                  alt="Eli Curcio"
+                  className="w-full h-full object-cover object-[36%_22%]"
                 />
               </div>
             </div>
@@ -473,7 +499,7 @@ const WorkshopPage: React.FC = () => {
 
               <div className="space-y-3.5 text-[#5A5A5A] text-base sm:text-lg leading-relaxed">
                 <p className="font-medium text-charcoal">
-                  Soy instructora de mindfulness, profesora de yoga y coach ontológica.
+                  Soy profesora de mindfulness (Asociación Argentina de Mindfulness; formación con base en MBSR), instructora de yoga y coach ontológica.
                 </p>
                 <p>
                   Hace años acompaño a personas a través de prácticas de mindfulness y meditación.

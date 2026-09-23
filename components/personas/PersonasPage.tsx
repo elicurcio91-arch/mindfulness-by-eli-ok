@@ -64,6 +64,34 @@ const PersonasPage: React.FC = () => {
         </div>
       </section>
 
+      <section className="bg-off-white px-6 py-12 md:py-16 border-b border-[#E8ECE9]">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-3 md:gap-4 items-start">
+            <figure className="md:col-span-3">
+              <div className="aspect-[6/5] overflow-hidden rounded-sm bg-[#E8ECE9]">
+                <img
+                  src="/eli-facilitando-pantalla.jpg"
+                  alt="Eli facilitando un encuentro presencial"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+            </figure>
+            <figure className="md:col-span-2">
+              <div className="aspect-[3/2] overflow-hidden rounded-sm bg-[#E8ECE9]">
+                <img
+                  src="/eli-facilitando-grupo.jpg"
+                  alt="Eli facilitando un encuentro, sentada con el grupo"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+            </figure>
+          </div>
+          <p className="mt-4 text-sm text-[#5A5A5A]">
+            Eli facilitando encuentros presenciales.
+          </p>
+        </div>
+      </section>
+
       <HeroWaitlist />
       <TheProblem />
       <WhatIsIt />
