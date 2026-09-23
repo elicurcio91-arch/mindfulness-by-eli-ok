@@ -12,7 +12,7 @@ const paths = [
     href: ROUTES.empresas,
     eyebrow: 'Equipos',
     title: 'Para empresas',
-    description: 'Workshops online para bajar el estrés y la autoexigencia en el trabajo.',
+    description: 'Menos estrés. Más presencia y foco en el trabajo.',
   },
 ] as const;
 

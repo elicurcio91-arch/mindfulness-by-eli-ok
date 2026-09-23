@@ -18,7 +18,7 @@ const PAGE_META: Record<string, { title: string; description: string }> = {
   },
   [ROUTES.empresas]: {
     title: 'Mindfulness para equipos | Mindfulness by Eli',
-    description: 'Workshops online para bajar el estrés y la autoexigencia en el trabajo. Pedí una propuesta a medida.',
+    description: 'Menos estrés, más presencia y foco en el trabajo. Mindfulness online para equipos. Pedí una propuesta a medida.',
   },
 };
 

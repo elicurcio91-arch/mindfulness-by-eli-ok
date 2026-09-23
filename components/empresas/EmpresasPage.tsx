@@ -2,8 +2,14 @@ import React, { useState } from 'react';
 
 const PROPOSAL_EMAIL = 'elicurcio.91@gmail.com';
 
+const POINTS = [
+  'Mejor balance entre laburo y vida personal',
+  'Herramientas de regulación emocional',
+  'Mejor clima en el equipo',
+] as const;
+
 const OFFERS = [
-  'Workshop único (60–90 min): estrés, atención o autoexigencia',
+  'Workshop único (60–90 min): estrés, presencia y foco',
   'Piloto (4–6 semanas): práctica breve y hábitos para el día laboral',
   '1:1 para líderes (opcional)',
 ] as const;
@@ -71,7 +77,7 @@ const EmpresasPage: React.FC = () => {
             Mindfulness para equipos
           </h1>
           <p className="text-lg md:text-2xl text-[#5A5A5A] font-light leading-relaxed max-w-2xl mx-auto mb-8">
-            Workshops online para bajar el estrés y la autoexigencia en el trabajo.
+            Menos estrés. Más presencia y foco en el trabajo.
           </p>
           <a href="#pedir-propuesta" onClick={scrollToForm} className="btn-primary">
             Pedir propuesta
@@ -79,6 +85,13 @@ const EmpresasPage: React.FC = () => {
           <p className="text-sm text-[#828282] mt-6 tracking-wide">
             En español · Online · A medida
           </p>
+          <ul className="mt-12 pt-8 border-t border-[#E8ECE9] grid grid-cols-1 sm:grid-cols-3 gap-6 text-left sm:text-center">
+            {POINTS.map((point) => (
+              <li key={point} className="text-[#5A5A5A] text-sm md:text-base leading-snug">
+                {point}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -89,7 +102,7 @@ const EmpresasPage: React.FC = () => {
           </h2>
           <div className="w-12 h-[2px] bg-[#8DA396] mb-8" />
           <p className="text-lg md:text-xl text-[#5A5A5A] leading-relaxed">
-            Equipos con mucha carga y autoexigencia alta. RRHH, wellbeing y líderes que buscan una acción concreta.
+            Equipos con mucha carga, poca pausa y el foco partido. RRHH, wellbeing y líderes que buscan una acción concreta.
           </p>
         </div>
       </section>
@@ -101,7 +114,7 @@ const EmpresasPage: React.FC = () => {
           </h2>
           <div className="w-12 h-[2px] bg-[#8DA396] mb-8" />
           <p className="font-editorial text-2xl md:text-3xl text-charcoal leading-snug">
-            El estrés no siempre se resuelve pidiendo más rendimiento. Cuando la vara interna está alta, el equipo se tensiona, se dispersa y rinde peor.
+            El ritmo del trabajo no baja solo. El estrés se acumula, la atención se dispersa y, si no hay un corte, el burnout deja de ser un caso aislado.
           </p>
         </div>
       </section>
